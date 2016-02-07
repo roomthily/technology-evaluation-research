@@ -2,6 +2,10 @@
 
 
 ##Software
+
+ESIP TRL Evaluation Spreadsheet [final report](http://wiki.esipfed.org/images/7/73/ESIP_Technology_Evaluation_Framework_Recommendations.pdf) | [presentation](http://wiki.esipfed.org/images/7/7d/ESIP_Technology_Evaluation_Framework_Recommendations_Slides.pdf)
+
+
 Software Sustainability Institute [guide](http://www.software.ac.uk/software-evaluation-guide) | [criteria](http://software.ac.uk/sites/default/files/SSI-SoftwareEvaluationCriteria.pdf)
 
 MITRE STEP [toolkit](http://www2.mitre.org/work/sepo/toolkits/STEP/)
@@ -17,6 +21,8 @@ DoD TRL Calculator [calculator](http://www.dtic.mil/ndia/2003systems/nolte2.pdf)
 DoD Maturity Evaluation [overview](http://www.iaeng.org/publication/WCECS2009/WCECS2009_pp1150-1157.pdf)
 
 18f [guides](https://pages.18f.gov/guides/)
+
+Linux Core Infrastructure Initiaive Best Practices [github](https://github.com/linuxfoundation/cii-best-practices-badge) [badge program](https://www.coreinfrastructure.org/programs/badge-program)
 
 
 ##Data
@@ -47,6 +53,8 @@ DoD IRL [text](http://personal.stevens.edu/~bsauser/SysDML/Evolution_Lifecylce_M
 
 
 ##Articles and Analysis
+
+Github Integrations [site](https://github.com/integrations) 
 
 [A systematic analysis of the science of sandboxing](https://peerj.com/articles/cs-43/)
 

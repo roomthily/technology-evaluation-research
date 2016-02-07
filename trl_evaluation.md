@@ -1,6 +1,15 @@
 #TRL Spreadsheet Information
 
 
+**Category Weights by TRL Level**
+
+![Cumulative Weights](images/trl_cumulative_weights.png)
+
+![Absolute Weights](images/trl_absolute_weights.png)
+
+\* See the [final report](http://wiki.esipfed.org/images/7/73/ESIP_Technology_Evaluation_Framework_Recommendations.pdf), provided by John Graybeal, and [presentation](http://wiki.esipfed.org/images/7/7d/ESIP_Technology_Evaluation_Framework_Recommendations_Slides.pdf).
+
+
 **TRL Level Feature Introduced**
 
 | TRL | Category                       | Subcategory       | Feature                                                                                                                                                                                                                                                                      | 
