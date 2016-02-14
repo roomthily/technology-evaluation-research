@@ -5,6 +5,7 @@
 
 ESIP TRL Evaluation Spreadsheet [final report](http://wiki.esipfed.org/images/7/73/ESIP_Technology_Evaluation_Framework_Recommendations.pdf) | [presentation](http://wiki.esipfed.org/images/7/7d/ESIP_Technology_Evaluation_Framework_Recommendations_Slides.pdf)
 
+NASA TRL [definition](https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html)
 
 Software Sustainability Institute [guide](http://www.software.ac.uk/software-evaluation-guide) | [criteria](http://software.ac.uk/sites/default/files/SSI-SoftwareEvaluationCriteria.pdf)
 
