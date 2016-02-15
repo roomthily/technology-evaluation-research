@@ -1,58 +1,68 @@
-##Software
+---
+layout: page
+---
 
-ESIP TRL Evaluation Spreadsheet [final report](http://wiki.esipfed.org/images/7/73/ESIP_Technology_Evaluation_Framework_Recommendations.pdf) | [presentation](http://wiki.esipfed.org/images/7/7d/ESIP_Technology_Evaluation_Framework_Recommendations_Slides.pdf)
+###Software
 
-NASA TRL [definition](https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html)
+ESIP TRL Evaluation Spreadsheet [final report](http://wiki.esipfed.org/images/7/73/ESIP_Technology_Evaluation_Framework_Recommendations.pdf) \| [presentation](http://wiki.esipfed.org/images/7/7d/ESIP_Technology_Evaluation_Framework_Recommendations_Slides.pdf)
 
-Software Sustainability Institute [guide](http://www.software.ac.uk/software-evaluation-guide) | [criteria](http://software.ac.uk/sites/default/files/SSI-SoftwareEvaluationCriteria.pdf)
+[NASA TRL definition](https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html)
 
-MITRE STEP [toolkit](http://www2.mitre.org/work/sepo/toolkits/STEP/)
+Software Sustainability Institute [guide](http://www.software.ac.uk/software-evaluation-guide) \| [criteria](http://software.ac.uk/sites/default/files/SSI-SoftwareEvaluationCriteria.pdf)
 
-STAR JPS / NESDIS Algorithm Evaluation [Data Product Maturity Level Definitions](http://www.star.nesdis.noaa.gov/jpss/documents/Status/DataProductMaturityLevelDefinitions.pdf) | [Algorithm Maturity](http://www.star.nesdis.noaa.gov/jpss/AlgorithmMaturity.php)
+[MITRE STEP toolkit](http://www2.mitre.org/work/sepo/toolkits/STEP/)
 
-ESA CS-ETSO [CS-ETSO](https://easa.europa.eu/system/files/dfu/CS-ETSO.pdf)
+STAR JPS / NESDIS Algorithm Evaluation [Data Product Maturity Level Definitions](http://www.star.nesdis.noaa.gov/jpss/documents/Status/DataProductMaturityLevelDefinitions.pdf) \| [Algorithm Maturity](http://www.star.nesdis.noaa.gov/jpss/AlgorithmMaturity.php)
 
-NASA ESTO [TRL](https://esto.nasa.gov/technologists_trl.html) | [TRL Worksheet](https://esto.nasa.gov/files/TRL_Worksheet_11-30-10.xls)
+[ESA CS-ETSO](https://easa.europa.eu/system/files/dfu/CS-ETSO.pdf)
 
-DoD TRL Calculator [calculator](http://www.dtic.mil/ndia/2003systems/nolte2.pdf)
+NASA ESTO [TRL](https://esto.nasa.gov/technologists_trl.html) \| [TRL Worksheet](https://esto.nasa.gov/files/TRL_Worksheet_11-30-10.xls)
 
-DoD Maturity Evaluation [overview](http://www.iaeng.org/publication/WCECS2009/WCECS2009_pp1150-1157.pdf)
+[DoD TRL Calculator](http://www.dtic.mil/ndia/2003systems/nolte2.pdf)
 
-18f [guides](https://pages.18f.gov/guides/)
+[DoD Maturity Evaluation overview](http://www.iaeng.org/publication/WCECS2009/WCECS2009_pp1150-1157.pdf)
 
-Linux Core Infrastructure Initiaive Best Practices [github](https://github.com/linuxfoundation/cii-best-practices-badge) [badge program](https://www.coreinfrastructure.org/programs/badge-program)
+[18f guides](https://pages.18f.gov/guides/)
 
+Linux Core Infrastructure Initiaive Best Practices [github](https://github.com/linuxfoundation/cii-best-practices-badge) \| [badge program](https://www.coreinfrastructure.org/programs/badge-program)
 
-##Data
+----------
 
-Data Maturity Matrix [article](http://datascience.codata.org/articles/abstract/10.2481/dsj.14-049/) | [template](https://figshare.com/articles/NCDC_CICSNC_SDSMM_Template/1211954) | [wiki](http://live.commons.esipfed.bluedotapps.org/node/7956)
+###Data
 
-W3C Data on the Web [text](https://www.w3.org/2013/dwbp/wiki/Main_Page)
+Data Maturity Matrix [article](http://datascience.codata.org/articles/abstract/10.2481/dsj.14-049/) \| [template](https://figshare.com/articles/NCDC_CICSNC_SDSMM_Template/1211954) \| [wiki](http://live.commons.esipfed.bluedotapps.org/node/7956)
 
-Continuum of Metadata Quality [text](https://ecommons.cornell.edu/handle/1813/7895)
+[W3C Data on the Web](https://www.w3.org/2013/dwbp/wiki/Main_Page)
 
-W3C Data Quality Vocabulary [text](https://www.w3.org/TR/2015/WD-vocab-dqv-20150625/)
+[Continuum of Metadata Quality](https://ecommons.cornell.edu/handle/1813/7895)
 
-Digital Curation Committee Metadata Standards [text](http://www.dcc.ac.uk/resources/metadata-standards)
+[W3C Data Quality Vocabulary](https://www.w3.org/TR/2015/WD-vocab-dqv-20150625/)
 
-RDA Community Metadata Directory [text](http://rd-alliance.github.io/metadata-directory/)
+[Digital Curation Committee Metadata Standards](http://www.dcc.ac.uk/resources/metadata-standards)
 
+[RDA Community Metadata Directory](http://rd-alliance.github.io/metadata-directory/)
 
-##Semantic Technologies
+----------
 
+###Semantic Technologies
 
-##Infusion and Reusability
+Submit a resource (fork or add an issue).
 
-A Proposal on Using Reuse Readiness Levels to Measure Software Reusability [paper](http://academiccommons.columbia.edu/catalog/ac:180794)
+----------
 
-Internal Technology Transfer [text](http://www.ics.kth.se/INCOSE/Assesment%20of%20Readiness%20for%20Internal%20Technology%20Transfer.pdf)
+###Infusion and Reusability
 
-DoD IRL [text](http://personal.stevens.edu/~bsauser/SysDML/Evolution_Lifecylce_Management_files/Sauser%20INCOSE%202009.pdf)
+[A Proposal on Using Reuse Readiness Levels to Measure Software Reusability](http://academiccommons.columbia.edu/catalog/ac:180794)
 
+[Internal Technology Transfer](http://www.ics.kth.se/INCOSE/Assesment%20of%20Readiness%20for%20Internal%20Technology%20Transfer.pdf)
 
-##Articles and Analysis
+[DoD IRL](http://personal.stevens.edu/~bsauser/SysDML/Evolution_Lifecylce_Management_files/Sauser%20INCOSE%202009.pdf)
 
-Github Integrations [site](https://github.com/integrations) 
+----------
+
+###Articles and Analysis
+
+[Github Integrations](https://github.com/integrations) 
 
 [A systematic analysis of the science of sandboxing](https://peerj.com/articles/cs-43/)
 

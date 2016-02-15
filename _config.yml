@@ -7,7 +7,7 @@
 
 # Site settings
 title: Technology Evaluation Resources
-email: soren.scott@gmail.com
+# email: email@example.com
 description: > # this means to ignore newlines until "baseurl:"
   A collection of resources and working documents related to 
   ESIP testbed software and other research object evaluations.
