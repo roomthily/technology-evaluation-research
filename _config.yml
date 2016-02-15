@@ -13,8 +13,6 @@ description: > # this means to ignore newlines until "baseurl:"
   ESIP testbed software and other research object evaluations.
 baseurl: "/technology-evaluation-research" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: roomthily
-github_username:  roomthily
 
 # Build settings
 markdown: kramdown
