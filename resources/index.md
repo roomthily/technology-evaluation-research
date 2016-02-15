@@ -58,6 +58,10 @@ Submit a resource (fork or add an issue).
 
 [DoD IRL](http://personal.stevens.edu/~bsauser/SysDML/Evolution_Lifecylce_Management_files/Sauser%20INCOSE%202009.pdf)
 
+[NASA Reuse Readiness Levels](https://earthdata.nasa.gov/files/RRLs_v1.0.pdf)
+
+[Tools To Support The Reuse Of Software Assets For The Nasa Earth Science Decadal Survey Missions](http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20120010312.pdf)
+
 ----------
 
 ### Articles and Analysis ###
