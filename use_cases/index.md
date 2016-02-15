@@ -2,7 +2,7 @@
 layout: page
 ---
 
-###Use Cases
+### Use Cases ###
 
 These are not formal use cases; however, they do represent different stakeholder discussions specific to software evaluation.
 

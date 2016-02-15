@@ -28,7 +28,7 @@ Linux Core Infrastructure Initiaive Best Practices [github](https://github.com/l
 
 ----------
 
-###Data
+### Data  ###
 
 Data Maturity Matrix [article](http://datascience.codata.org/articles/abstract/10.2481/dsj.14-049/) \| [template](https://figshare.com/articles/NCDC_CICSNC_SDSMM_Template/1211954) \| [wiki](http://live.commons.esipfed.bluedotapps.org/node/7956)
 
@@ -44,13 +44,13 @@ Data Maturity Matrix [article](http://datascience.codata.org/articles/abstract/1
 
 ----------
 
-###Semantic Technologies
+### Semantic Technologies ###
 
 Submit a resource (fork or add an issue).
 
 ----------
 
-###Infusion and Reusability
+### Infusion and Reusability ###
 
 [A Proposal on Using Reuse Readiness Levels to Measure Software Reusability](http://academiccommons.columbia.edu/catalog/ac:180794)
 
@@ -60,7 +60,7 @@ Submit a resource (fork or add an issue).
 
 ----------
 
-###Articles and Analysis
+### Articles and Analysis ###
 
 [Github Integrations](https://github.com/integrations) 
 
