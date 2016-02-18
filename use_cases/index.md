@@ -20,7 +20,7 @@ These are not formal use cases; however, they do represent different stakeholder
 
 ------- 
 
-**Stakeholder:** Science Software Developer/Reearcher Who Codes
+**Stakeholder:** Science Software Developer/Researcher Who Codes
 
 **Statement:** As a science software developer, I'm interested in using the recommended practices to improve my own workflow and skillsets.
 
