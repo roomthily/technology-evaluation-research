@@ -24,3 +24,4 @@ layout: page
 18. Or, rather than focusing on the difficulties found in #17, what can we say about the difference in evaluating for existence, ie the README file exists, versus evaluating for "quality", ie the README exists but was auto-generated and provides little to no additional context?
 19. Let's clarify "reuse" in this context. For evaluation, especially for the progressions, do we mean a) reuse in other code efforts as in a code module or b) reusability in the Open Science context of sustainability and reproducibility or c) all of the above and how, then, does that affect the criteria and reusability progression here?
 20. How can we structure the criteria to create a scaffold for educational purposes?
+21. What does interoperability mean in this context and how does that change based on the type of software being evaluated?

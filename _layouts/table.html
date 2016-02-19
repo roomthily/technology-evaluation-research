@@ -11,6 +11,8 @@
     {% include header.html %}
 
     <div class="table-content">
+        <h1>{{ page.title }}</h1>
+        <a href="{{ "/trl_evaluation/" | prepend: site.baseurl }}">return to list</a>
       
         {{ content }}
       
@@ -18,7 +20,46 @@
 
     {% include footer.html %}
 
+    <script type="text/javascript">
+        var _colors = {
+            0: '#FFFFFF',
+            1: '#FDF1F0',
+            2: '#FAE2E0',
+            3: '#F4C5C1',
+            4: '#EFA8A2',
+            5: '#EC9A93',
+            6: '#E67C73'
+        };
+
+        function setCell() {
+            cells = document.getElementsByTagName("td");
+            for (var i = 0; i < cells.length; i++) {
+                var cell = cells[i];
+                var val = cell.textContent || cell.innerText;
+                var c = 0;
+                if (val <= 0.2 && val > 0.0) {
+                    c = 1;
+                } else if (val > 0.2 && val <= 0.4) {
+                    c = 2;
+                } else if (val > 0.4 && val <= 0.6) {
+                    c = 3;
+                } else if (val > 0.6 && val <= 0.8) {
+                    c = 4;
+                } else if (val > 0.8 && val < 1) {
+                    c = 5;
+                } else if (val >= 1) {
+                    c = 6;
+                }
+
+                cell.style.backgroundColor = _colors[c];
+            }
+        }
+
+        setCell();
+    </script>
+
     <script async defer src="https://hypothes.is/embed.js"></script>
+
   </body>
   
 </html>  

@@ -10,7 +10,7 @@ See the [final report](http://wiki.esipfed.org/images/7/73/ESIP_Technology_Evalu
 
 Brief context: this is a combination of the Software Sustainability evaluation criteria and the NASA AIST TRL. For our current discussions, it is a useful starting point to ask what's missing, what is a generic readiness progression, what can be evaluated, etc. 
 
-See the [Criteria](FeatureWeights.html) for the complete list of evaluation questions with weights by TRL for the blow-by-blow.
+See the [Criteria](FeatureWeights.html) for the complete list of evaluation questions with weights by TRL for the blow-by-blow. These are provided with the [Hypothes.is](https://hypothes.is/) annotation overlay if you would like to comment directly on a criteria or weight. 
 
 Split by subcategory:
 
@@ -24,7 +24,7 @@ Split by subcategory:
 - [Sustainability: Evolvability](Sustainability-Evolvability.html)
 - [Sustainability: Governance](Sustainability-Governance.html)
 - [Sustainability: Identity](Sustainability-Identity.html)
-- [Sustainability: Interoperability](Sustainability-Interoperabililty.html)
+- [Sustainability: Interoperability](Sustainability-Interoperability.html)
 - [Sustainability: Licensing](Sustainability-Licensing.html)
 - [Sustainability: Portability](Sustainability-Portability.html)
 - [Sustainability: Supportability](Sustainability-Supportability.html)
