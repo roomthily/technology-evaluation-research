@@ -30,7 +30,7 @@ Linux Core Infrastructure Initiaive Best Practices [github](https://github.com/l
 
 ### Data  ###
 
-Data Maturity Matrix [article](http://datascience.codata.org/articles/abstract/10.2481/dsj.14-049/) \| [template](https://figshare.com/articles/NCDC_CICSNC_SDSMM_Template/1211954) \| [wiki](http://live.commons.esipfed.bluedotapps.org/node/7956)
+Data Maturity Matrix [article](http://datascience.codata.org/articles/abstract/10.2481/dsj.14-049/) \| [template](https://figshare.com/articles/NCDC_CICSNC_SDSMM_Template/1211954) \| [wiki](http://live.commons.esipfed.bluedotapps.org/node/7956) | [slidedeck](http://www.slideshare.net/gepeng86/scientific-data-stewardship-maturity-matrix)
 
 [W3C Data on the Web](https://www.w3.org/2013/dwbp/wiki/Main_Page)
 
