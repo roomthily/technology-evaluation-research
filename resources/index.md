@@ -73,3 +73,7 @@ Submit a resource (fork or add an issue).
 [The Software Maintainability Index Revisited](http://static1.1.sqspcdn.com/static/f/702523/9457031/1290003349713/200108-Welker.pdf?token=0hc4bxA%2BnY3KAhFrq0AESeTW0M4%3D)
 
 [McCabe's Cyclomatic Complexity and Why We Don't Use It](https://www.cqse.eu/en/blog/mccabe-cyclomatic-complexity/)
+
+[2016 SI2PI Workshop resources](http://cococubed.asu.edu/si2_pi_workshop_2016/agenda.html)
+
+[Mozilla's Code Review for Science](https://mozillascience.org/code-review-for-science-what-we-learned)
