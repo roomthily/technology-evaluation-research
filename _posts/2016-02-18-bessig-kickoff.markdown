@@ -12,3 +12,4 @@ We have a few options, depending on the crowd.
 3. We can pick another question of the list (or add to it) to discuss.
 4. {Some other topic by quick consensus **but** that is not tied to management because we can't evaluate that here.}
 
+Download the [presentation]({{ "/downloads/bessig.pdf" | prepend: site.baseurl  }})
