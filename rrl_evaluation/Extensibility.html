@@ -1,0 +1,36 @@
+---
+layout: rrltable
+---
+
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">RRL</th>
+<th title="Field #2">Criteria</th>
+</tr></thead>
+<tbody><tr><td align="right">1</td>
+<td>No ability to extend or modify program behavior. Source code is not available; execution parameters cannot be changed, and/or it is not possible to extend the functionality of the software, even for application contexts similar to the original application domain.</td>
+</tr>
+<tr><td align="right">2</td>
+<td>Very difficult to extend the software system, even for application contexts similar to the original application domain. The software was not designed with extensibility in mind. While some level of documentation and/or source code is available, it is extremely difficult to extend the software. For cases where source code is available, the logical flow of code may be hard to follow, with few (if any) comments, and little to no cohesion.</td>
+</tr>
+<tr><td align="right">3</td>
+<td>Extending the software is difficult, even for application contexts similar to the original application domain. Minimal consideration to extensibility is included in the design, through use of methods such as object-oriented design or other tools which provide logical cohesion. Where source code is available, the software has some structure, but may have a high number of independent logical paths, minimal comments and documentation, and/or a low degree of cohesion.</td>
+</tr>
+<tr><td align="right">4</td>
+<td>Some extensibility is possible through configuration changes and/or moderate software modification. Consideration to extensibility to some range of application contexts is included in the design though means such as (a) use of configuration files, (b) isolation of configuration parameters and constants in clearly identified sections of source code (distinct from logic and display code), (c) some documentation of the effects of changes to these parameters and the allowed values for these parameters, and/or (d) effective use of programming practices designed to enable reuse, such as object oriented design.</td>
+</tr>
+<tr><td align="right">5</td>
+<td>Consideration for future extensibility designed into the system for a moderate range of application contexts; extensibility approach defined and at least partially documented. The procedures for extending the software are defined, whether by source code modification (e.g., object-oriented design) or through the provision of some type of extension functionality (e.g., callback hooks or scripting capabilities). Where source code modification is part of the extension plan, the software is well-structured, has a moderate to high level of cohesion, and has configuration elements clearly separated from logic and display elements. Internal and external documentation are sufficient to allow an experienced programmer to understand program flow and logic with moderate effort.</td>
+</tr>
+<tr><td align="right">6</td>
+<td>Designed to allow extensibility across a moderate to broad range of application contexts, provides many points of extensibility, and a thorough and detailed extensibility plan exists. The extensibility capability for the software is well defined, sufficient to enable an experienced developer generally familiar with the project to extend the software. That documentation should include clear information about the range of application contexts to which the software can be extended as well as potential limitations on expansion.</td>
+</tr>
+<tr><td align="right">7</td>
+<td>Demonstrated to be extensible by an external development team in a similar context. The software has been extended and applied to a similar application context to the original. This extension may have been done by an external team using extension documentation, by may have involved substantial assistance from the original development team members.</td>
+</tr>
+<tr><td align="right">8</td>
+<td>Demonstrated extensibility on an external program, clear approach for modifying and extending features across a broad range of application domains. The software has been extended by at least one group of users outside the original development group using existing documentation and with no assistance from the original development team.</td>
+</tr>
+<tr><td align="right">9</td>
+<td>Demonstrated extensibility in multiple scenarios, provides specific documentation and features to build extensions which are used across a range of domains by multiple user groups. The software is regularly extended externally by users across multiple applications using available documentation. There may be a library available of user-generated content for extensions.</td>
+</tr>
+</tbody></table>

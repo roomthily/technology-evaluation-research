@@ -1,0 +1,24 @@
+---
+layout: rrltable
+---
+
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">RRL</th>
+<th title="Field #2">Criteria</th>
+</tr></thead>
+<tbody><tr><td align="right">1</td>
+<td>Not designed with modularity. Research or prototype-grade code written with no designs for organizing code in terms of functionality for modularity or reuse.</td>
+</tr>
+<tr><td align="right">3</td>
+<td>Modularity at major system or subsystem level only. No clear distinctions between generic and solution-specific functionality; few internal functions accessible by external programs (i.e., closed architecture), limited distinction between visible functions; code is organized into a primary system that provides general functionality and one or two subsystems that each provide multiple, unrelated, functions; code within each module contains many independent logical paths.</td>
+</tr>
+<tr><td align="right">5</td>
+<td>Partial segregation of generic and specific functionality. Top to bottom structuring into individual components that provide functions or services to outside entities (i.e., open architecture); internal functions or services documented, but not consistently; modules have been created for generic functions, but modules have not been created for all of the specified functions; code within each module contains many independent logical paths.</td>
+</tr>
+<tr><td align="right">7</td>
+<td>Clear delineations of specific and reusable components. Organization of all components into libraries or service registries; consistent documentation of all libraries as APIs or standard web service interfaces; modules have been created for all specified functions and organized into libraries with consistent features within interfaces; code within each module contains many independent logical paths.</td>
+</tr>
+<tr><td align="right">9</td>
+<td>All functions and data encapsulated into objects or accessible through web service interfaces. All functions and data encapsulated into objects or accessible through web service interfaces; consistent error handling; use of generic extensions to program languages for stronger type checking and compilation-time error checking; services available externally, e.g., in “third-party” service workflows; code within each module contains few independent logical paths.</td>
+</tr>
+</tbody></table>
