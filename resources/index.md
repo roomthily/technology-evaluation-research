@@ -10,6 +10,8 @@ ESIP TRL Evaluation Spreadsheet [final report](http://wiki.esipfed.org/images/7/
 
 Software Sustainability Institute [guide](http://www.software.ac.uk/software-evaluation-guide) \| [criteria](http://software.ac.uk/sites/default/files/SSI-SoftwareEvaluationCriteria.pdf)
 
+JISC Research Software Sustainability 2016 [site](http://www.knowledge-exchange.info/event/software-sustainability) | [report](http://repository.jisc.ac.uk/6332/1/Research_Software_Sustainability_Report_on_KE_Workshop_Feb_2016_FINAL.pdf)
+
 [MITRE STEP toolkit](http://www2.mitre.org/work/sepo/toolkits/STEP/)
 
 STAR JPS / NESDIS Algorithm Evaluation [Data Product Maturity Level Definitions](http://www.star.nesdis.noaa.gov/jpss/documents/Status/DataProductMaturityLevelDefinitions.pdf) \| [Algorithm Maturity](http://www.star.nesdis.noaa.gov/jpss/AlgorithmMaturity.php)
