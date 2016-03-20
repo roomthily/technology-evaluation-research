@@ -24,6 +24,8 @@ NASA ESTO [TRL](https://esto.nasa.gov/technologists_trl.html) \| [TRL Worksheet]
 
 [DoD Maturity Evaluation overview](http://www.iaeng.org/publication/WCECS2009/WCECS2009_pp1150-1157.pdf)
 
+OntoSoft [Ontology](http://ontosoft.org/ontology/software/) (recommendations encoded within the ontology)
+
 [18f guides](https://pages.18f.gov/guides/)
 
 Linux Core Infrastructure Initiaive Best Practices [github](https://github.com/linuxfoundation/cii-best-practices-badge) \| [badge program](https://www.coreinfrastructure.org/programs/badge-program)
