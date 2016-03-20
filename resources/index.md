@@ -81,3 +81,5 @@ Submit a resource (fork or add an issue).
 [2016 SI2PI Workshop resources](http://cococubed.asu.edu/si2_pi_workshop_2016/agenda.html)
 
 [Mozilla's Code Review for Science](https://mozillascience.org/code-review-for-science-what-we-learned)
+
+[Reproducible Builds](https://reproducible-builds.org/)
