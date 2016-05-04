@@ -46,6 +46,8 @@ Data Maturity Matrix [article](http://datascience.codata.org/articles/abstract/1
 
 [RDA Community Metadata Directory](http://rd-alliance.github.io/metadata-directory/)
 
+[Mozilla Science Data Reuse Checklist](http://mozillascience.github.io/checklist/)
+
 ----------
 
 ### Semantic Technologies ###
@@ -83,3 +85,13 @@ Submit a resource (fork or add an issue).
 [Mozilla's Code Review for Science](https://mozillascience.org/code-review-for-science-what-we-learned)
 
 [Reproducible Builds](https://reproducible-builds.org/)
+
+[GUIDELINES FOR PERSISTENTLY IDENTIFYING SOFTWARE USING DATACITE](http://rrr.cs.st-andrews.ac.uk/wp-content/uploads/2015/10/guidelines-software-identification.pdf)
+
+[Practices Perfected In OSS Can Reshape Enterprise Development](http://blog.npmjs.org/post/139373244435/practices-perfected-in-oss-can-reshape-enterprise)
+
+[Lies, Damned Lies and Software Analytics: Why Big Data Needs Rich Data](http://www.slideshare.net/mastorey/lies-damned-lies-and-software-analytics-why-big-data-needs-rich-data)
+
+[Stealing Google's Coding Practices for Academia](https://da-data.blogspot.com/2016/04/stealing-googles-coding-practices-for.html)
+
+[What Makes Software Good](https://medium.com/@mbostock/what-makes-software-good-943557f8a488#.mfnaxgnh3) (noted for the five points at the very end)
