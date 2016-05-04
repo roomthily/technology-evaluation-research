@@ -30,6 +30,12 @@ OntoSoft [Ontology](http://ontosoft.org/ontology/software/) (recommendations enc
 
 Linux Core Infrastructure Initiaive Best Practices [github](https://github.com/linuxfoundation/cii-best-practices-badge) \| [badge program](https://www.coreinfrastructure.org/programs/badge-program)
 
+[Center for Trustworthy Scientific Cyberinfrastructure](http://trustedci.org/)
+
+[Open Web Application Security Project](https://www.owasp.org/index.php/Main_Page)
+
+[Google VSAQ](https://github.com/google/vsaq) - Vendor Security Assessment Questionnaire
+
 ----------
 
 ### Data  ###
