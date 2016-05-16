@@ -103,3 +103,5 @@ Submit a resource (fork or add an issue).
 [What Makes Software Good](https://medium.com/@mbostock/what-makes-software-good-943557f8a488#.mfnaxgnh3) (noted for the five points at the very end)
 
 [duecredit](https://github.com/duecredit/duecredit)
+
+[The Open Definition](http://opendefinition.org/) - Open Data response to data licensing and reuse
