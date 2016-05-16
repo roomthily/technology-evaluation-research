@@ -101,3 +101,5 @@ Submit a resource (fork or add an issue).
 [Stealing Google's Coding Practices for Academia](https://da-data.blogspot.com/2016/04/stealing-googles-coding-practices-for.html)
 
 [What Makes Software Good](https://medium.com/@mbostock/what-makes-software-good-943557f8a488#.mfnaxgnh3) (noted for the five points at the very end)
+
+[duecredit](https://github.com/duecredit/duecredit)
