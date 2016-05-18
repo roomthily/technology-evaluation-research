@@ -2,14 +2,14 @@
 layout: guidelines
 ---
 
-#Software Assessment Guidelines 
+# Software Assessment Guidelines #
 
 **In Draft 5/15/2016**
 
-##Abstract
+## Abstract ##
 
 
-##Goals of this Document
+## Goals of this Document ##
 
 
 - To provide a basis for assessment guidelines that are effective and actionable both during active development and maintenance phases of research projects.
@@ -18,10 +18,10 @@ layout: guidelines
 - To develop guidelines structured to reflect good code practices [THIS PHRASE IS NOT GREAT] and incorporating features related to research code requirements.
 
 
-##HEADER TO COME
+## HEADER TO COME ##
 
 
-###Use Cases
+### Use Cases ###
 
 
 Stakeholder | Use Case
@@ -34,10 +34,10 @@ Developer | As a developer, I would like community-supported guidelines to suppo
 Grad Student, Post-Doc, Researcher interested in continuing code education | I’ve taken the introductory courses and want to continue to improve my skills but don’t know good next steps. I’d like guidance on next steps given my skillset.
 Research Community | We want to provide educational materials or other support for community members to meet their goals re: research software implementation and career growth.
 
-###What Are We Assessing
+### What Are We Assessing ###
 
 
-###Limitations of these Guidelines
+### Limitations of these Guidelines ###
 
 
 
@@ -45,7 +45,7 @@ Research Community | We want to provide educational materials or other support f
 
 
 
-##Guidelines
+## Guidelines ##
 
 [Reference and note for the descriptions of the bins and which ones are added for this doc.]
 
@@ -70,10 +70,10 @@ The guidelines described in this document are, in large part, based on previous 
 {% include guidelines.html %}
 
 
-##Participants
+## Participants ##
 
 
-##References
+## References ##
 
 
 
