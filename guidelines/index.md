@@ -72,7 +72,7 @@ The guidelines described in this document are, in large part, based on previous 
     <li><a href="#fitness">Fitness</a>
         <ul>
             <li><a href="#fitness-accuracy">Accuracy</a></li>
-            <li><a href="#fitness-credibilty"></a></li>
+            <li><a href="#fitness-credibilty">Credibility</a></li>
         </ul>
     </li>
     <li><a href="#sustainability">Sustainability &amp; Maintenance</a>
@@ -113,7 +113,7 @@ The guidelines described in this document are, in large part, based on previous 
 
 
 
-<div>
+<div class="guidelines">
     <h2 id="fitness">Fitness</h2>
     <h3 id="fitness-accuracy">Accuracy</h3>
     <div class="criteria">
