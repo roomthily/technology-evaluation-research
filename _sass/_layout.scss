@@ -282,3 +282,59 @@
     }
 }
 
+.guidelines {
+    h3 {
+        
+    }
+
+    .criteria:before {
+        clear:left;
+    }
+
+    .criterion {
+        font-size: 12px;
+        height:auto;
+        border-bottom: 1px dotted #666;
+        overflow:hidden;
+        margin-bottom:20px;
+    }
+
+    .revisions, .metadata {
+        float: left;
+        margin: 0 10px;
+    }
+    .revisions {
+        width:400px;
+    }
+    .metadata {
+        width:250px;
+    }
+    .metadata h4 {
+        font-weight: bold;
+    }
+
+    .revisions i {
+        margin-right:5px;
+    }
+
+    .revisions p {
+        padding: 5px;
+        color: #555;
+        margin: 3px 0;
+    }
+
+    .metadata p {
+        padding-left:20px;
+    }
+
+    p.original {
+        background-color:#d5dfe5;
+    }
+    p.original.deprecated {
+        background-color: #f5b7be;
+    }
+    p.revision {
+        background-color:#b5ddc9;
+    }
+}
+
