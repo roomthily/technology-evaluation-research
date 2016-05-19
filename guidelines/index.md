@@ -56,6 +56,8 @@ These guidelines are based on the criteria developed by the Software Sustainabil
 
 The guidelines described in this document are, in large part, based on previous work by the Software Sustainability Institute and the Technology Assessment Framework (J. Greybeal as an ESIP Testbed grant). 
 
+For new catergories or concepts, we believe that is important to include criteria here, even if the concept is not fully captured. ---something about starting places, living document, important to make those visible, if you will, so that they can be discussed and improved on.
+
 
 - revisions for currentness and to reflect ESIP's goals related to education and mentorship
 - revisions for composability: for encouraging change over time (replace smaller component with newer definitions) and to more explicitly define criteria for understandability and educational purposes. & for defining progressions.
@@ -67,6 +69,11 @@ The guidelines described in this document are, in large part, based on previous 
 [Define the binning, etc]
 
 [Describe the design.]
+
+**The Draft Process**
+
+For criteria categorized as "Other", all received criteria are included, as is, during the initial round. De-duplication, in those categories and across existing categories, is expected throughout the revision process.
+
 
 <h4>Table of Contents</h4>
 <ul>
@@ -2719,13 +2726,13 @@ The guidelines described in this document are, in large part, based on previous 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">For software, a best-practice guideline is selected and code is validated against it.</p>
+                <p class="original questioned">For software, a best-practice guideline is selected and code is validated against it.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>What does this mean? Do you mean -- For software, use industry best practices for a given language or platform and then validate that the code meets those practices (i.e., a third party code review).</p>
                 <h4>References</h4>
                 <p><a href="#"></a></p>
                 <h4>Similar Criteria</h4>
@@ -2765,7 +2772,7 @@ The guidelines described in this document are, in large part, based on previous 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Is task-oriented or objective-oriented.</p>
+                <p class="original questioned">Is task-oriented or objective-oriented.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -3563,6 +3570,7 @@ The guidelines described in this document are, in large part, based on previous 
 
     <h3 id="other-preservation">Preservation/Archiving</h3>
     <div class="criteria">
+        <!-- downs -->
         <div class="criterion">
             <div class="revisions">
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Source code used to create data are archived with the data or separately with bidirectional references between the data and software.</p>
@@ -3638,10 +3646,178 @@ The guidelines described in this document are, in large part, based on previous 
                 <p><a href="#"></a></p>
             </div>
         </div>
+
+        <!-- toner -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Document describing known environment in which code was originally run</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>List known dependencies</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>consider container technologies to ensure reproducibility of software content or function.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>documentation describing objectives of software, known limitations or bugs, and reason for and purpose of its existence</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Ideally, preserved/archived code should include "test data", so future users can unpack and run code, and see if results appear as expected. (Unless data is already archived elsewhere)</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Code should be documented in a natural language explaining each process/code section.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p>(In some cases, preserving code for reuse is impossible, but being able to refer back to old code and follow it without needing to know intimately the language it was written in is helpful.)</p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Archived code should not be an executable (.exe) but a group of files packaged together that can be built or reviewed by future users for understanding. Code should be as self-contained as possible.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Does the software use open source platforms and libraries, or does it require the use of licensed software?</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Copyright/licensing must be noted and made clear to future users. </p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Copyright/licensing must be noted and made clear to future users. </p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Archived code should include any documentation that applies to the particular release of the code--including both specific version documentation and overall software documentation. </p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p>(Resources enabling "usability" of code also apply to future users acquiring code from the archive.)</p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
     </div> <!-- end Preservation -->
 
     <h3 id="other-credit">Publication &amp; Credit</h3>
     <div class="criteria">
+        <!-- downs -->
         <div class="criterion">
             <div class="revisions">
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Authors of software are identied in the suggested citation for the software.</p>
