@@ -2726,7 +2726,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original questioned">For software, a best-practice guideline is selected and code is validated against it.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>For software, a best-practice guideline is selected and code is validated against it.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -2772,7 +2772,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original questioned">Is task-oriented or objective-oriented.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Is task-oriented or objective-oriented.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
