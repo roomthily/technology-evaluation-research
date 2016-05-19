@@ -287,6 +287,11 @@
         
     }
 
+    table {
+        border-collapse:collapse;
+        border: 1px solid #555;
+    }
+
     .criteria:before {
         clear:left;
     }
