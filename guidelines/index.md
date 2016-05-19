@@ -122,13 +122,13 @@ For criteria categorized as "Other", all received criteria are included, as is, 
     <p></p>
 
     <h4>Criteria Options</h4>
-    <div class="criterion">
+    <div class="revisions">
         <p class="original">The original statement.</p>
         <p class="original questioned"><i class="fa fa-warning fa-fw"></i>The original statement, flagged for review.</p>
         <p class="revision"><i class="fa fa-pencil fa-fw"></i>Suggested revisions to the original statement or a replacement for the original. The original statement is provided for reference.</p>
         <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Suggested new statement.</p>
         <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Suggested revision is to delete the statement entirely.</p>
-    </criterion>
+    </div>
 
     <h4>Criteria Descriptors</h4>
     <p>The descriptors provide additional context for the criterion if applicable.</p>
