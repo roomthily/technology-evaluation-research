@@ -68,8 +68,6 @@ For new catergories or concepts, we believe that is important to include criteri
 
 [Define the binning, etc]
 
-[Describe the design.]
-
 **The Draft Process**
 
 For criteria categorized as "Other", all received criteria are included, as is, during the initial round. De-duplication, in those categories and across existing categories, is expected throughout the revision process.
@@ -120,6 +118,25 @@ For criteria categorized as "Other", all received criteria are included, as is, 
 </ul>
 
 <div class="guidelines">
+    <h2>About the layout</h2>
+    <p></p>
+
+    **Criteria Options**
+    <p class="original">The original statement.</p>
+    <p class="original questioned"><i class="fa fa-warning fa-fw"></i>The original statement, flagged for review.</p>
+    <p class="revision"><i class="fa fa-pencil fa-fw"></i>Suggested revisions to the original statement or a replacement for the original. The original statement is provided for reference.</p>
+    <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Suggested new statement.</p>
+    <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Suggested revision is to delete the statement entirely.</p>
+
+    **Criteria Descriptors**
+    <p>The descriptors provide additional context for the criterion if applicable.</p>
+    <p><span>Application:</span> indicates whether a statement refers to only the codebase, the project as a whole (generally relates to project artifacts not part of the codebase such as a project website), or applies to both.</p>
+    <p><span>Grouping:</span> describes a logical grouping to the criteria within a subcategory.</p>
+    <p><span>Notes:</span> any notes provided by the initial reviewers regarding suggested revisions.</p>
+    <p><span>References:</span> link to a citation providing a rationale for the criterion.</p>
+    <p><span>Similar Criteria:</span> links to criteria listed in other subcategories that may be duplicated concepts.</p>
+    
+
     <h2 id="fitness">Fitness</h2>
     <h3 id="fitness-accuracy">Accuracy</h3>
     <div class="criteria">
