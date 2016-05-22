@@ -35,6 +35,7 @@ Grad Student, Post-Doc, Researcher interested in continuing code education | Iâ€
 Research Community | We want to provide educational materials or other support for community members to meet their goals re: research software implementation and career growth.
 
 
+
 ### What Are We Assessing ###
 
 
@@ -43,7 +44,6 @@ Research Community | We want to provide educational materials or other support f
 This section contains discussions concerning practices that we consider important to the implementation and sustainability of research software but that are difficult or impossible to assess by external means. 
 
 [Examples of practices that are recommended but leave little to no trace for assessment.]
-
 
 
 ## Guidelines ##
@@ -2255,12 +2255,13 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Project has automated tests to check conformance to coding standards.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Project has Unit Tests where apropriate and they can be run automatically, including by a CI system.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>[SS] The original statement is ambiguous - does it refer to a coding standard such as PEP8 and is then testable with a linter or does it refer to unit testing, etc (as seen in the suggested revision)?</p>
                 <h4>References</h4>
                 <p><a href="#"></a></p>
                 <h4>Similar Criteria</h4>
@@ -2269,13 +2270,13 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Project has automated tests to check test coverage.</p>
+                <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Project has automated tests to check test coverage.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>Drop this. IMHO, it's far more important to have tests that are run automatically and by a CI system than to try for some % coverage. Classes that are 90% accessors don't need high coverage while classes that include complex/new algorithms do. </p>
                 <h4>References</h4>
                 <p><a href="#"></a></p>
                 <h4>Similar Criteria</h4>
@@ -2285,12 +2286,13 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Project has integration tests.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Project has integration tests and they can be run automatically, including by a CI system.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>[SS] For scaffolding, etc, consider splitting this out into two criteria but define the relationship.</p>
                 <h4>References</h4>
                 <p><a href="#"></a></p>
                 <h4>Similar Criteria</h4>
@@ -2515,6 +2517,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         <div class="criterion">
             <div class="revisions">
                 <p class="original">An automated build (e.g. Make, ANT, custom solution) is used to build any software.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>An automated build (e.g. Make, ANT, Maven, Gradle, or other language-specific build tool) is used to build any software.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -2529,13 +2532,14 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Dependency management is used to automatically download dependencies (e.g. ANT, Ivy, Maven or custom solution).</p>
+                <p class="original questioned">Dependency management is used to automatically download dependencies (e.g. ANT, Ivy, Maven or custom solution).</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>This is generally not an option for non-Java compiled code. However, there is a related idea for C and C++...</p>
+                <!-- add note for things like python requirements.txt (pip, etc) and update language to refer more broadly to non-Java situations. -->
                 <h4>References</h4>
                 <p><a href="#"></a></p>
                 <h4>Similar Criteria</h4>
@@ -2557,6 +2561,24 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p><a href="#"></a></p>
             </div>
         </div>
+        <!-- gallagher -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Code follows the GNU software guidlines and uses README, NEWS, INSTALL and COPYING files to describe the package (INSTALL includes the build information this case).</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p>related to previous statement.</p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <!-- end gallagher -->
+
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Source distributions list all third-party dependencies that are not bundled, along with web addresses, suitable versions, licences and whether these are mandatory or optional.</p>
@@ -2605,6 +2627,53 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Web site lists all third-party dependencies that are not bundled, along with web addresses, suitable versions, licences and whether these are mandatory or optional.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+
+        <!-- gallagher -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Binary and source packages reference thrid-party code (including the acceptable versions) so that commonly-used tools (e.g., yum, apt-get) will automaticlly fetch those source/binary packages</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project uses build tools (e.g. automake, etc.) in a way that integrates with linux distro packager's expectations so they can/will build packages for public repos.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project supports common/standard (ad hoc) binary packaing tools (e.g., RPM, python egg). This means that a 'buildable' package provides binaries (or the equivalent) so that it can simply be installed and does not have to be built!</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -2927,6 +2996,23 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         <div class="criterion">
             <div class="revisions">
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Quality control information is included in the documentation.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+
+        <!-- gallagher -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Where available, project takes advantage of public-facing tools' documentation support. For example, github supports a README file that uses Markdown. It's pretty quick to write and is displayed automatically when a person goes to get the source. Maybe this has more to do with 'buildability,' but in some cases it might be all the documentation an initial author writes. </p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -3583,7 +3669,99 @@ For criteria categorized as "Other", all received criteria are included, as is, 
     <h2 id="other">Other</h2>
 
     <h3 id="other-security">Security</h3>
+    <p>Suggested group ordering: Basic (1), Process (2), Tools (3).</p>
     <div class="criteria">
+        <!-- gallagher -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Software is exposed to a static source code checker (e.g., Coverity)</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Available Tools</p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Software authors use PKI (e.g., PGP) to sign releases (source and binary) and make the public key available on their website (and/or public key repos).</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Basic</p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Authors are aware of and use public secure coding guidlines for their languages/technology. These include specific guidlines published by CERT and OWASP, cover both languages like C/C++, Java, Perl and technologies like Web services adn XSLT.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Process</p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Projects have in place (and publicly visable) a security incident response plan.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Process</p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Authors perform dynamic testing on their software</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Tools</p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Authors work with an external organization that reviews/tests their software.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Process</p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
 
     </div> <!-- end Security -->
 
