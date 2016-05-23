@@ -113,6 +113,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <li><a href="#other-security">Security</a></li>
             <li><a href="#other-preservation">Preservation &amp; Archiving</a></li>
             <li><a href="#other-credit">Credit</a></li>
+            <li><a href="#other-performance">Performance</a></li>
         </ul>
     </li>
 </ul>
@@ -1673,9 +1674,41 @@ For criteria categorized as "Other", all received criteria are included, as is, 
     </div> <!-- end Sustainability:Licensing -->
 
     <h3 id="sustainability-portability">Portability</h3>
+    <p>Ed. note: this entire section is flagged for review, to be resolved by either condensing the two main concepts (software can be built and run on multiple platforms and web application functions across multiple browsers) into more general criteria or by removing the section altogether and updating related criteria in other sections (such as buildability and documentation criteria related to that).</p>
     <div class="criteria">
+        <!-- gallagher -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>For code that compiles and does not use a VM: Uses a build system that interogates the build environment to determine features AND the software actually uses the result of that interogation</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>For code that is interpreted: Follows standard (likely ad hoc) practices for distribution and interpreter version/selection.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+
         <!-- scott -->
-        <p>Ed. note: this entire section is flagged for review, to be resolved by either condensing the two main concepts (software can be built and run on multiple platforms and web application functions across multiple browsers) into more general criteria or by removing the section altogether and updating related criteria in other sections (such as buildability and documentation criteria related to that).</p>
         <div class="criterion">
             <div class="revisions">
                 <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Application can be built on and run under Debian.</p>
@@ -2080,6 +2113,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
     </div> <!-- end Sustainability:Supportability-->
 
     <h3 id="sustainability-testability">Testability</h3>
+    <p>Suggested category grouping: project has unit and integration tests (1); tests are run by a continuous integration (CI) system once committed (2). Include coding standards and autoomated coverage analysis as (3) but less crucial than testing and CI. Reconsider criteria that are commonly provided by a CI system and whether those are suggested criteria on their own merit.</p>
     <div class="criteria">
         <div class="criterion">
             <div class="revisions">
@@ -4025,6 +4059,11 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
         </div>
     </div> <!-- end Credit -->
+
+    <h3 id="other-performance">Performance</h3>
+    <div class="criteria">
+        <p>Ed. note: Suggested new category to specifically address performance.</p>
+    </div>
 </div> <!-- end guidelines-->
 
 
