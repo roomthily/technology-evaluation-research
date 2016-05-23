@@ -3095,14 +3095,15 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Display handles variety of scales, including mobile phone size if that is targeted, while allowing user ready access to needed controls.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>The web application was developed using responsive design principles.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>Here referring to the application developed as the code/software deliverable and not a project website. But it also applies to the project website.</p>
                 <h4>References</h4>
-                <p><a href="#"></a></p>
+                <p><a href="#"></a>[ADD: ref to responsive design http://alistapart.com/article/responsive-web-design]</p>
                 <h4>Similar Criteria</h4>
                 <p><a href="#"></a></p>
             </div>
@@ -3110,27 +3111,45 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Generated data products are organized clearly, with embedded metadata wherever possible.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Generated data products are organized clearly, with associated metadata clearly identifiable.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>Step 1: data + metadata.</p>
                 <h4>References</h4>
                 <p><a href="#"></a></p>
                 <h4>Similar Criteria</h4>
                 <p><a href="#"></a></p>
             </div>
         </div>
+        <!-- scott -->
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Lists of resources are neatly presented for easy access, comparison, access to details, and handling of scale. Both filter and scrolling are available; user can control number of items presented.</p>
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Generated data products and their related metadata are provided in data packages and those data packages are organized clearly.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
+                <p>Step 2: data packages.</p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original questioned">Lists of resources are neatly presented for easy access, comparison, access to details, and handling of scale. Both filter and scrolling are available; user can control number of items presented.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
                 <p></p>
+                <h4>Notes</h4>
+                <p>Unclear what this refers to unless it's a ToC or file browser pane? If yes, needs clearer wording.</p>
                 <h4>References</h4>
                 <p><a href="#"></a></p>
                 <h4>Similar Criteria</h4>
@@ -3154,19 +3173,67 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">System can be controlled or used by foreign speakers and color-vision-deficient individuals.</p>
+                <p class="original deprecated">System can be controlled or used by foreign speakers and color-vision-deficient individuals.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>Two concepts in the original - localization and accessibility. Splitting into clearer criteria (language may not be high priority for projects (localization is hard) but accessibility (beyond color-blindness) is more than doable with clean markup, etc.</p>
                 <h4>References</h4>
                 <p><a href="#"></a></p>
                 <h4>Similar Criteria</h4>
                 <p><a href="#"></a></p>
             </div>
         </div>
+
+        <!-- scott -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project web site provides localization options, ie support for non-English speakers.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p>Localization. Open question re: is localization tied to project goals or more generally (reqs from funder, etc) given that it is not always a straightforward task? Applies to Identity, Documentation and other Usability categories.</p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project web site follows established guidelines for web accessibility. </p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p>Accessibility</p>
+                <h4>References</h4>
+                <p><a href="#"></a>https://www.w3.org/standards/webdesign/accessibility, WCAG, Section 508</p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Web application follows established guidelines for web accessibility whenever possible.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p>Accessibility. Note limitations in mapping frameworks which may result in accessibility being tied to color-blind friendly color scheme.</p>
+                <h4>References</h4>
+                <p><a href="#"></a>https://www.w3.org/standards/webdesign/accessibility</p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Terminology used throughout the system or product is internally consistent, appropriate to the context, and suitable for targeted users, avoiding codes unless universally known.</p>
@@ -4203,7 +4270,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
     <h3 id="other-performance">Performance</h3>
     <div class="criteria">
         <p>Ed. note: Suggested new category to specifically address performance.</p>
-    </div>
+    </div> <!-- end Performance -->
+
 </div> <!-- end guidelines-->
 
 
