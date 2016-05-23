@@ -1674,244 +1674,118 @@ For criteria categorized as "Other", all received criteria are included, as is, 
 
     <h3 id="sustainability-portability">Portability</h3>
     <div class="criteria">
+        <!-- scott -->
+        <p>Ed. note: this entire section is flagged for review, to be resolved by either condensing the two main concepts (software can be built and run on multiple platforms and web application functions across multiple browsers) into more general criteria or by removing the section altogether and updating related criteria in other sections (such as buildability and documentation criteria related to that).</p>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Application can be built on and run under Debian.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Application can be built on and run under Debian.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Application can be built on and run under Fedora.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Application can be built on and run under Fedora.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Application can be built on and run under MacOSX.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Application can be built on and run under MacOSX.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Application can be built on and run under RedHat.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Application can be built on and run under RedHat.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Application can be built on and run under Solaris.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Application can be built on and run under Solaris.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Application can be built on and run under Ubuntu.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Application can be built on and run under Ubuntu.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Application can be built on and run under UNIX/Linux.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Application can be built on and run under UNIX/Linux.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Application can be built on and run under Windows 7.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Application can be built on and run under Windows 7.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Application can be built on and run under Windows Vista.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Application can be built on and run under Windows Vista.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Application can be built on and run under Windows XP.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Application can be built on and run under Windows XP.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Application can be built on and run under Windows.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Application can be built on and run under Windows.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Browser applications/sites run under Google Chrome.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Browser applications/sites run under Google Chrome.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Browser applications/sites run under Internet Explorer.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Browser applications/sites run under Internet Explorer.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Browser applications/sites run under Mozilla Firefox.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Browser applications/sites run under Mozilla Firefox.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Browser applications/sites run under Opera.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Browser applications/sites run under Opera.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Browser applications/sites run under Safari.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Browser applications/sites run under Safari.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
     </div> <!-- end Sustainability:Portability-->
