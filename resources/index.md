@@ -57,6 +57,8 @@ Data Maturity Matrix [article](http://datascience.codata.org/articles/abstract/1
 
 [Mozilla Science Data Reuse Checklist](http://mozillascience.github.io/checklist/)
 
+[NGDA Lifecycle Maturity Assessment](https://cms.geoplatform.gov/A-16-NGDA-Theme-Community/LMA)
+
 ----------
 
 ### Semantic Technologies ###
