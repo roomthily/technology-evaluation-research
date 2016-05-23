@@ -12,6 +12,7 @@ Software Sustainability Institute [guide](http://www.software.ac.uk/software-eva
 
 JISC Research Software Sustainability 2016 [site](http://www.knowledge-exchange.info/event/software-sustainability) | [report](http://repository.jisc.ac.uk/6332/1/Research_Software_Sustainability_Report_on_KE_Workshop_Feb_2016_FINAL.pdf)
 
+
 [MITRE STEP toolkit](http://www2.mitre.org/work/sepo/toolkits/STEP/)
 
 STAR JPS / NESDIS Algorithm Evaluation [Data Product Maturity Level Definitions](http://www.star.nesdis.noaa.gov/jpss/documents/Status/DataProductMaturityLevelDefinitions.pdf) \| [Algorithm Maturity](http://www.star.nesdis.noaa.gov/jpss/AlgorithmMaturity.php)
@@ -35,6 +36,8 @@ Linux Core Infrastructure Initiaive Best Practices [github](https://github.com/l
 [Open Web Application Security Project](https://www.owasp.org/index.php/Main_Page)
 
 [Google VSAQ](https://github.com/google/vsaq) - Vendor Security Assessment Questionnaire
+
+[ISO-9126](http://www.cse.unsw.edu.au/~cs3710/PMmaterials/Resources/9126-1%20Standard.pdf) source for categories
 
 ----------
 
@@ -105,3 +108,5 @@ Submit a resource (fork or add an issue).
 [duecredit](https://github.com/duecredit/duecredit)
 
 [The Open Definition](http://opendefinition.org/) - Open Data response to data licensing and reuse
+
+[Producing Open Source Software](http://producingoss.com/)
