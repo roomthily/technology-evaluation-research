@@ -110,3 +110,5 @@ Submit a resource (fork or add an issue).
 [The Open Definition](http://opendefinition.org/) - Open Data response to data licensing and reuse
 
 [Producing Open Source Software](http://producingoss.com/)
+
+[CLAHub](https://www.clahub.com/) - Contributor License Agreements

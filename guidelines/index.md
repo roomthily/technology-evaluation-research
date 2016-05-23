@@ -1004,12 +1004,13 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Changes in the source code repository are e-mailed to a mailing list.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Changes to the source code repository are made available through some notification system, whether mailing list of ticketing system notifications.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>Updated to reflect GitHub/BitBucket/Trac interactions ("watch" functionality).</p>
                 <h4>References</h4>
                 <p><a href="#"></a></p>
                 <h4>Similar Criteria</h4>
@@ -1033,13 +1034,13 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Contributors retain copyright/IP of their contributions.</p>
+                <p class="original questioned">Contributors retain copyright/IP of their contributions.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>If we're following the open source model, this is incorrect - Contributor License Agreements release the rights from the contributor back to the project. The original implies that someone could revoke permissions for their contribution to a project, which would have credibility/stability issues. </p>
                 <h4>References</h4>
                 <p><a href="#"></a></p>
                 <h4>Similar Criteria</h4>
@@ -1078,7 +1079,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Releases document deprecated components/APIs in that release.</p>
+                <p class="original deprecated">Releases document deprecated components/APIs in that release.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -1093,7 +1094,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Releases document removed/changed components/APIs in that release.</p>
+                <p class="original deprecated">Releases document removed/changed components/APIs in that release.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -1106,6 +1107,24 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p><a href="#"></a></p>
             </div>
         </div>
+
+        <!-- scott -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>A release is accompanied by a change log document (or update to a CHANGELOG document), including deprecated or modified components/APIs.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p>Merged the previous into one statement about change logs.</p>
+                <h4>References</h4>
+                <p><a href="#"></a>See the Linux Found. best practices.</p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Stability/deprecation policy is publicly available.</p>
@@ -1124,12 +1143,13 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         <div class="criterion">
             <div class="revisions">
                 <p class="original">This e-mailing list can be subscribed to by anyone.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Anyone can subscribe to the notification system providing software release updates.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>Check for duplication in the ticketing system criteria.</p>
                 <h4>References</h4>
                 <p><a href="#"></a></p>
                 <h4>Similar Criteria</h4>
@@ -1139,6 +1159,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Users, user-developers and developers who are not project members can contribute.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Contribution policy is not limited to code contributions and describes processes for anyone to contribute to the project even if nt project members.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -1748,6 +1769,24 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p><a href="#"></a></p>
             </div>
         </div>
+
+        <!-- scott -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project documentation defines contributor license agreements, either by requesting a CLA or by stating the rights transferred to the project by a contributor not directly affiliated with the project.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p>See note in Community.</p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+
     </div> <!-- end Sustainability:Licensing -->
 
     <h3 id="sustainability-portability">Portability</h3>
@@ -2070,12 +2109,13 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Project resources are hosted externally to a single-organisation/institution in a sustainable third-party repository (e.g. SourceForge, GoogleCode, LaunchPad, GitHub) which will live beyond the lifetime of the current project.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Project resources are hosted externally to a single-organisation/institution in a sustainable third-party repository, such as GitHub, or a research software repository which will live beyond the lifetime of the current project.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>"third-party repository" does not describe GH or the others well. And a bit about domain-specific or research software-specific repositories as archive locations.</p>
                 <h4>References</h4>
                 <p><a href="#"></a></p>
                 <h4>Similar Criteria</h4>
@@ -3018,21 +3058,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
 
         <!-- scott -->
-        <div class="criterion">
-            <div class="revisions">
-                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Documentation is versioned.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
         <div class="criterion">
             <div class="revisions">
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>The documentation for a specific software release is available.</p>
