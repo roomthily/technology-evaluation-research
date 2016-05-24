@@ -4,7 +4,7 @@ layout: guidelines
 
 # Software Assessment Guidelines #
 
-**In Draft 5/15/2016**
+**In Draft 5/2016**
 
 ## Abstract ##
 
@@ -18,7 +18,7 @@ layout: guidelines
 - To develop guidelines structured to reflect good code practices [THIS PHRASE IS NOT GREAT] and incorporating features related to research code requirements.
 
 
-## HEADER TO COME ##
+## Background ##
 
 
 ### Use Cases ###
@@ -37,6 +37,7 @@ Research Community | We want to provide educational materials or other support f
 
 
 ### What Are We Assessing ###
+
 
 
 ### What We Can't Assess ###
@@ -4260,8 +4261,23 @@ For criteria categorized as "Other", all received criteria are included, as is, 
 </div> <!-- end guidelines-->
 
 
+## Use of these Criteria for Assessment ##
+
+
+## Reuse and Software Progression ##
+
+"Maturity"
+
+
+
 ## Participants ##
 
+<ul>
+    <li>Toner, Valerie</li>
+    <li>Gallagher, James</li>
+    <li>Downs, Robert</li>
+    <li>Wilson, Anne</li>
+</ul>
 
 ## References ##
 
