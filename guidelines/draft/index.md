@@ -51,11 +51,11 @@ This section contains discussions concerning practices that we consider importan
 
 [Reference and note for the descriptions of the bins and which ones are added for this doc.]
 
-These guidelines are based on the criteria developed by the Software Sustainability Institute [REF], [other info], and feedback based on several ESIP activities. 
-
 [Brief description of the development of these guidelines through ESIP, EarthCube, LASP, BESSIG]
 
 The guidelines described in this document are, in large part, based on previous work by the Software Sustainability Institute and the Technology Assessment Framework (J. Greybeal as an ESIP Testbed grant). 
+
+The subcategories are taken from the ISO 9126 [REF] and definitions are provided [here]({{ site.baseurl }}/guidelines/categories).
 
 For new catergories or concepts, we believe that is important to include criteria here, even if the concept is not fully captured. ---something about starting places, living document, important to make those visible, if you will, so that they can be discussed and improved on.
 
@@ -136,7 +136,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
     <p>The descriptors provide additional context for the criterion if applicable.</p>
     <p><span>Application:</span> indicates whether a statement refers to only the codebase, the project as a whole (generally relates to project artifacts not part of the codebase such as a project website), or applies to both.</p>
     <p><span>Grouping:</span> describes a logical grouping to the criteria within a subcategory.</p>
-    <p><span>Notes:</span> any notes provided by the initial reviewers regarding suggested revisions.</p>
+    <p><span>Notes:</span> any notes provided by he initial reviewers regarding suggested revisions.</p>
     <p><span>References:</span> link to a citation providing a rationale for the criterion.</p>
     <p><span>Similar Criteria:</span> links to criteria listed in other subcategories that may be duplicated concepts.</p>
     
@@ -1035,7 +1035,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original questioned">Contributors retain copyright/IP of their contributions.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Contributors retain copyright/IP of their contributions.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -1080,7 +1080,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original deprecated">Releases document deprecated components/APIs in that release.</p>
+                <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Releases document deprecated components/APIs in that release.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -1095,7 +1095,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original deprecated">Releases document removed/changed components/APIs in that release.</p>
+                <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Releases document removed/changed components/APIs in that release.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -2558,7 +2558,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original questioned">Dependency management is used to automatically download dependencies (e.g. ANT, Ivy, Maven or custom solution).</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Dependency management is used to automatically download dependencies (e.g. ANT, Ivy, Maven or custom solution).</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -2964,7 +2964,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original questioned">States assumed background and expertise of the reader, for each class of user.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>States assumed background and expertise of the reader, for each class of user.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -3144,7 +3144,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
 
         <div class="criterion">
             <div class="revisions">
-                <p class="original questioned">Lists of resources are neatly presented for easy access, comparison, access to details, and handling of scale. Both filter and scrolling are available; user can control number of items presented.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Lists of resources are neatly presented for easy access, comparison, access to details, and handling of scale. Both filter and scrolling are available; user can control number of items presented.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -3174,7 +3174,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original deprecated">System can be controlled or used by foreign speakers and color-vision-deficient individuals.</p>
+                <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>System can be controlled or used by foreign speakers and color-vision-deficient individuals.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -4268,6 +4268,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
 
 "Maturity"
 
+Project lifecycle
 
 
 ## Participants ##
