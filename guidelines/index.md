@@ -4097,21 +4097,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Copyright/licensing must be noted and made clear to future users. </p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Archived code should include any documentation that applies to the particular release of the code--including both specific version documentation and overall software documentation. </p>
             </div>
             <div class="metadata">
@@ -4279,6 +4264,156 @@ For criteria categorized as "Other", all received criteria are included, as is, 
 
 
 ## References ##
+
+<div class="refs">
+    <div style="line-height: 1.35; " class="csl-bib-body">
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[1]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“2016 Software Infrastructure for Sustained Innovation (SI2) PI Workshop Report,” Software Infrastructure for Sustained Innovation (SI2) Principal Investigators (PI), Arlington, VA, Feb. 2016.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=2016%20Software%20Infrastructure%20for%20Sustained%20Innovation%20(SI2)%20PI%20Workshop%20Report&amp;rft.place=Arlington%2C%20VA&amp;rft.date=2016-02-16"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[2]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">N. Azizian, S. Sarkani, and T. Mazzuchi, “A Comprehensive Review and Analysis of Maturity Assessment Approaches for Improved Decision Support to Achieve Efficient Defense Acquisition,” in <i>Proceedings of the World Congress on Engineering and Computer Science 2009</i>, San Francisco, 2009.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-988-18210-2-7&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=proceeding&amp;rft.atitle=A%20Comprehensive%20Review%20and%20Analysis%20of%20Maturity%20Assessment%20Approaches%20for%20Improved%20Decision%20Support%20to%20Achieve%20Efficient%20Defense%20Acquisition&amp;rft.btitle=Proceedings%20of%20the%20World%20Congress%20on%20Engineering%20and%20Computer%20Science%202009&amp;rft.place=San%20Francisco&amp;rft.aufirst=Nazanin&amp;rft.aulast=Azizian&amp;rft.au=Nazanin%20Azizian&amp;rft.au=Shahram%20Sarkani&amp;rft.au=Thomas%20Mazzuchi&amp;rft.date=2009-10-20&amp;rft.isbn=978-988-18210-2-7"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[3]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">R. R. Downs and J. J. Marshall, “A Proposal on Using Reuse Readiness Levels to Measure Software Reusability,” <i>Data Science Journal</i>, vol. 9, 2010.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.7916%2FD8ZS2V7W&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=A%20Proposal%20on%20Using%20Reuse%20Readiness%20Levels%20to%20Measure%20Software%20Reusability&amp;rft.jtitle=Data%20Science%20Journal&amp;rft.volume=9&amp;rft.aufirst=Robert%20R.&amp;rft.aulast=Downs&amp;rft.au=Robert%20R.%20Downs&amp;rft.au=James%20J.%20Marshall&amp;rft.date=2010"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[4]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">D. C. Stig, U. Högman, and D. Bergsjö, “Assessment for the Readiness for Internal Technology Transfer - A Case Study,” 2011.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Assessment%20for%20the%20Readiness%20for%20Internal%20Technology%20Transfer%20-%20A%20Case%20Study&amp;rft.aufirst=Daniel%20Corin&amp;rft.aulast=Stig&amp;rft.au=Daniel%20Corin%20Stig&amp;rft.au=Ulf%20H%C3%B6gman&amp;rft.au=Dag%20Bergsj%C3%B6&amp;rft.date=2011"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[5]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“Best Practices Criteria for Free/Libre and Open Source Software (FLOSS) (version 0.8.0),” <i>Linux Foundation</i>. [Online]. Available: https://github.com/linuxfoundation/cii-best-practices-badge/blob/master/doc/criteria.md.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Best%20Practices%20Criteria%20for%20Free%2FLibre%20and%20Open%20Source%20Software%20(FLOSS)%20(version%200.8.0)&amp;rft.identifier=https%3A%2F%2Fgithub.com%2Flinuxfoundation%2Fcii-best-practices-badge%2Fblob%2Fmaster%2Fdoc%2Fcriteria.md"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[6]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“CLAHub,” <i>Contributor License Agreements on Github</i>. [Online]. Available: https://www.clahub.com/. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=CLAHub&amp;rft.identifier=https%3A%2F%2Fwww.clahub.com%2F"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[7]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">Nadia Eghbal, “Contributing Guides: A Template.” [Online]. Available: https://github.com/nayafia/contributing-template.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Contributing%20Guides%3A%20A%20Template&amp;rft.identifier=https%3A%2F%2Fgithub.com%2Fnayafia%2Fcontributing-template&amp;rft.aulast=Nadia%20Eghbal&amp;rft.au=Nadia%20Eghbal"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[8]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">C. A. Ehmke, “Contributor Covenant: A Code of Conduct for Open Source Projects.,” 2014. [Online]. Available: http://contributor-covenant.org/.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Contributor%20Covenant%3A%20A%20Code%20of%20Conduct%20for%20Open%20Source%20Projects.&amp;rft.identifier=http%3A%2F%2Fcontributor-covenant.org%2F&amp;rft.aufirst=Coraline%20Ada&amp;rft.aulast=Ehmke&amp;rft.au=Coraline%20Ada%20Ehmke&amp;rft.date=2014"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[9]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“DASPOS.” [Online]. Available: https://daspos.crc.nd.edu/. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=DASPOS&amp;rft.identifier=https%3A%2F%2Fdaspos.crc.nd.edu%2F"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[10]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“duecredit/duecredit,” <i>duecredit</i>. [Online]. Available: https://github.com/duecredit/duecredit. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=duecredit%2Fduecredit&amp;rft.description=duecredit%20-%20Automated%20collection%20and%20reporting%20of%20citations%20for%20used%20software%2Fmethods%2Fdatasets&amp;rft.identifier=https%3A%2F%2Fgithub.com%2Fduecredit%2Fduecredit"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[11]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“Ecological Studies of Open Source Software Ecosystems.” [Online]. Available: http://informatique.umons.ac.be/genlog/projects/ecos/. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Ecological%20Studies%20of%20Open%20Source%20Software%20Ecosystems&amp;rft.identifier=http%3A%2F%2Finformatique.umons.ac.be%2Fgenlog%2Fprojects%2Fecos%2F"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[12]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">J. Graybeal, “ESIP Technology Evaluation Framework Final Recommendations,” Jan. 2016.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=ESIP%20Technology%20Evaluation%20Framework%20Final%20Recommendations&amp;rft.aufirst=John&amp;rft.aulast=Graybeal&amp;rft.au=John%20Graybeal&amp;rft.date=2016-01"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[13]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“ESSI-SCOPE Quality Characteristics and their application.” [Online]. Available: http://www.cse.dcu.ie/essiscope/sm2/9126ref.html. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=ESSI-SCOPE%20Quality%20Characteristics%20and%20their%20application&amp;rft.identifier=http%3A%2F%2Fwww.cse.dcu.ie%2Fessiscope%2Fsm2%2F9126ref.html"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[14]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“Google VSAQ: Vendor Security Assessment Questionnaire,” <i>Google VSAQ</i>. [Online]. Available: https://github.com/google/vsaq. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Google%20VSAQ%3A%20Vendor%20Security%20Assessment%20Questionnaire&amp;rft.description=vsaq%20-%20VSAQ%20is%20an%20interactive%20questionnaire%20application%20to%20assess%20the%20security%20programs%20of%20third%20parties.&amp;rft.identifier=https%3A%2F%2Fgithub.com%2Fgoogle%2Fvsaq"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[15]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">I. Gent, C. Jones, and B. Matthews, “GUIDELINES FOR PERSISTENTLY IDENTIFYING SOFTWARE USING DATACITE: A JISC RESEARCH DATA SPRING PROJECT,” Sep. 2015.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=GUIDELINES%20FOR%20PERSISTENTLY%20IDENTIFYING%20SOFTWARE%20USING%20DATACITE%3A%20A%20JISC%20RESEARCH%20DATA%20SPRING%20PROJECT&amp;rft.aufirst=Ian&amp;rft.aulast=Gent&amp;rft.au=Ian%20Gent&amp;rft.au=Catherine%20Jones&amp;rft.au=Brian%20Matthews&amp;rft.date=2015-09"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[16]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“Home,” <i>Center for Trustworthy Scientific Cyberinfrastructure</i>. [Online]. Available: http://trustedci.org/. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Home&amp;rft.description=Center%20for%20Trustworthy%20Scientific%20Cyberinfrastructure%2C%20CTSC%2C%20Indiana%20University%2C%20Center%20for%20Applied%20Cybersecurity%20Research%2C%20CACR%2C%20IU%2C%20Von%20Welch%2C%20National%20Science%20Foundation&amp;rft.identifier=http%3A%2F%2Ftrustedci.org%2F"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[17]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“ISO/IEC 25010:2011 - Systems and software engineering -- Systems and software Quality Requirements and Evaluation (SQuaRE) -- System and software quality models,” <i>ISO</i>. [Online]. Available: http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=35733. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=ISO%2FIEC%2025010%3A2011%20-%20Systems%20and%20software%20engineering%20--%20Systems%20and%20software%20Quality%20Requirements%20and%20Evaluation%20(SQuaRE)%20--%20System%20and%20software%20quality%20models&amp;rft.identifier=http%3A%2F%2Fwww.iso.org%2Fiso%2Fhome%2Fstore%2Fcatalogue_ics%2Fcatalogue_detail_ics.htm%3Fcsnumber%3D35733"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[18]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“NASA Technology Readiness Levels,” 28-Oct-2012. [Online]. Available: https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=NASA%20Technology%20Readiness%20Levels&amp;rft.identifier=https%3A%2F%2Fwww.nasa.gov%2Fdirectorates%2Fheo%2Fscan%2Fengineering%2Ftechnology%2Ftxt_accordion1.html&amp;rft.date=2012-10-28"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[19]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">Brigitta Urban-Mathieux, “NGDA Lifecycle Maturity Assessment,” <i>GEOPLATFORM.gov</i>. [Online]. Available: https://cms.geoplatform.gov/A-16-NGDA-Theme-Community/LMA.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=NGDA%20Lifecycle%20Maturity%20Assessment&amp;rft.identifier=https%3A%2F%2Fcms.geoplatform.gov%2FA-16-NGDA-Theme-Community%2FLMA&amp;rft.aulast=Brigitta%20Urban-Mathieux&amp;rft.au=Brigitta%20Urban-Mathieux"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[20]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">V. Ratnakar and Y. Gil, “Ontosoft,” <i>Ontosoft</i>. [Online]. Available: http://ontosoft.org/ontology/software/. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Ontosoft&amp;rft.identifier=http%3A%2F%2Fontosoft.org%2Fontology%2Fsoftware%2F&amp;rft.aufirst=Varun&amp;rft.aulast=Ratnakar&amp;rft.au=Varun%20Ratnakar&amp;rft.au=Yolanda%20Gil"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[21]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“Open Services for Lifecycle Collaboration.” [Online]. Available: http://open-services.net/. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Open%20Services%20for%20Lifecycle%20Collaboration&amp;rft.identifier=http%3A%2F%2Fopen-services.net%2F"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[22]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“OWASP,” <i>The Open Web Application Security Project</i>. [Online]. Available: https://www.owasp.org/index.php/Main_Page. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=OWASP&amp;rft.identifier=https%3A%2F%2Fwww.owasp.org%2Findex.php%2FMain_Page"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[23]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">M. Petre and G. Wilson, “PLOS/Mozilla Scientific Code Review Pilot: Summary of Findings,” <i>CoRR</i>, vol. abs/1311.2412, 2013.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=PLOS%2FMozilla%20Scientific%20Code%20Review%20Pilot%3A%20Summary%20of%20Findings&amp;rft.jtitle=CoRR&amp;rft.volume=abs%2F1311.2412&amp;rft.aufirst=Marian&amp;rft.aulast=Petre&amp;rft.au=Marian%20Petre&amp;rft.au=Greg%20Wilson&amp;rft.date=2013"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[24]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“Practices Perfected In OSS Can Reshape Enterprise Development,” <i>The npm Blog</i>. [Online]. Available: http://blog.npmjs.org/post/139373244435/practices-perfected-in-oss-can-reshape-enterprise. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Practices%20Perfected%20In%20OSS%20Can%20Reshape%20Enterprise%20Development&amp;rft.description=npm%2C%20Inc.%20helps%20more%20than%203%20million%20open%20source%20developers%20build%20communities%2C%20learn%2C%20collaborate%2C%20and%20ultimately%20publish%20software%20that%E2%80%99s%20used%20by%20many%20of%20the%20largest%20companies%20in%20the%20world.%0AI%20believe...&amp;rft.identifier=http%3A%2F%2Fblog.npmjs.org%2Fpost%2F139373244435%2Fpractices-perfected-in-oss-can-reshape-enterprise"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[25]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">K. Fogel, “Producing Open Source Software.” [Online]. Available: http://producingoss.com/en/producingoss.html. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Producing%20Open%20Source%20Software&amp;rft.identifier=http%3A%2F%2Fproducingoss.com%2Fen%2Fproducingoss.html&amp;rft.aufirst=Karl&amp;rft.aulast=Fogel&amp;rft.au=Karl%20Fogel"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[26]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“RepoGrams/RepoGrams,” <i>RepoGrams</i>. [Online]. Available: https://github.com/RepoGrams/RepoGrams. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=RepoGrams%2FRepoGrams&amp;rft.description=RepoGrams%20-%20A%20tool%20to%20analyze%20and%20compare%20software%20repositories%3A&amp;rft.identifier=https%3A%2F%2Fgithub.com%2FRepoGrams%2FRepoGrams"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[27]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“reproducible-builds.org,” <i>Reproducible Builds</i>. [Online]. Available: https://reproducible-builds.org/. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=reproducible-builds.org&amp;rft.identifier=https%3A%2F%2Freproducible-builds.org%2F"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[28]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">S. Hettrick, “Research Software Sustainability: Report on a Knowledge Exchange Workshop,” The Software Sustainability Institute, Feb. 2016.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=Research%20Software%20Sustainability%3A%20Report%20on%20a%20Knowledge%20Exchange%20Workshop&amp;rft.aufirst=Simon&amp;rft.aulast=Hettrick&amp;rft.au=Simon%20Hettrick&amp;rft.date=2016-02"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[29]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“Reuse Readiness Levels (RRLs),” NASA Earth Science Data Systems - Software Reuse Working Group, Apr. 2010.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=Reuse%20Readiness%20Levels%20(RRLs)&amp;rft.date=2010-04-30"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[30]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">Mike Jackson, Steve Crouch, Rob Baxter, “Software Evaluation: Criteria-based Assessment.” Software Sustainability Institure, Nov-2011.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=document&amp;rft.title=Software%20Evaluation%3A%20Criteria-based%20Assessment&amp;rft.publisher=Software%20Sustainability%20Institure&amp;rft.identifier=http%3A%2F%2Fsoftware.ac.uk%2Fsites%2Fdefault%2Ffiles%2FSSI-SoftwareEvaluationCriteria.pdf&amp;rft.aulast=Mike%20Jackson%2C%20Steve%20Crouch%2C%20Rob%20Baxter&amp;rft.au=Mike%20Jackson%2C%20Steve%20Crouch%2C%20Rob%20Baxter&amp;rft.date=2011-11"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[31]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">Steve Crouch, Mike Jackson, Rob Baxter, “Software Evaluation Guide,” <i>Software Sustainability Institute</i>. [Online]. Available: http://www.software.ac.uk/software-evaluation-guide.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Software%20Evaluation%20Guide&amp;rft.identifier=http%3A%2F%2Fwww.software.ac.uk%2Fsoftware-evaluation-guide&amp;rft.aulast=Steve%20Crouch%2C%20Mike%20Jackson%2C%20Rob%20Baxter&amp;rft.au=Steve%20Crouch%2C%20Mike%20Jackson%2C%20Rob%20Baxter"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[32]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“Stealing Google’s Coding Practices for Academia,” <i>Stealing Google’s Coding Practices for Academia</i>. .</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=Stealing%20Google's%20Coding%20Practices%20for%20Academia&amp;rft.identifier=https%3A%2F%2Fda-data.blogspot.com%2F2016%2F04%2Fstealing-googles-coding-practices-for.html"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[33]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“The Open Definition - Open Definition - Defining Open in Open Data, Open Content and Open Knowledge.” [Online]. Available: http://opendefinition.org/. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=The%20Open%20Definition%20-%20Open%20Definition%20-%20Defining%20Open%20in%20Open%20Data%2C%20Open%20Content%20and%20Open%20Knowledge&amp;rft.identifier=http%3A%2F%2Fopendefinition.org%2F"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[34]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">K. D. Welker, “The Software Maintainability Index Revisited,” <i>The Journal of Defense Software Engineering</i>, Aug. 2001.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The%20Software%20Maintainability%20Index%20Revisited&amp;rft.jtitle=The%20Journal%20of%20Defense%20Software%20Engineering&amp;rft.aufirst=Kurt%20D.&amp;rft.aulast=Welker&amp;rft.au=Kurt%20D.%20Welker&amp;rft.date=2001-08"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[35]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">C. A. Mattmann, R. R. Downs, J. J. Marshall, N. F. Most, and S. Samadi, “TOOLS TO SUPPORT THE REUSE OF SOFTWARE ASSETS FOR THE NASA EARTH SCIENCE DECADAL SURVEY MISSIONS,” <i>IEEE Geoscience and Remote Sensing Society Newsletter</i>, Mar. 2011.</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=TOOLS%20TO%20SUPPORT%20THE%20REUSE%20OF%20SOFTWARE%20ASSETS%20FOR%20THE%20NASA%20EARTH%20SCIENCE%20DECADAL%20SURVEY%20MISSIONS&amp;rft.jtitle=IEEE%20Geoscience%20and%20Remote%20Sensing%20Society%20Newsletter&amp;rft.aufirst=Chris%20A.&amp;rft.aulast=Mattmann&amp;rft.au=Chris%20A.%20Mattmann&amp;rft.au=Robert%20R.%20Downs&amp;rft.au=James%20J.%20Marshall&amp;rft.au=Neal%20F.%20Most&amp;rft.au=Shahin%20Samadi&amp;rft.date=2011-03"></span>
+      <div style="clear: left; " class="csl-entry">
+        <div style="float: left; padding-right: 0.5em;text-align: right; width: 2em;" class="csl-left-margin">[36]</div><div style="margin: 0 .4em 0 2.5em;" class="csl-right-inline">“Welcome to the Standard Technical Evaluation Process Toolkit,” <i>MITRE STEP Toolkit</i>. [Online]. Available: http://www2.mitre.org/work/sepo/toolkits/STEP/. [Accessed: 24-May-2016].</div>
+      </div>
+      <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Welcome%20to%20the%20Standard%20Technical%20Evaluation%20Process%20Toolkit&amp;rft.identifier=http%3A%2F%2Fwww2.mitre.org%2Fwork%2Fsepo%2Ftoolkits%2FSTEP%2F"></span>
+    </div>
+</div>
+
 
 
 
