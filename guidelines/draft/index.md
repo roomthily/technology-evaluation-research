@@ -1177,15 +1177,16 @@ For criteria categorized as "Other", all received criteria are included, as is, 
 
     <h3 id="sustainability-community">Community</h3>
     <div class="criteria">
+        <!-- scott -->
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Developers exist who are not members of the project.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Users are requested to cite the product if publishing papers based on results derived from the product.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>Flagged for publication/credit binning</p>
                 <h4>References</h4>
                 <p><a href="#"></a></p>
                 <h4>Similar Criteria</h4>
@@ -1194,49 +1195,20 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Users are requested to cite the product if publishing papers based on results derived from the product.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Users are required to cite a boilerplate citation if publishing papers based on results derived from the product.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>Flagged for publication/credit binning</p>
                 <h4>References</h4>
                 <p><a href="#"></a></p>
                 <h4>Similar Criteria</h4>
                 <p><a href="#"></a></p>
             </div>
         </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Users are required to cite a boilerplate citation if publishing papers based on results derived from the product.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Users exist who are not members of the project.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
+
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Web site has list of important partners and collaborators.</p>
@@ -1282,6 +1254,38 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p><a href="#"></a></p>
             </div>
         </div>
+
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Developers exist who are not members of the project.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Users exist who are not members of the project.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p></p>
+                <h4>References</h4>
+                <p><a href="#"></a></p>
+                <h4>Similar Criteria</h4>
+                <p><a href="#"></a></p>
+            </div>
+        </div>
+        
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Web site has list of third-party publications that cite the product.</p>
