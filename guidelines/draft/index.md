@@ -624,7 +624,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Notes</h4>
-                <p>Revisit depending on portability/buildability revisions</p>>
+                <p>Revisit depending on portability/buildability revisions</p>
             </div>
         </div>
         <div class="criterion">
@@ -665,6 +665,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
 
     <h3 id="sustainability-changeability">Changeability</h3>
     <div class="criteria">
+        <!-- scott -->
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Changes in the source code repository are e-mailed to a mailing list.</p>
@@ -672,136 +673,9 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Dev Transparency</p>
                 <h4>Notes</h4>
                 <p>Updated to reflect GitHub/BitBucket/Trac interactions ("watch" functionality).</p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Contributions policy is publicly available.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Contributors retain copyright/IP of their contributions.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p>If we're following the open source model, this is incorrect - Contributor License Agreements release the rights from the contributor back to the project. The original implies that someone could revoke permissions for their contribution to a project, which would have credibility/stability issues. </p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Project has defined a contributions policy.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Project has defined a stability/deprecation policy for components, APIs, pages, etc.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Releases document deprecated components/APIs in that release.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Releases document removed/changed components/APIs in that release.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-
-        <!-- scott -->
-        <div class="criterion">
-            <div class="revisions">
-                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>A release is accompanied by a change log document (or update to a CHANGELOG document), including deprecated or modified components/APIs.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p>Merged the previous into one statement about change logs.</p>
-                <h4>References</h4>
-                <p><a href="#"></a>See the Linux Found. best practices.</p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Stability/deprecation policy is publicly available.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -811,13 +685,41 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Dev Transparency</p>
                 <h4>Notes</h4>
                 <p>Check for duplication in the ticketing system criteria.</p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+            </div>
+        </div>
+
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Contributions policy is publicly available.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Contribution Policy</p>
+                <h4>Notes</h4>
+                <p>See also Governance (and shift to governance? to match FLOSS organizational conversations?)</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Contributors retain copyright/IP of their contributions.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Contribution Policy</p>
+                <h4>Notes</h4>
+                <p>If we're following the open source model, this is incorrect - Contributor License Agreements release the rights from the contributor back to the project. The original implies that someone could revoke permissions for their contribution to a project, which would have credibility/stability issues. </p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Project has defined a contributions policy.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Contribution Policy</p>
             </div>
         </div>
         <div class="criterion">
@@ -827,13 +729,57 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Contribution policy</p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>(Not policy but maybe there should be a stronger section under community for explicitly stating non-project member options or under governance or is it implied by having a CONTRIBUTING statement?)</p>
+            </div>
+        </div>
+
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Project has defined a stability/deprecation policy for components, APIs, pages, etc.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Change policies</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Releases document deprecated components/APIs in that release.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Change policies</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Releases document removed/changed components/APIs in that release.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Change policies</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>A release is accompanied by a change log document (or update to a CHANGELOG document), including deprecated or modified components/APIs.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Change policies</p>
+                <h4>Notes</h4>
+                <p>Merged the previous into one statement about change logs.</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Stability/deprecation policy is publicly available.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Change policies</p>
             </div>
         </div>
     </div> <!-- end Sustainability:Changeability-->
