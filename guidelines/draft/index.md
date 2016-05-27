@@ -149,14 +149,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Tests exist to evaluate whether the results match the specification.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <h4>Application</h4>
+                <p>Algorithm | Code</p>
             </div>
         </div>
         <div class="criterion">
@@ -164,14 +158,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">The precision presented in answers to the user is appropriate for the product's algorithm and implementation.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <h4>Application</h4>
+                <p>Algorithm | Code</p>
             </div>
         </div>
         <div class="criterion">
@@ -179,14 +167,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">The product produces the same results in response to the same inputs (unless specification calls for randomness).</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <h4>Application</h4>
+                <p>Algorithm | Code</p>
             </div>
         </div>
         <div class="criterion">
@@ -194,14 +176,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">The product results are unaffected by increasing levels of use, analyzed inputs, or generated outputs; consistent with likely future demand.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+               <h4>Application</h4>
+                <p>Algorithm | Code</p>
             </div>
         </div>
         <div class="criterion">
@@ -209,14 +185,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">The specific results provided by the product match what the specification calls for.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <h4>Application</h4>
+                <p>Algorithm | Code</p>
             </div>
         </div>
         <div class="criterion">
@@ -224,14 +194,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">There are examples of outputs that follow the specification.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <h4>Application</h4>
+                <p>Algorithm | Code</p>
             </div>
         </div>
         <div class="criterion">
@@ -239,14 +203,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">There is a specification of the algorithm against which results can be compared.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <h4>Application</h4>
+                <p>Algorithm | Code</p>
             </div>
         </div>
     </div> <!-- end Fitness: Accuracy -->
