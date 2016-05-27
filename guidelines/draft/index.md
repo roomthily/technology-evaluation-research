@@ -304,14 +304,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Each source code file/web page/document has a copyright statement.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -319,14 +311,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">If supported by the language, each source code file has a copyright statement embedded within a constant.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -334,14 +318,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">If there are multiple web sites then these all state exactly the same copyright, licencing and authorship.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -349,14 +325,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Web site states copyright.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -364,14 +332,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Web site states key roles: who developed/develops the product, funds it, oversees the web site, etc.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
     </div> <!-- end Sustainability:Copyright-->
@@ -498,12 +458,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Clean Code</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -513,12 +467,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Clean Code</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -528,12 +476,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Clean Code</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -543,12 +485,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Clean Code</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -558,12 +494,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Clean Code</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -573,12 +503,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Clean Code</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -588,12 +512,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Clean Code</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
 
@@ -605,12 +523,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Standardized Code</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -620,12 +532,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Standardized Code</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -635,12 +541,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Standardized Code</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -650,12 +550,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Standardized Code</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -665,12 +559,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Standardized Code</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
 
@@ -681,12 +569,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Document Generation</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -696,12 +578,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Document Generation</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -711,12 +587,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Document Generation</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -726,12 +596,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Document Generation</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
 
@@ -741,14 +605,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>Source code or content repository is managed through a version control system.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -757,14 +613,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>Releases follow protocols of the version control system in place.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>Tagged Git releases, etc.</p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
 
@@ -773,14 +623,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Auto-generated source code is in separate directories from other source code.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
-                <p>Revisit depending on portability/buildability revisions</p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Revisit depending on portability/buildability revisions</p>>
             </div>
         </div>
         <div class="criterion">
@@ -788,14 +632,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>How to regenerate the auto-generated source code is documented.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>Revisit depending on portability/buildability revisions</p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -803,33 +641,16 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Project files for IDEs are provided.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>Revisit depending on portability/buildability revisions</p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
-        
-        
-        
-        
+    
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Source code structure relates clearly to the architecture or design.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         
@@ -838,14 +659,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Structure of the source code or content repository and how this maps to the software’s components is documented.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
     </div> <!-- end Sustainability:Analysability-->
