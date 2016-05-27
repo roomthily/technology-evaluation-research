@@ -73,6 +73,8 @@ For new catergories or concepts, we believe that is important to include criteri
 
 For criteria categorized as "Other", all received criteria are included, as is, during the initial round. De-duplication, in those categories and across existing categories, is expected throughout the revision process.
 
+**Ed. note: consider the about-to-be-published software citation principles for some areas defined here. Do the criteria align with the general principles identified by the community?**
+
 
 <h4>Table of Contents</h4>
 <ul>
@@ -375,20 +377,17 @@ For criteria categorized as "Other", all received criteria are included, as is, 
     </div> <!-- end Sustainability:Copyright-->
 
     <h3 id="sustainability-accessibility">Accessibility</h3>
+    <p>Ed. note: suggest revisions for three situations - 1) project members are hosting their own repository management system (git, Trac, etc) which does affect public/private access and browsability; 2) project members are using a third party DVCS like GitHub or BitBucket which affects public/private but other aspects are not directly tied to the *project* assessment; c) project members post their software repositories to a domain/research code system which is more related to publication and preservation (but still about whether the code is accessible).</p>
     <div class="criteria">
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Ability to browse source code repository online.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Ability to browse source code repository online.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Source Code</p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Realistically, could assume when hosting in external platform, ie GitHub, that this is a feature of the external system and not something to evaluate for the project itself.</p>
             </div>
         </div>
         <div class="criterion">
@@ -397,103 +396,30 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Source Code</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Anonymous read-only access to source code repository.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Anonymous read-only access to source code repository.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Source Code</p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Binary distributions are available (whether for free, payment, registration).</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Binary distributions are available without the need for any registration or authorisation of access by the project.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Binary distributions are freely available.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Downloads/versions page shows evidence of regular releases (e.g. six monthly, bi-weekly, etc.).</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>If kept, clarify language. The related flagged items read more as guidance to choose an external platform </p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Repository is hosted externally to a single organisation/institution in a sustainable third-party repository (e.g. SourceForge, GoogleCode, LaunchPad, GitHub) which will live beyond the lifetime of any current funding line.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>All repositories developed by the project team are hosted externally in a sustainable thrid-party platform, either a code-hosting platform or a domain- or research-specific software repository.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Source Code</p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Removing the platform names (too many are gone now) and including text for the newer domain area repositories (see Astronomy community efforts and some general research software repositories (OntoSoft)).</p>
             </div>
         </div>
         <div class="criterion">
@@ -502,13 +428,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Source Code</p>
             </div>
         </div>
         <div class="criterion">
@@ -517,13 +437,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Source Code</p>
             </div>
         </div>
         <div class="criterion">
@@ -532,13 +446,45 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Source Code</p>
+            </div>
+        </div>
+
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Binary distributions are available (whether for free, payment, registration).</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Artifacts</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Binary distributions are available without the need for any registration or authorisation of access by the project.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Artifacts</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Binary distributions are freely available.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Artifacts</p>
+            </div>
+        </div>
+
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Downloads/versions page shows evidence of regular releases (e.g. six monthly, bi-weekly, etc.).</p>
+            </div>
+            <div class="metadata">
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>This seems out of place. Capture release scheduling under the larger Versioning umbrella. *If* releases needs to be under Accessibility, it needs to relate directly to the avaialability of the source code versions and the build artifacts.</p>
             </div>
         </div>
     </div> <!-- end Sustainability: Accessibility -->
