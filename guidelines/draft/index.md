@@ -1092,14 +1092,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Provides tests demonstrating compliance to open standards.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -1107,14 +1099,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Uses mature, ratified, non-draft open standards.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -1122,14 +1106,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Uses open standards.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
     </div> <!-- end Sustainability:Interoperability -->
