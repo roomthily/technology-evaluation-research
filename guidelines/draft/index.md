@@ -1210,6 +1210,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>For code that compiles and does not use a VM: Uses a build system that interogates the build environment to determine features AND the software actually uses the result of that interogation</p>
             </div>
             <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Software</p>
             </div>
         </div>
         <div class="criterion">
@@ -1217,6 +1219,21 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>For code that is interpreted: Follows standard (likely ad hoc) practices for distribution and interpreter version/selection.</p>
             </div>
             <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Software</p>
+            </div>
+        </div>
+
+        <!-- elliott -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>If the algorithm takes advantage of GPU architecture, is it hardware vendor agnostic?</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>GPU/Hardware</p>
+                <h4>Notes</h4>
+                <p>If the code takes advantage a GPU for its computation, does it use a vendor specific language (e.g. CUDA), or an open standard capabile of running on multiple hardware platforms (e.g OpenCL)?  Using an open standard helps to ensure that more users can run it on their existing systems.  In addition, open standards will likely help with maintainability and compatibility down the road.  CUDA requires NVIDIA cards, whereas OpenCL can run on NVIDIA, AMD, and Intel graphics cards.</p>
             </div>
         </div>
 
