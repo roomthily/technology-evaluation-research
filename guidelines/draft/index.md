@@ -951,32 +951,16 @@ For criteria categorized as "Other", all received criteria are included, as is, 
     <div class="criteria">
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Governance policy is publicly available.</p>
+                <p class="original">Project has defined a governance policy.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Project has defined a governance policy.</p>
+                <p class="original">Governance policy is publicly available.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
 
@@ -987,13 +971,11 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Contribution</p>
                 <h4>Notes</h4>
                 <p>Probably a repeated concept but currently comes up in FLOSS governance discussions, might just need to be shifted from various other sub-categories.</p>
                 <h4>References</h4>
                 <p><a href="#"></a>See "contributing Guidelines" ref.</p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -1002,13 +984,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Contribution</p>
             </div>
         </div>
         <div class="criterion">
@@ -1017,13 +993,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Contribution</p>
             </div>
         </div>
         <div class="criterion">
@@ -1032,13 +1002,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Contribution</p>
             </div>
         </div>
         <div class="criterion">
@@ -1046,14 +1010,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project website or code repository includes a code of conduct.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
 
