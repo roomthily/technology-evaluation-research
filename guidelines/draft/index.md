@@ -2,9 +2,17 @@
 layout: guidelines
 ---
 
-# Software Assessment Guidelines #
+# Draft Software Assessment Guidelines #
 
-**In Draft 5/2016**
+<div class="feedback">
+<p>Comments and feedback are encouraged until <strong>July 8, 2016</strong>. </p>
+<p>To comment, please use one of the following options, in oreder of preference:</p>
+<ol>
+    <li>Comment directly on this page using the <a href="https://hypothes.is/">Hypothes.is</a> annotation system.</li>
+    <li>Create an issue in <a href="https://github.com/roomthily/technology-evaluation-research/issues">GitHub</a>.</li>
+    <li>Submit a pull request to the <code>gh-pages</code> branch in this <a href="https://github.com/roomthily/technology-evaluation-research/">repository</a>. Information on the structure is <a href="{{ site.baseurl }}/guidelines/contributing">available</a>. (This is not the preferred option.)</li>
+</ol>
+</div>
 
 ## Abstract ##
 
@@ -23,6 +31,7 @@ layout: guidelines
 
 ### Use Cases ###
 
+The guidelines presented in this document 
 
 Stakeholder | Use Case
 ----------- | --------
@@ -896,13 +905,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Funding/Sustainability</p>
             </div>
         </div>
         <div class="criterion">
@@ -911,28 +914,35 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Funding/Sustainability</p>
             </div>
         </div>
+        
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Web site describes project roadmap or plans or milestones (either on a web page or within a ticketing system).</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
+            </div>
+        </div>
+
+        <!-- kokkonen -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Web site describes software requirements on hardware, operating system versions, tool versions.</p>
+            </div>
+            <div class="metadata">
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>(Check documentation for OS, 3rd party versions; wherever it winds up, a group for Hardware is a good idea (GPU-optimized code, etc)</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Software includes no arbitrary shutdown dates.</p>
+            </div>
+            <div class="metadata">
+                <h4>Notes</h4>
+                <p>Consider a more general statement against global defaults or hard-coded defaults in the code base (we can provide examples of similar issues around default size limits, etc. Guidelines - limited use of globals, uses configuration files.</p>
             </div>
         </div>
     </div> <!-- end Sustainability:Evolvability-->
@@ -3818,10 +3828,13 @@ Project lifecycle
 ## Participants ##
 
 <ul>
-    <li>Toner, Valerie</li>
-    <li>Gallagher, James</li>
-    <li>Downs, Robert</li>
-    <li>Wilson, Anne</li>
+    <li>Toner, Valerie (NOAA)</li>
+    <li>Gallagher, James (OPeNDAP)</li>
+    <li>Downs, Robert (CIESIN)</li>
+    <li>Wilson, Anne (LASP)</li>
+    <li>Kokkonen, Kim (LASP)</li>
+    <li>Elliott, Joshua (LASP)</li>
+    <li>Bowe, Ryan ()</li>
 </ul>
 
 ## References ##
