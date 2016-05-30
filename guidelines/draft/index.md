@@ -1012,7 +1012,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
             </div>
         </div>
-
     </div> <!-- end Sustainability:Governance -->
 
     <h3 id="sustainability-identity">Identity</h3>
@@ -1020,16 +1019,12 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Project/product/software has a distinct name regardless of its application area. A search by Google on the name plus keywords from the application area throws up the project web site in the first page of matches.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Project/software name or acronym is distinct within the application area.</p>
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project/software name or acronym is easily discoverable, eg. the acronym is not a very common word or, if it is, the phrase provides additional information for discovery.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Branding</p>
             </div>
         </div>
         <div class="criterion">
@@ -1038,13 +1033,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Branding</p>
             </div>
         </div>
         <div class="criterion">
@@ -1053,13 +1042,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Branding</p>
             </div>
         </div>
         <div class="criterion">
@@ -1068,28 +1051,16 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Basic</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Project/product/software name does not throw up embarrassing “did you mean…” hits on Google.</p>
+                <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Project/product/software name does not throw up embarrassing “did you mean…” hits on Google.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Maybe should just be a better guideline on naming? Three is a lot related to search?</p>
             </div>
         </div>
         <div class="criterion">
@@ -1098,13 +1069,9 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Basic</p>
                 <h4>Notes</h4>
                 <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -1113,13 +1080,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Advanced</p>
             </div>
         </div>
     </div> <!-- end Sustainability:Identity -->
