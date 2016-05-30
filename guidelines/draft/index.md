@@ -1114,47 +1114,42 @@ For criteria categorized as "Other", all received criteria are included, as is, 
     <div class="criteria">
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Each source code file or document has a licence header; each web page has a rights and authorship footer.</p>
+                <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Each source code file or document has a licence header; each web page has a rights and authorship footer.</p>
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>License is specified in each source code file or document.</p>
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project website includes authorship information.</p>
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Each code repository README (or similar) indicates license applied.</p>
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Each code repository README (or similar) includes authorship information.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
+                <h4>Application</h4>
+                <p>Both</p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Many concepts in the original (need to check for duplication across criteria).</p>
             </div>
         </div>
+
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Site or product content has a 'free for public use' license or statement.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Project website has a 'free for public use' license or statement.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
+                <h4>Application</h4>
+                <p>Project</p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Consistent language ("project website").</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Site or product content has a license.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Project website has a license.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
+                <h4>Application</h4>
+                <p>Project</p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Consistent language ("project website").</p>
             </div>
         </div>
         <div class="criterion">
@@ -1162,14 +1157,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Software (source and binaries) has a licence.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <h4>Application</h4>
+                <p>Code</p>
             </div>
         </div>
         <div class="criterion">
@@ -1177,14 +1166,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Software has an Open Software Initiative (OSI) recognised licence.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <h4>Application</h4>
+                <p>Code</p>
             </div>
         </div>
         <div class="criterion">
@@ -1192,14 +1175,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Software has an open source licence.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <h4>Application</h4>
+                <p>Code</p>
             </div>
         </div>
         <div class="criterion">
@@ -1207,14 +1184,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Web site states applicable licences.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <h4>Application</h4>
+                <p>Project</p>
             </div>
         </div>
 
@@ -1224,14 +1195,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project documentation defines contributor license agreements, either by requesting a CLA or by stating the rights transferred to the project by a contributor not directly affiliated with the project.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p>See note in Community.</p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <h4>Application</h4>
+                <p>Code</p>
             </div>
         </div>
 
