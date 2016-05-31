@@ -2786,12 +2786,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Available Tools</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2801,12 +2795,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Basic</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2816,12 +2804,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Process</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2831,12 +2813,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Process</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2846,12 +2822,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Tools</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2861,12 +2831,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Process</p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
 
