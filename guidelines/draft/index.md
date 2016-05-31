@@ -1119,6 +1119,16 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             <div class="metadata">
             </div>
         </div>
+
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>[Placeholder - implements JSON-LD, etc.]</p>
+            </div>
+            <div class="metadata">
+                <h4>Notes</h4>
+                <p>Noted need for service/API interoperability criteria.</p>
+            </div>
+        </div>
     </div> <!-- end Sustainability:Interoperability -->
 
     <h3 id="sustainability-licensing">Licensing</h3>
@@ -2860,6 +2870,62 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
         </div>
 
+        <!-- shepherd -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Sanitizes user input. (eg database apps sanitize for SQL injection, inputs that get displayed as HTML get filtered)</p>
+            </div>
+            <div class="metadata">
+                <h4>Application</h4>
+                <p>Web App/API</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Web application defends against Cross-Site Request Forgery (CSRF)</p>
+            </div>
+            <div class="metadata">
+                <h4>Application</h4>
+                <p>Web App/API</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Web application defends against Cross-Site Scripting (XSS)</p>
+            </div>
+            <div class="metadata">
+                <h4>Application</h4>
+                <p>Web App/API</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>File permissions of web-accessible files (eg User-uploaded files cannot overwrite or delete critical files)</p>
+            </div>
+            <div class="metadata">
+                <h4>Application</h4>
+                <p>Web App/API</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>User-uploaded files are not executable, cannot completely fill a disk, </p>
+            </div>
+            <div class="metadata">
+                <h4>Application</h4>
+                <p>Web App/API</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Users cannot view arbitrary files through web app</p>
+            </div>
+            <div class="metadata">
+                <h4>Application</h4>
+                <p>Web App/API</p>
+            </div>
+        </div>
+
     </div> <!-- end Security -->
 
     <h3 id="other-preservation">Preservation/Archiving</h3>
@@ -2870,14 +2936,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Source code used to create data are archived with the data or separately with bidirectional references between the data and software.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2885,14 +2943,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Source code developed for accessing or using the data are archived with the data or separately with bidirectional references between the data and software.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2900,14 +2950,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Documentation are archived with the source code.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2915,14 +2957,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Licenses are archived with the source code.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2930,14 +2964,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Constraints or restrictions are archived with the source code.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
 
@@ -2947,14 +2973,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Document describing known environment in which code was originally run</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2962,14 +2980,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>List known dependencies</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2977,14 +2987,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>consider container technologies to ensure reproducibility of software content or function.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2992,14 +2994,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>documentation describing objectives of software, known limitations or bugs, and reason for and purpose of its existence</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -3007,14 +3001,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Ideally, preserved/archived code should include "test data", so future users can unpack and run code, and see if results appear as expected. (Unless data is already archived elsewhere)</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -3022,14 +3008,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Code should be documented in a natural language explaining each process/code section.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>(In some cases, preserving code for reuse is impossible, but being able to refer back to old code and follow it without needing to know intimately the language it was written in is helpful.)</p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -3037,14 +3017,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Archived code should not be an executable (.exe) but a group of files packaged together that can be built or reviewed by future users for understanding. Code should be as self-contained as possible.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -3052,14 +3024,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Does the software use open source platforms and libraries, or does it require the use of licensed software?</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -3067,14 +3031,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Copyright/licensing must be noted and made clear to future users. </p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -3082,14 +3038,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Archived code should include any documentation that applies to the particular release of the code--including both specific version documentation and overall software documentation. </p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>(Resources enabling "usability" of code also apply to future users acquiring code from the archive.)</p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
     </div> <!-- end Preservation -->
@@ -3099,17 +3049,9 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         <!-- downs -->
         <div class="criterion">
             <div class="revisions">
-                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Authors of software are identied in the suggested citation for the software.</p>
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Authors of software are identified in the suggested citation for the software.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -3117,14 +3059,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Substantial contributions to software are considered authorship.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -3132,14 +3066,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Other contributions to software are acknowledged in documentation.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -3147,14 +3073,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Authors of documentation are identified in the suggested citation for the documentation.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -3162,14 +3080,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Software used to create data are cited in the data documentation.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -3177,14 +3087,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Data for which the software were created are cited in the software documentation.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -3192,14 +3094,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Review committees consider and recognize software contributions and citations of software.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -3207,14 +3101,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Publications about the data cite the software used to create the data.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -3222,14 +3108,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Publications about the use of the data cite the software used to analyze the data.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
     </div> <!-- end Credit -->
@@ -3270,6 +3148,22 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p>Does the code require the user to have an enormous amount of system memory, or does it make efficient use of available memory on each compute node?</p>
                 <h4>Application</h4>
                 <p>Library/Module</p>
+            </div>
+        </div>
+
+        <!-- shepherd -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Performance requirements are documented. What is the requirement and why (for example, Page X should return in under 3 seconds b/c analytics show our major stakeholders navigate away after waiting for 3 seconds).</p>
+            </div>
+            <div class="metadata">
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Performance limits are documented. (eg. software performance degrades when trying to analyze anything more than 1 million entities)</p>
+            </div>
+            <div class="metadata">
             </div>
         </div>
     </div> <!-- end Performance -->
