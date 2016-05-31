@@ -2022,6 +2022,22 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p><a href="#"></a></p>
             </div>
         </div>
+
+        <!-- kokkonen -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Build instructions include platform-dependent details and answers to frequently asked questions.</p>
+            </div>
+            <div class="metadata">
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Build instructions include clear version requirements for external dependencies (unless automated dependency management is provided).</p>
+            </div>
+            <div class="metadata">
+            </div>
+        </div>
     </div> <!-- end Usability:Buildability -->
 
     <h3 id="usability-documentation">Documentation</h3>
