@@ -945,6 +945,17 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p>Consider a more general statement against global defaults or hard-coded defaults in the code base (we can provide examples of similar issues around default size limits, etc. Guidelines - limited use of globals, uses configuration files.</p>
             </div>
         </div>
+
+        <!-- scott -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>[Ed. note: some criteria related to reuse of OS frameworks, ie. not reinventing every wheel. This is a placeholder and reminder.]</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Reuse</p>
+            </div>
+        </div>
     </div> <!-- end Sustainability:Evolvability-->
 
     <h3 id="sustainability-governance">Governance</h3>
@@ -1353,20 +1364,44 @@ For criteria categorized as "Other", all received criteria are included, as is, 
     </div> <!-- end Sustainability:Portability-->
 
     <h3 id="sustainability-supportability">Supportability</h3>
+    <p>Ed. note: criteria marked as <code>Grouping: Email</code> need revision for the different modes of email support and regrouped accordingly (direct email, form-based contact, mailing list). </p>
     <div class="criteria">
+        <!-- scott -->
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Above pages/windows/files describe, or link to, a description of “how to ask for help” e.g. cite version number, send transcript, error logs etc.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Above pages/windows/files describe, or link to, a description of “how to ask for help” e.g. cite version number, send transcript, error logs etc.</p>
+            </div>
+            <div class="metadata">
+                <h4>Notes</h4>
+                <p>Not sure about "Above" here. Maybe meant to be "About"? Seems to describe an email/contact page template for help requests.</p>
+            </div>
+        </div>
+
+        <!-- emails -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Project has an e-mail address.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Project has an e-mail address for support.</p>
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project website includes a contact form for requesting support.</p>
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project provides a mailing list for requesting support.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Email</p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Needs a switch statement - email for support, contact form for support, mailing list, irc, bug tracking system? Sort of conflates "email address" with mailing list functionality.</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original">Project e-mail address has project domain name.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Project e-mail uses the project's domain name.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Email</p>
+                <h4>Notes</h4>
+                <p>Not sure these kinds of statements are broadly applicable - it assumes more of an OS model but university or research/science code out of federal agencies may not be able to use a project domain.</p>
             </div>
         </div>
         <div class="criterion">
@@ -1375,13 +1410,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Email</p>
             </div>
         </div>
         <div class="criterion">
@@ -1390,28 +1419,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">E-mail archives or ticketing system shows that queries are responded to within a week (not necessarily fixed, but at least looked at and a decision taken as to their priority).</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Email</p>
             </div>
         </div>
         <div class="criterion">
@@ -1420,13 +1428,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Email</p>
             </div>
         </div>
         <div class="criterion">
@@ -1435,90 +1437,42 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Email</p>
+            </div>
+        </div>
+
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>E-mail archives or ticketing system shows that queries are responded to within a week (not necessarily fixed, but at least looked at and a decision taken as to their priority).</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Email</p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Flagged - not a marker that is actionable by a project member (consider shift to project analytics assessment section).</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">E-mails are read by more than one person.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>E-mails are read by more than one person.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Email</p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Is this evaluatable by an external evaluator?</p>
             </div>
         </div>
+
+
         <div class="criterion">
             <div class="revisions">
                 <p class="original">If there is a blog, is it is regularly used.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Project e-mail address has project domain name.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Project has a ticketing system.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Project has an e-mail address.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
+        
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Project resources are hosted externally to a single-organisation/institution in a sustainable third-party repository (e.g. SourceForge, GoogleCode, LaunchPad, GitHub) which will live beyond the lifetime of the current project.</p>
@@ -1529,25 +1483,18 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p></p>
                 <h4>Notes</h4>
                 <p>"third-party repository" does not describe GH or the others well. And a bit about domain-specific or research software-specific repositories as archive locations.</p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
+        
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Software describes how to get support (in a README for command-line tools or a Help=>About window in a GUI).</p>
+                <p class="original">Project has a ticketing system.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Issues</p>
                 <h4>Notes</h4>
                 <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -1556,13 +1503,9 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Issues</p>
                 <h4>Notes</h4>
                 <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -1571,13 +1514,21 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Issues</p>
                 <h4>Notes</h4>
                 <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+            </div>
+        </div>
+
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Software describes how to get support (in a README for command-line tools or a Help=>About window in a GUI).</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Source code repository, in a README or similar document, describes how to get support.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Software, as built application, includes how to get support through a Help window or other common interface feature.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Support pointers</p>
             </div>
         </div>
         <div class="criterion">
@@ -1586,13 +1537,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Support pointers</p>
             </div>
         </div>
         <div class="criterion">
@@ -1601,43 +1546,26 @@ For criteria categorized as "Other", all received criteria are included, as is, 
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
-                <p></p>
+                <p>Support pointers</p>
+            </div>
+        </div>
+
+        <div class="criterion">
+            <div class="revisions">
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Web site has search facility.</p>
+            </div>
+            <div class="metadata">
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Flagged - can we come up with a reason related to project maturity for this criterion?</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Web site has search facility.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Web site has site map or index.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Web site has site map or index.</p>
-            </div>
-            <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Flagged - can we come up with a reason related to project maturity for this criterion?</p>
             </div>
         </div>
     </div> <!-- end Sustainability:Supportability-->
