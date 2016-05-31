@@ -1582,10 +1582,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p></p>
                 <h4>Notes</h4>
                 <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -1597,10 +1593,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p></p>
                 <h4>Notes</h4>
                 <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -1612,10 +1604,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p></p>
                 <h4>Notes</h4>
                 <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -1628,10 +1616,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p></p>
                 <h4>Notes</h4>
                 <p>[SS] The original statement is ambiguous - does it refer to a coding standard such as PEP8 and is then testable with a linter or does it refer to unit testing, etc (as seen in the suggested revision)?</p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -1639,14 +1623,8 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Project has automated tests to check test coverage.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>Drop this. IMHO, it's far more important to have tests that are run automatically and by a CI system than to try for some % coverage. Classes that are 90% accessors don't need high coverage while classes that include complex/new algorithms do. </p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -1659,10 +1637,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p></p>
                 <h4>Notes</h4>
                 <p>[SS] For scaffolding, etc, consider splitting this out into two criteria but define the relationship.</p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -1674,10 +1648,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p></p>
                 <h4>Notes</h4>
                 <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -1689,85 +1659,56 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p></p>
                 <h4>Notes</h4>
                 <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
+
+        <!-- kokkonen -->
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Project recommends tools to check conformance to coding standards.</p>
+                <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Project recommends tools to check conformance to coding standards.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>I don't see the value of a project *recommending* tools. Either code is being tested by its developers or it isn't. Perhaps if the software in question is itself a developer tool like a language, it should recommend testing tools, but that is a very special case that doesn't seem applicable here.</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Project recommends tools to check test coverage.</p>
+                <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Project recommends tools to check test coverage.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Maybe this applies for "Library/Module", but I would deprecate</p>
             </div>
         </div>
+
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Project specifies how to set up external resources e.g. FTP servers, databases for tests.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
+
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Test results are e-mailed to a mailing list.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
+
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Test results are visible publicly.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Test results are visible publicly.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Is this appropriate at all and if it is a common/recommended practice to deliver test results outside the development team.</p>
             </div>
         </div>
         <div class="criterion">
@@ -1775,74 +1716,103 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Test results are visible to all developers/members.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Tests are automatically run nightly.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Tests are automatically run nightly.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Is this kind of statement necessary with CI systems? And would a code repo have any signal to indicate this to an external evaluator?</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Tests create their configuration own files, database tables etc.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Tests create their own configuration files, database tables etc.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
                 <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">There is an automated test for this minimum test coverage level.</p>
+                <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>There is an automated test for this minimum test coverage level.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Given the other notes for test coverage, deprecate.</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
                 <p class="original">This e-mailing list can be subscribed to by anyone.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>The test results e-mailing list can be subscribed to by anyone</p>
+            </div>
+            <div class="metadata">
+            </div>
+        </div>
+
+        <!-- kokkonen -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project measures both conditional and line test coverage levels</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p></p>
                 <h4>Notes</h4>
+                <p>Conditional (branch) coverage is harder to achieve but just as important as line coverage</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Expected test results are based on verifiable criteria.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
                 <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <h4>Notes</h4>
+                <p>Just executing a line of code isn't worth much unless the results or side effects are compared to verifiable expected results</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Code is designed to support efficient testing.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p>If code isn't designed with testing in mind, verifiable tests can be convoluted or impossible to write.</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Tests use mocking technology where appropriate.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p>Mocking improves the focus, performance, and flexibility of unit tests. Most importantly it supports testing conditions that occur rarely or have perhaps never been observed so far.</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Tests cover exceptional conditions as well as expected behavior.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p></p>
+                <h4>Notes</h4>
+                <p>It's just as important to test for things that are unlikely to occur as for those that are part of nominal behavior.</p>
             </div>
         </div>
     </div> <!-- end Sustainability:Testability-->
