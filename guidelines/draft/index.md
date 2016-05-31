@@ -31,18 +31,53 @@ layout: guidelines
 
 ### Use Cases ###
 
-The guidelines presented in this document 
 
-Stakeholder | Use Case
------------ | --------
-Funder | As a funding agency, we're interested in evaluating the software projects we fund.  
-Project Manager, Principal Investigator (manager in practice) | As a manager, I’m interested in using the rubric/progression as a learning tool to help improve the development practices in my research group.
-Principal Investigator | As a PI, I would like a tool to assess our progress and ensure we’re meeting our funder’s expectations for a software project based on the readiness level stated in the original proposal and as defined by the funder.
-Science Software Developer, Researcher Who Codes | As a science software developer, I’m interested in using the recommended practices to improve my own workflow and skillsets.
-Developer | As a developer, I would like community-supported guidelines to support requests to change our current dev team practices.
-Grad Student, Post-Doc, Researcher interested in continuing code education | I’ve taken the introductory courses and want to continue to improve my skills but don’t know good next steps. I’d like guidance on next steps given my skillset.
-Research Community | We want to provide educational materials or other support for community members to meet their goals re: research software implementation and career growth.
-
+<table class="use_cases">
+    <thead>
+        <tr>
+            <th>Stakeholder</th>
+            <th>Use Case</th>
+            <th>Outcome</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Funder</td>
+            <td>As a funding agency, we're interested in evaluating the software projects we fund.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Project Manager, Principal Investigator (manager in practice)</td>
+            <td>As a manager, I’m interested in using the rubric/progression as a learning tool to help improve the development practices in my research group.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Principal Investigator</td>
+            <td>As a PI, I would like a tool to assess our progress and ensure we’re meeting our funder’s expectations for a software project based on the readiness level stated in the original proposal and as defined by the funder.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Science Software Developer, Researcher Who Codes</td>
+            <td>As a science software developer, I’m interested in using the recommended practices to improve my own workflow and skillsets.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Developer</td>
+            <td>As a developer, I would like community-supported guidelines to support requests to change our current dev team practices.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Grad Student, Post-Doc, Researcher interested in continuing code education</td>
+            <td>I’ve taken the introductory courses and want to continue to improve my skills but don’t know good next steps. I’d like guidance on next steps given my skillset.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Research Community</td>
+            <td>We want to provide educational materials or other support for community members to meet their goals re: research software implementation and career growth.</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
 
 
 ### What Are We Assessing ###
@@ -83,6 +118,17 @@ For new catergories or concepts, we believe that is important to include criteri
 For criteria categorized as "Other", all received criteria are included, as is, during the initial round. De-duplication, in those categories and across existing categories, is expected throughout the revision process.
 
 **Ed. note: consider the about-to-be-published software citation principles for some areas defined here. Do the criteria align with the general principles identified by the community?**
+
+<div class="feedback">
+<p>We ask that you consider a few things when looking over these guidelines.</p>
+<ol>
+    <li>Is the statement evaluatable by someone external to the project? When reading the criterion, can you think of some feature common to code files, code repositories, documentation, or a project website you would look for? If not, do you consider the concept referenced in the statement to still be important to code or project quality? </li>
+    <li>Does the criterion's concept reflect an ideal endpoint? Can you suggest meaningful and evaluatable criteria that are actionable community practices that lead to that ideal (and are those reflected in other criteria here)? What is the happy path?</li>
+    <li>Is the criterion (or the group) related to active development efforts or -----</li>
+    <li></li>
+</ol>
+<p>Finally, </p>
+</div>
 
 
 <h4>Table of Contents</h4>

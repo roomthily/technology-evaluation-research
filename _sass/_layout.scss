@@ -284,24 +284,32 @@
 
 .guidelines {
     h2, h3, h4 {
+        margin: 0;
         clear: both;
-    }
-
-    table {
-        border-collapse:collapse;
-        border: 1px solid #555;
     }
 
     .criteria:before {
         clear:left;
     }
 
+    .criteria {
+        height:auto;
+        overflow:hidden;
+        margin-bottom:20px;
+    }
+
     .criterion {
         font-size: 12px;
         height:auto;
-        border-bottom: 1px dotted #666;
+        border-left: 1px solid #aaa;
+        border-right: 1px solid #aaa;
+        border-bottom: 1px solid #aaa;
         overflow:hidden;
-        margin-bottom:20px;
+        padding:10px;
+    }
+
+    .criterion:first-of-type {
+        border-top: 1px solid #aaa;
     }
 
     .revisions, .metadata {
@@ -346,8 +354,19 @@
     }
 }
 
-div.feedback {
+table.use_cases {
+    border-collapse:collapse;
+    font-size: $small-font-size;
+}
+
+table.use_cases th, table.use_cases td {
+    padding:10px;
     border: 1px solid #555;
+    vertical-align: baseline;
+}
+
+div.feedback {
+    border: 1px solid #999;
     background-color: #f6f3eb;
     padding: 10px;
 }
