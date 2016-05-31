@@ -2662,29 +2662,14 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">A getting started guide is provided outlining a basic example of using the product.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
                 <p class="original">API documentation is provided for userdevelopers and developers.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>API documentation is provided for user-developers and developers.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2692,14 +2677,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Instructions are provided for many basic use cases.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2707,14 +2684,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Instructions are provided supporting all use cases.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2722,14 +2691,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Reference guides or contextual specifications (may be simple labels, if clear) are provided for all command line, GUI and configuration options.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
     </div> <!-- end Usability:Learnability-->
@@ -2742,14 +2703,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>Architectural overview, with diagrams, is included or referenced in the documentation.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2758,14 +2711,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>Case studies of use are included or referenced in the documentation.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2774,14 +2719,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>Descriptions of intended use cases are included or referenced in the documentation.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2790,14 +2727,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>Design rationale is included or referenced in the documentation – why the system does things the way it does.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2806,14 +2735,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>High-level description of how the product works is included or referenced in the documentation.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2822,14 +2743,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>High-level description of what the product does is included or referenced in the documentation.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2838,30 +2751,14 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>High-level description of what/who the product is for is included or referenced in the documentation.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Constraints or restrictions are archived with the source code.</p>
-                <p class="revision"><i class="fa fa-pencil fa-fw"></i>HConstraints or restrictions are included or referenced in the documentation and archived with the source code.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Constraints or restrictions are included or referenced in the documentation and archived with the source code.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
     </div> <!-- end Usability:Understandability -->
@@ -3339,7 +3236,42 @@ For criteria categorized as "Other", all received criteria are included, as is, 
 
     <h3 id="other-performance">Performance</h3>
     <div class="criteria">
-        <p>Ed. note: Suggested new category to specifically address performance.</p>
+        <p>Ed. note: Suggested new category to specifically address performance. Will need something regarding web app/service performance.</p>
+
+        <!-- elliott -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Rough order of time-complexity and memory-complexity are documented.</p>
+            </div>
+            <div class="metadata">
+                <h4>Notes</h4>
+                <p>It is important to know if the algorithm is efficiently implemented, so the user has an understanding of the scalability and the compute resources required to run the code.</p>
+                <h4>Application</h4>
+                <p>Library/Module</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Is the algorithm parallelized? Or, does the algorithm scale across multiple CPU cores?</p>
+            </div>
+            <div class="metadata">
+                <h4>Notes</h4>
+                <p>Knowing if an algorithm is single-threaded or multi-threaded can inform the user as to what compute resources are required, and what the rough performance might be like.  In addition it can allow the user to evaluate it against other comepeting algorithms.</p>
+                <h4>Application</h4>
+                <p>Library/Module</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Does the algorithm use memory efficiently?</p>
+            </div>
+            <div class="metadata">
+                <h4>Notes</h4>
+                <p>Does the code require the user to have an enormous amount of system memory, or does it make efficient use of available memory on each compute node?</p>
+                <h4>Application</h4>
+                <p>Library/Module</p>
+            </div>
+        </div>
     </div> <!-- end Performance -->
 
 </div> <!-- end guidelines-->
