@@ -29,6 +29,7 @@ layout: guidelines
 ## Background ##
 
 
+
 ### Use Cases ###
 
 
@@ -118,85 +119,103 @@ For new catergories or concepts, we believe that is important to include criteri
 
 For criteria categorized as "Other", all received criteria are included, as is, during the initial round. De-duplication, in those categories and across existing categories, is expected throughout the revision process.
 
-**Ed. note: consider the about-to-be-published software citation principles for some areas defined here. Do the criteria align with the general principles identified by the community?**
+**Ed. note: consider the about-to-be-published [software citation principles](https://www.force11.org/software-citation-principles) for some areas defined here. Do the criteria align with the general principles identified in that document?**
 
 <div class="feedback">
-<p>We ask that you consider a few things when looking over these guidelines.</p>
-<ol>
-    <li>Is the statement evaluatable by someone external to the project? When reading the criterion, can you think of some feature common to code files, code repositories, documentation, or a project website you would look for? If not, do you consider the concept referenced in the statement to still be important to code or project quality? </li>
-    <li>Does the criterion's concept reflect an ideal endpoint? Can you suggest meaningful and evaluatable criteria that are actionable community practices that lead to that ideal (and are those reflected in other criteria here)? What is the happy path?</li>
-    <li>Is the criterion (or the group) related to active development efforts or -----</li>
-    <li></li>
-</ol>
-<p>Finally, </p>
+    <p>We ask that you consider a few things when looking over these guidelines.</p>
+    <ol>
+        <li>Is the statement evaluatable by someone external to the project? When reading the criterion, can you think of some feature common to code files, code repositories, documentation, or a project website you would look for? If not, do you consider the concept referenced in the statement to still be important to code or project quality? </li>
+        <li>Does the criterion's concept reflect an ideal endpoint? Can you suggest meaningful and evaluatable criteria that are actionable community practices that lead to that ideal (and are those reflected in other criteria here)? What is the happy path?</li>
+        <li>Is the criterion (or the group) related to active development efforts or to preservation/maintenance efforts? Consider a research project lifecycle.</li>
+        <li>Is the criterion or group associated with a codebase or the project information? Does it relate to code maturity or project maturity and is that clear from the statement?</li>
+        <li>For any criteria directly related to code, can the criterion be applied to any codebase or software artifact or does it apply only to one (or a few) types of software, such as a plugin/extension, module/library, web application, web service, desktop application, etc?</li>
+    </ol>
+    <p>Finally, consider the criteria in relation to a project or codebase you're familiar with. </p>
+</div>
+
+We understand that the guidelines do not represent the entire range of recommended practices across all kinds of research development activities or code development practices, in general. 
+
+<div class="guidelines g-border">
+    <h3>Table of Contents</h3>
+    <div class="leftie">
+        <ul>
+            <li><a href="#fitness">Fitness</a>
+                <ul>
+                    <li><a href="#fitness-accuracy">Accuracy</a></li>
+                    <li><a href="#fitness-credibilty">Credibility</a></li>
+                </ul>
+            </li>
+            <li><a href="#sustainability">Sustainability &amp; Maintenance</a>
+                <ul>
+                    <li><a href="#sustainability-copyright">Copyright</a></li>
+                    <li><a href="#sustainability-accessibility">Accessibility</a></li>
+                    <li><a href="#sustainability-analysability">Analysability</a></li>
+                    <li><a href="#sustainability-changeability">Changeability</a></li>
+                    <li><a href="#sustainability-community">Community</a></li>
+                    <li><a href="#sustainability-evolvability">Evolvability</a></li>
+                    <li><a href="#sustainability-governance">Governance</a></li>
+                    <li><a href="#sustainability-identity">Identity</a></li>
+                    <li><a href="#sustainability-interoperability">Interoperability</a></li>
+                    <li><a href="#sustainability-licensing">Licensing</a></li>
+                    <li><a href="#sustainability-portability">Portability</a></li>
+                    <li><a href="#sustainability-supportability">Supportability</a></li>
+                    <li><a href="#sustainability-testability">Testability</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="leftie">
+        <ul>
+            <li><a href="#usabilty">Usability</a>
+                <ul>
+                    <li><a href="#usability-buildability">Buildability</a></li>
+                    <li><a href="#usability-documentation">Documentation</a></li>
+                    <li><a href="#usability-friendliness">Friendliness</a></li>
+                    <li><a href="#usability-installability">Installability</a></li>
+                    <li><a href="#usability-learnability">Learnability</a></li>
+                    <li><a href="#usability-understandability">Understandability</a></li>
+                </ul>
+            </li>
+            <li><a href="#other">Other</a>
+                <ul>
+                    <li><a href="#other-security">Security</a></li>
+                    <li><a href="#other-preservation">Preservation &amp; Archiving</a></li>
+                    <li><a href="#other-credit">Credit</a></li>
+                    <li><a href="#other-performance">Performance</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </div>
 
 
-<h4>Table of Contents</h4>
-<ul>
-    <li><a href="#fitness">Fitness</a>
-        <ul>
-            <li><a href="#fitness-accuracy">Accuracy</a></li>
-            <li><a href="#fitness-credibilty">Credibility</a></li>
-        </ul>
-    </li>
-    <li><a href="#sustainability">Sustainability &amp; Maintenance</a>
-        <ul>
-            <li><a href="#sustainability-copyright">Copyright</a></li>
-            <li><a href="#sustainability-accessibility">Accessibility</a></li>
-            <li><a href="#sustainability-analysability">Analysability</a></li>
-            <li><a href="#sustainability-changeability">Changeability</a></li>
-            <li><a href="#sustainability-community">Community</a></li>
-            <li><a href="#sustainability-evolvability">Evolvability</a></li>
-            <li><a href="#sustainability-governance">Governance</a></li>
-            <li><a href="#sustainability-identity">Identity</a></li>
-            <li><a href="#sustainability-interoperability">Interoperability</a></li>
-            <li><a href="#sustainability-licensing">Licensing</a></li>
-            <li><a href="#sustainability-portability">Portability</a></li>
-            <li><a href="#sustainability-supportability">Supportability</a></li>
-            <li><a href="#sustainability-testability">Testability</a></li>
-        </ul>
-    </li>
-    <li><a href="#usabilty">Usability</a>
-        <ul>
-            <li><a href="#usability-buildability">Buildability</a></li>
-            <li><a href="#usability-documentation">Documentation</a></li>
-            <li><a href="#usability-friendliness">Friendliness</a></li>
-            <li><a href="#usability-installability">Installability</a></li>
-            <li><a href="#usability-learnability">Learnability</a></li>
-            <li><a href="#usability-understandability">Understandability</a></li>
-        </ul>
-    </li>
-    <li><a href="#other">Other</a>
-        <ul>
-            <li><a href="#other-security">Security</a></li>
-            <li><a href="#other-preservation">Preservation &amp; Archiving</a></li>
-            <li><a href="#other-credit">Credit</a></li>
-            <li><a href="#other-performance">Performance</a></li>
-        </ul>
-    </li>
-</ul>
-
 <div class="guidelines">
-    <h2>About the layout</h2>
+    <h3>About the layout</h3>
     <p></p>
 
-    <h4>Criteria Options</h4>
-    <div class="revisions">
-        <p class="original">The original statement.</p>
-        <p class="original questioned"><i class="fa fa-warning fa-fw"></i>The original statement, flagged for review.</p>
-        <p class="revision"><i class="fa fa-pencil fa-fw"></i>Suggested revisions to the original statement or a replacement for the original. The original statement is provided for reference.</p>
-        <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Suggested new statement.</p>
-        <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Suggested revision is to delete the statement entirely.</p>
+    <div class="g-border">
+        <div class="leftie">
+            <h4>Criteria Options</h4>
+            <div class="revisions">
+                <div class="criterion">
+                    <p class="original">The original statement.</p>
+                    <p class="original questioned"><i class="fa fa-warning fa-fw"></i>The original statement, flagged for review.</p>
+                    <p class="revision"><i class="fa fa-pencil fa-fw"></i>Suggested revisions to the original statement or a replacement for the original. The original statement is provided for reference.</p>
+                    <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Suggested new statement.</p>
+                    <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Suggested revision is to delete the statement entirely.</p>
+                </div>
+            </div>
+        </div>
+        <div class="leftie">
+            <h4>Criteria Descriptors</h4>
+            <p>The descriptors provide additional context for the criterion if applicable.</p>
+            <p><span>Application:</span> indicates whether a statement refers to only the codebase, the project as a whole (generally relates to project artifacts not part of the codebase such as a project website), or applies to both.</p>
+            <p><span>Grouping:</span> describes a logical grouping to the criteria within a subcategory.</p>
+            <p><span>Notes:</span> any notes provided by he initial reviewers regarding suggested revisions.</p>
+            <p><span>References:</span> link to a citation providing a rationale for the criterion.</p>
+            <p><span>Similar Criteria:</span> links to criteria listed in other subcategories that may be duplicated concepts.</p>
+        </div>
     </div>
-
-    <h4>Criteria Descriptors</h4>
-    <p>The descriptors provide additional context for the criterion if applicable.</p>
-    <p><span>Application:</span> indicates whether a statement refers to only the codebase, the project as a whole (generally relates to project artifacts not part of the codebase such as a project website), or applies to both.</p>
-    <p><span>Grouping:</span> describes a logical grouping to the criteria within a subcategory.</p>
-    <p><span>Notes:</span> any notes provided by he initial reviewers regarding suggested revisions.</p>
-    <p><span>References:</span> link to a citation providing a rationale for the criterion.</p>
-    <p><span>Similar Criteria:</span> links to criteria listed in other subcategories that may be duplicated concepts.</p>
     
 
     <h2 id="fitness">Fitness</h2>

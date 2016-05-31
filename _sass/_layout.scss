@@ -282,6 +282,31 @@
     }
 }
 
+.leftie {
+    float:left;
+    width:40%;
+    position:relative;
+    overflow:hidden;
+    display:block;
+    padding:20px;
+}
+.leftie div.revisions {
+    width: auto;
+    border:0;
+}
+.leftie div.criterion, .leftie div.criterion:first-of-type {
+    border:0;
+}
+.leftie p span {
+    font-weight:bold;
+}
+
+.g-border {
+    border-bottom:1px solid #aaa;
+    margin-bottom:30px;
+    overflow:hidden;
+}
+
 .guidelines {
     h2, h3, h4 {
         margin: 0;
@@ -331,7 +356,7 @@
     }
 
     .revisions p {
-        padding: 5px;
+        padding: 10px;
         color: #555;
         margin: 3px 0;
     }
