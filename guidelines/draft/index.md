@@ -1588,10 +1588,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">A minimum test coverage level that must be met has been defined.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
             </div>
         </div>
         <div class="criterion">
@@ -1599,10 +1595,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Continuous integration is supported – tests are automatically run whenever the source code changes.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
             </div>
         </div>
         <div class="criterion">
@@ -1610,10 +1602,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">For GUIs, project uses automated GUI test frameworks.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
             </div>
         </div>
         <div class="criterion">
@@ -1622,8 +1610,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>Project has Unit Tests where apropriate and they can be run automatically, including by a CI system.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>[SS] The original statement is ambiguous - does it refer to a coding standard such as PEP8 and is then testable with a linter or does it refer to unit testing, etc (as seen in the suggested revision)?</p>
             </div>
@@ -1643,8 +1629,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>Project has integration tests and they can be run automatically, including by a CI system.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>[SS] For scaffolding, etc, consider splitting this out into two criteria but define the relationship.</p>
             </div>
@@ -1654,10 +1638,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Project has scripts for testing scenarios that have not been automated (e.g. for testing GUIs).</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
             </div>
         </div>
         <div class="criterion">
@@ -1665,10 +1645,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original">Project has unit tests.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
             </div>
         </div>
 
@@ -1678,8 +1654,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Project recommends tools to check conformance to coding standards.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>I don't see the value of a project *recommending* tools. Either code is being tested by its developers or it isn't. Perhaps if the software in question is itself a developer tool like a language, it should recommend testing tools, but that is a very special case that doesn't seem applicable here.</p>
             </div>
@@ -1689,8 +1663,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>Project recommends tools to check test coverage.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>Maybe this applies for "Library/Module", but I would deprecate</p>
             </div>
@@ -1743,10 +1715,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>Tests create their own configuration files, database tables etc.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
             </div>
         </div>
         <div class="criterion">
@@ -1754,8 +1722,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="original deprecated"><i class="fa fa-trash fa-fw"></i>There is an automated test for this minimum test coverage level.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>Given the other notes for test coverage, deprecate.</p>
             </div>
@@ -1775,8 +1741,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project measures both conditional and line test coverage levels</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>Conditional (branch) coverage is harder to achieve but just as important as line coverage</p>
             </div>
@@ -1786,8 +1750,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Expected test results are based on verifiable criteria.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>Just executing a line of code isn't worth much unless the results or side effects are compared to verifiable expected results</p>
             </div>
@@ -1797,8 +1759,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Code is designed to support efficient testing.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>If code isn't designed with testing in mind, verifiable tests can be convoluted or impossible to write.</p>
             </div>
@@ -1808,8 +1768,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Tests use mocking technology where appropriate.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>Mocking improves the focus, performance, and flexibility of unit tests. Most importantly it supports testing conditions that occur rarely or have perhaps never been observed so far.</p>
             </div>
@@ -1819,10 +1777,37 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Tests cover exceptional conditions as well as expected behavior.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>It's just as important to test for things that are unlikely to occur as for those that are part of nominal behavior.</p>
+            </div>
+        </div>
+
+        <!-- scott -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Test suite includes tests to ensure correct permissions are maintained across the range of configurations.</p>
+            </div>
+            <div class="metadata">
+                <h4>Notes</h4>
+                <p>This is specifically for collaboration software but has been an issue in university-developed platforms (configuration options for permissions to a piece of content may result in unexpected access violations).</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>For software implementing third party integrations, those integrations are tested in the test suite.</p>
+            </div>
+            <div class="metadata">
+                <h4>Notes</h4>
+                <p>This is specifically for collaboration software.</p>
+            </div>
+        </div>
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>For software implementing third party integrations, the access needs of the integration for the software's stated purpose is clearly indicated to the user.</p>
+            </div>
+            <div class="metadata">
+                <h4>Notes</h4>
+                <p>This is specifically for collaboration software. (And is in the wrong category right now.)</p>
             </div>
         </div>
     </div> <!-- end Sustainability:Testability-->
@@ -2889,7 +2874,6 @@ For criteria categorized as "Other", all received criteria are included, as is, 
                 <p>Web App/API</p>
             </div>
         </div>
-
     </div> <!-- end Security -->
 
     <h3 id="other-preservation">Preservation/Archiving</h3>
