@@ -85,6 +85,8 @@ layout: guidelines
 ### What Are We Assessing ###
 
 
+Where possible, we are separating criteria that are related directly to activities that fall under the responsibility of the project team and those that relate to analyzing the success of some of those activities. For instance, the project provides a BibTex citation for the software (falling under project responsibilities) and altmetrics provided through an indexer provides one metric of reuse (external measure of success). Our focus is on those criteria falling under the project responsibilities as actionable, recommended practices. Criteria related to those external measures are included in [INSERT SECTION]. 
+
 
 ### What We Can't Assess ###
 
