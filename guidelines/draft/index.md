@@ -129,6 +129,7 @@ For criteria categorized as "Other", all received criteria are included, as is, 
         <li>Is the criterion (or the group) related to active development efforts or to preservation/maintenance efforts? Consider a research project lifecycle.</li>
         <li>Is the criterion or group associated with a codebase or the project information? Does it relate to code maturity or project maturity and is that clear from the statement?</li>
         <li>For any criteria directly related to code, can the criterion be applied to any codebase or software artifact or does it apply only to one (or a few) types of software, such as a plugin/extension, module/library, web application, web service, desktop application, etc?</li>
+        <li>Is the criterion *directly* related to the software/code developed for the project, eg is it the deliverable? The aim is to not assess the framework used, for example, but the plugin or customizations made explicitly for the project.</li>
     </ol>
     <p>Finally, consider the criteria in relation to a project or codebase you're familiar with. </p>
 </div>
@@ -182,16 +183,16 @@ We understand that the guidelines do not represent the entire range of recommend
                     <li><a href="#other-preservation">Preservation &amp; Archiving</a></li>
                     <li><a href="#other-credit">Credit</a></li>
                     <li><a href="#other-performance">Performance</a></li>
+                    <li><a href="#other-notebooks">Notebooks</a></li>
                 </ul>
             </li>
         </ul>
     </div>
 </div>
 
-
 <div class="guidelines">
     <h3>About the layout</h3>
-    <p></p>
+    <p>The layout used in the draft is meant to provide the first iteration of feedback for comment. </p>
 
     <div class="g-border">
         <div class="leftie">
@@ -855,6 +856,20 @@ We understand that the guidelines do not represent the entire range of recommend
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Change policies</p>
+            </div>
+        </div>
+
+        <!-- scott -->
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Source code uses semantic versioning for major and minor releases.</p>
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Contribution policy indicates project's versioning method.</p>
+            </div>
+            <div class="metadata">
+                <h4>Grouping</h4>
+                <p>Versioning</p>
+                <h4>Notes</h4>
+                <p>Related to releases, software artifacts, and milestones. </p>
             </div>
         </div>
     </div> <!-- end Sustainability:Changeability-->
@@ -3181,6 +3196,11 @@ We understand that the guidelines do not represent the entire range of recommend
             </div>
         </div>
     </div> <!-- end Performance -->
+
+    <h3 id="other-notebooks">Notebooks</h3>
+    <div class="criteria">
+        <p>Ed. note: Suggested new category given the popularity of Jupyter/iPython Notebooks (or similar systems) in research settings.</p>
+    </div>
 
 </div> <!-- end guidelines-->
 
