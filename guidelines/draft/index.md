@@ -412,8 +412,8 @@ We understand that the guidelines do not represent the entire range of recommend
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Documentation states key roles: who developed/develops the product, funds it, oversees the web site, etc.</p>
-                <p class="revision"><i class="fa fa-pencil fa-fw"></i></p>
+                <p class="original">Web site states key roles: who developed/develops the product, funds it, oversees the web site, etc.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Documentation states key roles: who developed/develops the product, funds it, oversees the web site, etc.</p>
             </div>
             <div class="metadata">
                 <h4>Notes</h4>
