@@ -29,6 +29,8 @@ layout: guidelines
 ## Background ##
 
 
+[research code as developed through a grant-funded project.]
+
 
 ### Use Cases ###
 
@@ -389,6 +391,8 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="original">If supported by the language, each source code file has a copyright statement embedded within a constant.</p>
             </div>
             <div class="metadata">
+                <h4>Notes</h4>
+                <p>Style? Is this common practice or based on language style- or project styleguides?</p>
             </div>
         </div>
         <div class="criterion">
@@ -401,15 +405,19 @@ We understand that the guidelines do not represent the entire range of recommend
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Web site states copyright.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Documentation states copyright.</p>
             </div>
             <div class="metadata">
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Web site states key roles: who developed/develops the product, funds it, oversees the web site, etc.</p>
+                <p class="original">Documentation states key roles: who developed/develops the product, funds it, oversees the web site, etc.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i></p>
             </div>
             <div class="metadata">
+                <h4>Notes</h4>
+                <p>Consider shifting to publication/credit.</p>
             </div>
         </div>
     </div> <!-- end Sustainability:Copyright-->
@@ -490,29 +498,35 @@ We understand that the guidelines do not represent the entire range of recommend
 
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Binary distributions are available (whether for free, payment, registration).</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Binary distributions are available (whether for free, payment, registration).</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Artifacts</p>
+                <h4>Notes</h4>
+                <p>Not always relevant from an OS release perspective, possibly of value for reproducibility/publication.</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Binary distributions are available without the need for any registration or authorisation of access by the project.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Binary distributions are available without the need for any registration or authorisation of access by the project.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Artifacts</p>
+                <h4>Notes</h4>
+                <p>Not always relevant from an OS release perspective, possibly of value for reproducibility/publication.</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Binary distributions are freely available.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Binary distributions are freely available.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Artifacts</p>
+                <h4>Notes</h4>
+                <p>Not always relevant from an OS release perspective, possibly of value for reproducibility/publication.</p>
             </div>
         </div>
 
@@ -683,6 +697,8 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>Source code or content repository is managed through a version control system.</p>
             </div>
             <div class="metadata">
+                <h4>Notes</h4>
+                <p>wrong category?</p>
             </div>
         </div>
         <div class="criterion">
@@ -969,6 +985,8 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="original">Developers exist who are not members of the project.</p>
             </div>
             <div class="metadata">
+                <h4>Notes</h4>
+                <p>Not always goal of project.</p>
             </div>
         </div>
         <div class="criterion">
@@ -1055,6 +1073,8 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="original">Governance policy is publicly available.</p>
             </div>
             <div class="metadata">
+                <h4>Notes</h4>
+                <p>Only if relevant (define when for this).</p>
             </div>
         </div>
 
@@ -1119,6 +1139,8 @@ We understand that the guidelines do not represent the entire range of recommend
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Branding</p>
+                <h4>Notes</h4>
+                <p>Conflicts with next criteria.</p>
             </div>
         </div>
         <div class="criterion">
@@ -1128,24 +1150,30 @@ We understand that the guidelines do not represent the entire range of recommend
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Branding</p>
+                <h4>Notes</h4>
+                <p>First page results is not controllable by research group - revise statements related to name.</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Project/product/software has a logo.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Project/product/software has a logo.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Branding</p>
+                <h4>Notes</h4>
+                <p>This is difficult to justify for research code.</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Project/product/software has its own domain name.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Project/product/software has its own domain name.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Basic</p>
+                <h4>Notes</h4>
+                <p>This is difficult to justify for research code and may not be possible due to institutional constraints.</p>
             </div>
         </div>
         <div class="criterion">
@@ -1159,22 +1187,24 @@ We understand that the guidelines do not represent the entire range of recommend
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Project/product/software name does not violate an existing trade-mark.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Project/product/software name does not violate an existing trade-mark.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Basic</p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>This is difficult to justify for research code.</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Project/product/software name is trade-marked.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Project/product/software name is trade-marked.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Advanced</p>
+                <h4>Notes</h4>
+                <p>This is difficult to justify for research code.</p>
             </div>
         </div>
     </div> <!-- end Sustainability:Identity -->
@@ -1281,11 +1311,14 @@ We understand that the guidelines do not represent the entire range of recommend
             <div class="metadata">
                 <h4>Application</h4>
                 <p>Code</p>
+                <h4>Notes</h4>
+                <p>Not always relevant.</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Web site states applicable licences.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Documentation states applicable licences.</p>
             </div>
             <div class="metadata">
                 <h4>Application</h4>
@@ -1903,14 +1936,9 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="original">All mandatory third-party dependencies or external references are currently available.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Is this evaluatable by an external evaluator (in a timely fashion at least)?</p>
+                <p>Not controllable by project</p>
             </div>
         </div>
         <div class="criterion">
@@ -1918,14 +1946,8 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="original">All optional third-party dependencies or external references are currently available.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Not controllable by project</p>
             </div>
         </div>
         <div class="criterion">
@@ -1934,14 +1956,6 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>An automated build (e.g. Make, ANT, Maven, Gradle, or other language-specific build tool) is used to build any software.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -1949,15 +1963,9 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Dependency management is used to automatically download dependencies (e.g. ANT, Ivy, Maven or custom solution).</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>This is generally not an option for non-Java compiled code. However, there is a related idea for C and C++...</p>
-                <!-- add note for things like python requirements.txt (pip, etc) and update language to refer more broadly to non-Java situations. -->
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Python's pip requirements, ruby has implementations... SO a more general statement is viable.</p>
             </div>
         </div>
         <div class="criterion">
@@ -1965,14 +1973,6 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="original">Source distributions have instructions for building corresponding software.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <!-- gallagher -->
@@ -1981,14 +1981,8 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Code follows the GNU software guidlines and uses README, NEWS, INSTALL and COPYING files to describe the package (INSTALL includes the build information this case).</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
                 <p>related to previous statement.</p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <!-- end gallagher -->
@@ -1998,14 +1992,8 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="original">Source distributions list all third-party dependencies that are not bundled, along with web addresses, suitable versions, licences and whether these are mandatory or optional.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Not sure this full set of things is common. Version yes, but the rest?</p>
             </div>
         </div>
         <div class="criterion">
@@ -2013,14 +2001,6 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="original">Tests are provided to verify the build or distribution has succeeded, or service/information is presented as intended.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2028,14 +2008,8 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="original">Web site has instructions for building the product.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Not always applicable [unknown revision here]</p>
             </div>
         </div>
         <div class="criterion">
@@ -2043,14 +2017,8 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="original">Web site lists all third-party dependencies that are not bundled, along with web addresses, suitable versions, licences and whether these are mandatory or optional.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
                 <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
+                <p>Not sure this full set of things is common. Version yes, but the rest?</p>
             </div>
         </div>
 
@@ -2060,14 +2028,6 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Binary and source packages reference thrid-party code (including the acceptable versions) so that commonly-used tools (e.g., yum, apt-get) will automaticlly fetch those source/binary packages</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2075,14 +2035,6 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project uses build tools (e.g. automake, etc.) in a way that integrates with linux distro packager's expectations so they can/will build packages for public repos.</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
         <div class="criterion">
@@ -2090,14 +2042,6 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>Project supports common/standard (ad hoc) binary packaing tools (e.g., RPM, python egg). This means that a 'buildable' package provides binaries (or the equivalent) so that it can simply be installed and does not have to be built!</p>
             </div>
             <div class="metadata">
-                <h4>Grouping</h4>
-                <p></p>
-                <h4>Notes</h4>
-                <p></p>
-                <h4>References</h4>
-                <p><a href="#"></a></p>
-                <h4>Similar Criteria</h4>
-                <p><a href="#"></a></p>
             </div>
         </div>
 
@@ -2167,13 +2111,13 @@ We understand that the guidelines do not represent the entire range of recommend
 
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Does not use terms like “intuitive”, “user friendly”, “easy to use”, “simple” or “obviously”, unless as part of quotes from satisfied users.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Does not use terms like “intuitive”, “user friendly”, “easy to use”, “simple” or “obviously”, unless as part of quotes from satisfied users.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Style</p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>Request to remove style (writing style) criteria.</p>
             </div>
         </div>
         <div class="criterion">
@@ -2197,6 +2141,7 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p>Repo Doc style</p>
                 <h4>Notes</h4>
                 <p>So markdown or reStructuredText but keeping it open to new "flavors".</p>
+                <p>Request to remove style (writing style) criteria.</p>
             </div>
         </div>
 
@@ -2247,7 +2192,7 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p>Doc Management</p>
                 <h4>Notes</h4>
                 <p>Code and documentation can be separated.</p>
-                <p>Consensus for documentation that is hosted by the project or that is hosted on some third-party site such as Read The Docs.</p>
+                <p>Consensus for documentation that is hosted by the project or that is hosted on some third-party site such as Read The Docs but it is not always on the project website.</p>
             </div>
         </div>
         <div class="criterion">
@@ -2258,7 +2203,7 @@ We understand that the guidelines do not represent the entire range of recommend
                 <h4>Grouping</h4>
                 <p>Doc Management</p>
                 <h4>Notes</h4>
-                <p></p>
+                <p>Request to remove - not relevant in this location.</p>
             </div>
         </div>
         <div class="criterion">
@@ -2377,13 +2322,14 @@ We understand that the guidelines do not represent the entire range of recommend
             <div class="revisions">
                 <p class="original">Uses teletype-style fonts for command line inputs and outputs, source code fragments, function names, class names etc.; uses appropriately styled fonts for key information and special terms or links.</p>
                 <p class="revision"><i class="fa fa-pencil fa-fw"></i>Documentation follows commmon styles for displaying code blocks.</p>
-                <p class="revision added"><i class="fa fa-pencil fa-fw"></i>Documentation clearly distinguishses between input and output blocks.</p>
+                <p class="revision added"><i class="fa fa-pencil fa-fw"></i>Documentation clearly distinguishes between input and output blocks.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>(Style?)</p>
                 <h4>Notes</h4>
                 <p>If nothing else, code blocks or inline snippets are rendered with monospaced fonts (which is the searchable term in most font browsers).</p>
+                <p>Request to remove style (writing style) criteria.</p>
             </div>
         </div>
 
@@ -2578,6 +2524,7 @@ We understand that the guidelines do not represent the entire range of recommend
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Web site lists all third-party dependencies and external references that are not bundled, along with (as appropriate) web addresses, suitable versions, licences and whether these are mandatory or optional.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Documentation lists all third-party dependencies and external references that are not bundled, along with (as appropriate) web addresses, suitable versions, licences and whether these are mandatory or optional.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -2591,6 +2538,8 @@ We understand that the guidelines do not represent the entire range of recommend
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Dependencies</p>
+                <h4>Notes</h4>
+                <p>Not controllable.</p>
             </div>
         </div>
         <div class="criterion">
@@ -2600,6 +2549,8 @@ We understand that the guidelines do not represent the entire range of recommend
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Dependencies</p>
+                <h4>Notes</h4>
+                <p>Not controllable.</p>
             </div>
         </div>
         <div class="criterion">
@@ -2609,11 +2560,14 @@ We understand that the guidelines do not represent the entire range of recommend
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Dependencies</p>
+                <h4>Notes</h4>
+                <p>May not apply to all software types - suggest applicable types.</p>
             </div>
         </div>
         <div class="criterion">
             <div class="revisions">
                 <p class="original">Binary distributions list all third-party dependencies and external references that are not bundled, along with (as appropriate) web addresses, suitable versions, licences and whether these are mandatory or optional.</p>
+                <p class="revision"><i class="fa fa-pencil fa-fw"></i>Binary distributions identify all third-party dependencies and external references that are not bundled, along with (as appropriate) web addresses, suitable versions, licences and whether these are mandatory or optional.</p>
             </div>
             <div class="metadata">
                 <h4>Grouping</h4>
@@ -2667,6 +2621,8 @@ We understand that the guidelines do not represent the entire range of recommend
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Installation</p>
+                <h4>Notes</h4>
+                <p>Questioned "web site" as appropriate location for this info - likelier, if project website for example, to get out of date.</p>
             </div>
         </div>
         <div class="criterion">
@@ -2676,6 +2632,8 @@ We understand that the guidelines do not represent the entire range of recommend
             <div class="metadata">
                 <h4>Grouping</h4>
                 <p>Installation</p>
+                <h4>Notes</h4>
+                <p>Style question. Request to remove.</p>
             </div>
         </div>
         <!-- kokkonen -->
@@ -2721,6 +2679,8 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="original">When an archive (e.g. TAR.GZ or ZIP) is unpacked, it creates a single directory with the files within. It does not spread its contents all over the current directory.  </p>
             </div>
             <div class="metadata">
+                <h4>Notes</h4>
+                <p>Style question. Request to remove.</p>
             </div>
         </div>
 
@@ -2729,6 +2689,16 @@ We understand that the guidelines do not represent the entire range of recommend
                 <p class="original">Uninstallers exist, and uninstall every file or warns user of any files that were not removed and where these are.</p>
             </div>
             <div class="metadata">
+            </div>
+        </div>
+
+        <div class="criterion">
+            <div class="revisions">
+                <p class="revision added"><i class="fa fa-plus-circle fa-fw"></i>[Recommended installation is not through curl/wget to an uncontrolled resource.]</p>
+            </div>
+            <div class="metadata">
+                <h4>Notes</h4>
+                <p>Not uncon=mmon to see this as the installation procedure in GitHub repos so some statement might be appropriate.</p>
             </div>
         </div>
     </div> <!-- end Usability:Installabilty-->
@@ -2752,16 +2722,12 @@ We understand that the guidelines do not represent the entire range of recommend
         </div>
         <div class="criterion">
             <div class="revisions">
-                <p class="original">Instructions are provided for many basic use cases.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Instructions are provided for many basic use cases.</p>
+                <p class="original questioned"><i class="fa fa-warning fa-fw"></i>Instructions are provided supporting all use cases.</p>
             </div>
             <div class="metadata">
-            </div>
-        </div>
-        <div class="criterion">
-            <div class="revisions">
-                <p class="original">Instructions are provided supporting all use cases.</p>
-            </div>
-            <div class="metadata">
+                <h4>Notes</h4>
+                <p>Redundant (relies on some understanding of "basic use case".</p>
             </div>
         </div>
         <div class="criterion">
@@ -3227,6 +3193,7 @@ Project lifecycle
     <li>Kokkonen, Kim (LASP)</li>
     <li>Elliott, Joshua (LASP)</li>
     <li>Bowe, Ryan ()</li>
+    <li>Chris Pankratz (LASP)</li>
 </ul>
 
 ## References ##
