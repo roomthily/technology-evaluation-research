@@ -117,7 +117,7 @@ For new catergories or concepts, we believe that is important to include criteri
 
 [Define the ESIP Core requirements]
 
-[Define the binning, etc]
+
 
 **The Draft Process**
 
@@ -2443,7 +2443,7 @@ We understand that the guidelines do not represent the entire range of recommend
                 <h4>Notes</h4>
                 <p>Accessibility</p>
                 <h4>References</h4>
-                <p><a href="#"></a>https://www.w3.org/standards/webdesign/accessibility, WCAG, Section 508</p>\
+                <p><a href="#"></a>https://www.w3.org/standards/webdesign/accessibility, WCAG, Section 508</p>
             </div>
         </div>
         <div class="criterion">
