@@ -25,6 +25,8 @@ layout: guidelines
 - To provide assessment guidelines effective for a range of stakeholders, from funders to individual researchers.
 - To develop guidelines structured to reflect good code practices [THIS PHRASE IS NOT GREAT] and incorporating features related to research code requirements.
 
+principles -> criteria -> guidance
+
 
 ## Background ##
 
@@ -34,7 +36,7 @@ layout: guidelines
 
 ### Use Cases ###
 
-
+note about data facility and other research group configurations - the variety in development configurations and the need to support all of those in actionable ways. 
 
 <table class="use_cases">
     <thead>
@@ -108,6 +110,8 @@ The guidelines described in this document are, in large part, based on previous 
 The subcategories are taken from the ISO 9126 [REF] and definitions are provided [here]({{ site.baseurl }}/guidelines/categories).
 
 For new catergories or concepts, we believe that is important to include criteria here, even if the concept is not fully captured. ---something about starting places, living document, important to make those visible, if you will, so that they can be discussed and improved on.
+
+Where possible, we defer (and refer) to common software development practices.
 
 
 - revisions for currentness and to reflect ESIP's goals related to education and mentorship
