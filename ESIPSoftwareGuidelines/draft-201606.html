@@ -1,0 +1,995 @@
+---
+layout: guidelines
+title: "ESIP Software Guidelines (Draft June 2016)"
+---
+
+<p id="h.7nzd33k2plcx" class="c1 c2 c13 title">&nbsp;</p>
+<p id="h.6rttn4epaywi" class="c1 c13 title">ESIP Software Guidelines</p>
+
+
+<p class="c1">Editors: Soren Scott</p>
+
+<p class="c1">Abstract:</p>
+
+
+
+<p class="c1">IN DRAFT June-July 2016</p>
+<hr />
+
+<ul>
+    <li><a href="#h.46uewrp95kfe">Introduction</a></li>
+    <li><a href="#h.rtkadvvyvaul">Research Software Projects</a></li>
+    <li><a href="#h.6bi4jecr96n">Community and Stakeholders</a></li>
+    <li><a href="#h.jto1fyx4wiqs">Guidelines</a>
+        <ul>
+            <li><a href="#h.jc42b2hcl6wm">Sustainable Code</a>
+                <ul>
+                    <li><a href="#h.w7q3addxbtzy">Clean, standardized code</a>
+                        <ul>
+                            <li><a href="#h.pt7zrmqte23n">The codebase is well-structured and consistently structured.</a></li>
+                            <li><a href="#h.tekrxe5wegtn">Code follows the language&rsquo;s recommended style guide or the research group&rsquo;s style guide.</a></li>
+                            <li><a href="#h.1zkmnhg3e5oe">Conformance to the style is verified using a linter.</a></li>
+                            <li><a href="#h.xacmpjv4c3t">Linting is included during automated testing.</a></li>
+                            <li><a href="#h.n0j2lapycvbr">Errors and exception handling follows recommends practices for the language used.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#h.g8dldwawc4gi">Versioned code</a>
+                        <ul>
+                            <li><a href="#h.2tdya1yrzmc6">Source code is maintained in a version control system (VCS).</a></li>
+                            <li><a href="#h.6c0j1lpk4dir">Source code uses a versioning scheme.</a></li>
+                            <li><a href="#h.huu50eug1a5f">Source code uses tagged releases.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#h.tlmgsr2d8yip">Buildable or Installable</a>
+                        <ul>
+                            <li><a href="#h.dxcrxyr9q443">Source code includes build scripts to automate builds.</a></li>
+                            <li><a href="#h.v88x0wfkpugl">Scripts or configurations are provided for creating binary installers.</a></li>
+                            <li><a href="#h.hi3h4uzdhzde">For desktop GUIs, provide an installer.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#h.hlj4s6z7m6fe">Tested</a>
+                        <ul>
+                            <li><a href="#h.r7veqzthne4v">Source code includes unit and integration tests.</a></li>
+                            <li><a href="#h.qfvkud70t782">Tests limit dependence on external services where possible.</a></li>
+                            <li><a href="#h.vekc78g7nqxx">Testing is automated through a continuous integration system.</a></li>
+                            <li><a href="#h.66jeksgqtmig">For web applications, include automated GUI testing.</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#h.k8wt6ghlvp2k">Interoperable</a>
+                <ul>
+                    <li><a href="#h.jdkbivybsbw3">For data services</a>
+                        <ul>
+                            <li><a href="#h.jwbj4ujf85sn">Applications, desktop or web-based, supports community data standards for inputs and outputs.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#h.9c8tsx28txfx">For Semantic Services</a></li>
+                </ul>
+            </li>
+            <li><a href="#h.j3o37luj1lmk">Usable</a>
+                <ul>
+                    <li><a href="#h.jf59v21hi69u">Software has a clear, understandable interface.</a>
+                        <ul>
+                            <li><a href="#h.6foli2yv92b3">For software with a visual interface, such as a desktop GUI, plugin/extension or web application, the interface provides a clean and clear layout.</a></li>
+                            <li><a href="#h.tvmzy7swlrrs">For web applications or any software accepting user inputs, Unicode is well-supported throughout the system.</a></li>
+                            <li><a href="#h.qxz6nnr14i6e">For web applications, the application implements responsive design, ie. support for multiple screen sizes.</a></li>
+                            <li><a href="#h.ga5mu41sst4w">For web applications, the application adheres to progressive enhancement practices.</a></li>
+                            <li><a href="#h.42fc5mhfrgk0">For web applications, the interface follows established guidelines for web accessibility.</a></li>
+                            <li><a href="#h.fdfrt2xf1lu2">For web applications, support current browser versions.</a></li>
+                            <li><a href="#h.vft1b61bp3vj">For a web service, the API is RESTful or follows a known community standard or specification.</a></li>
+                            <li><a href="#h.1gxhk9ppul8o">For collaboration tools, ensure that the interface design does not encourage sensitive information leaks.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#h.7mb3s9l49d19">Software is performant and stable.</a>
+                        <ul>
+                            <li><a href="#h.nwh0jy5c06kn">Documentation describes the current development status.</a></li>
+                            <li><a href="#h.mpxwzayw9bzb">For web applications or web services, the documentation or project website includes service level qualities.</a></li>
+                            <li><a href="#h.1z1daqwsh16q">For web applications and web services, systems are monitored.</a></li>
+                            <li><a href="#h.l9dc6388w79f">For high performance computing, GPU or other cluster-based software, the project provides basic benchmarking statistics.</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#h.278bwz69j1fc">Documented</a>
+                <ul>
+                    <li><a href="#h.qlvssx94m25r">Source code is documented.</a>
+                        <ul>
+                            <li><a href="#h.muhqkex415r9">Source code comments use a standard comment style, related to the selected style guide or language or related to a document generation tool.</a></li>
+                            <li><a href="#h.ycrdao5dntt5">API documentation is automatically generated.</a></li>
+                            <li><a href="#h.4nph8cwunjf5">The documentation describes how to automatically generate the documentation.</a></li>
+                            <li><a href="#h.tq0ajo5926em">API Documentation is versioned.</a></li>
+                            <li><a href="#h.gjmwihq5i3uk">The codebase includes documentation to support adoption and reuse.</a></li>
+                            <li><a href="#h.eyumqunuhqwt">The source code repository is documented using plain text file formats.</a></li>
+                            <li><a href="#h.jo1cauupk7qk">The build procedure or installation process is described.</a></li>
+                            <li><a href="#h.4pnm2fq7ygzv">The documentation describes how to execute the test suite.</a></li>
+                            <li><a href="#h.6qp4s0y7ha51">The versioning scheme is described.</a></li>
+                            <li><a href="#h.csa26k8fwk2r">Release notes or changelogs are provided for each release.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#h.90q5gnajhkbj">Software is documented.</a>
+                        <ul>
+                            <li><a href="#h.5wf9rcv7ts53">Any Documentation</a></li>
+                            <li><a href="#h.m7qbd04yq214">User documentation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#h.gqpohaprkcbq">Project is documented.</a></li>
+                </ul>
+            </li>
+            <li><a href="#h.kevi2ogx4kct">Secure</a>
+                <ul>
+                    <li><a href="#h.c0ntdoo6m887">Source code, including automation configurations and scripts, have been sanitized for public release.</a></li>
+                    <li><a href="#h.bwddr3yneyvr">For web applications and services, software follows industry recommendations for secure practices.</a></li>
+                    <li><a href="#h.2qasdya4g2dq">For any code or software system, follow the recommended security practices for each system component.</a></li>
+                    <li><a href="#h.v4eyawiuk7gf">Keep systems and dependencies up-to-date.</a></li>
+                    <li><a href="#h.wcbbon9uy2j6">Collaborative platforms include tests for permissions and integrations.</a></li>
+                    <li><a href="#h.ltbzsn7tud66">Containers follow recommended practices for security.</a></li>
+                </ul>
+            </li>
+            <li><a href="#h.j3cd3qemat79">Sharable</a>
+                <ul>
+                    <li><a href="#h.hhtvml7dyjhk">Source code is licensed.</a></li>
+                    <li><a href="#h.561dz5rrclj0">Source code includes configurations for automated systems.</a></li>
+                    <li><a href="#h.oofsvittp0hd">Project name is discoverable.</a></li>
+                </ul>
+            </li>
+            <li><a href="#h.1ogf2zcgktnr">Governed</a>
+                <ul>
+                    <li><a href="#h.qderu9pnkzxc">Contribution policies are provided.</a>
+                        <ul>
+                            <li><a href="#h.j2u8c0tf34q2">For any project, describe the workflow used by the project for contributions to the source code (or other versioned items).</a></li>
+                            <li><a href="#h.ns2tcmg58ars">For any project, describe commit message, pull request, and issue preferences.</a></li>
+                            <li><a href="#h.p0kh0cpf78eq">For any project, define the code review process.</a></li>
+                            <li><a href="#h.ffvx3h4l2hb7">For open source projects, provide a code of conduct or state clear expectations of behavior and communication.</a></li>
+                            <li><a href="#h.oy3ktoh4p9gb">For open source projects, provide guidelines about what contributions will or will not be accepted.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#h.b4mxlh97r1ja">Development activities are transparent.</a>
+                        <ul>
+                            <li><a href="#h.foxopgq1esv4">Development activities are managed through an issue tracker or similar software.</a></li>
+                            <li><a href="#h.l1vbrrmurts7">Project provides support mechanism(s).</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#h.nag33fat6sc8">Code as Research Objects</a>
+                <ul>
+                    <li><a href="#h.tk3e9fopeigk">Publication and Citation</a>
+                        <ul>
+                            <li><a href="#h.hhhoi02ps8tb">Software, as binaries and source code, are published to a sustainable third-party repository.</a></li>
+                            <li><a href="#h.42ni1tsctkct">Documentation includes citation details.</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#h.pzfz7hkzxqus">Preservation/Archiving</a></li>
+                    <li><a href="#h.rdevd43xfrh4">Credit</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#h.g3e5ybizjqjh">Progression, Sustainability and Reusability</a></li>
+    <li><a href="#h.qyi0cpttkurs">Contributors</a></li>
+    <li><a href="#h.btnzoj6jjto1">References and Bibliography</a></li>
+</ul>
+
+<hr />
+
+<h1 id="h.46uewrp95kfe" class="c1 c13">Introduction</h1>
+<p class="c1">This work builds on the criteria developed by the <span class="c4"><a class="c7" href="http://software.ac.uk/sites/default/files/SSI-SoftwareEvaluationCriteria.pdf">Software Sustainability Institute</a></span>&nbsp;(Jackson et al. 2011) and its application, and expansion, in an evaluation framework, developed through ESIP in collaboration with NASA AIST, to verify <span class="c4"><a class="c7" href="https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html">Technology Readiness Levels</a></span>&nbsp;(TRL, NASA 2012) in 2015. The framework was used during a <span class="c4"><a class="c7" href="http://testbed.esipfed.org/sites/default/files/2015_AIST_Evaluations_Overview.pdf">pilot evaluation effort</a></span>&nbsp;(Burgess 2016, Graybeal 2016) over the course of that autumn.</p>
+
+<p class="c1">Community discussions around the criteria and ESIP&rsquo;s larger interest in assessment as a mentoring activity, instead of a verification activity, led to this effort to revise the assessment criteria to better fit with those education goals as well as certain structural concerns with the existing criteria.</p>
+<h3 id="h.3qhixgp3adkd" class="c1 c13">Goals of this Document</h3>
+<ol class="c28 lst-kix_shfd0z5borlh-0 start" start="1">
+<li class="c1 c18 c22">Describe research software project stages and relationships between code and project maturity.</li>
+<li class="c1 c22 c18">Provide guidance and resources that are relevant across stakeholders and types of research groups.</li>
+<li class="c1 c22 c18">Provide guidance and resources that are relevant for any type of research software or code or specific guidance when warranted.</li>
+</ol>
+
+<p class="c1">The guidance outlined here is intended intended to cover a broad range of research software concept.</p>
+<h1 id="h.rtkadvvyvaul" class="c1 c13">Research Software Projects</h1>
+
+<p class="c1">The guidance developed here is intended for any research software or research code output or deliverable. We are looking beyond the traditional understanding of &ldquo;science code&rdquo; to consider any code developed through a grant funding mechanism. These codes may not directly speak to a science outcome; however, they are valuable when considered more broadly for provenance, for reusability and reproducibility.</p>
+<h1 id="h.ffek4s7uaw6w" class="c1 c13"><span><img title="" src="images/image00.png" alt="" /></span><sup><a id="cmnt_ref1" href="#cmnt1">[a]</a></sup></h1>
+<p class="c1">Figure XX. Research Funding Lifecycles. &nbsp;</p>
+
+<p class="c1">Figure XX provides an idealized overview of research grant funding as it relates to software project lifecycles. It is not intended to describe the complete funding landscape or the variety of ways a research software project could be positioned along a funding or maturity progression. For the purposes of this document and the guidance provided, we are noting the expectations of project or code maturity and the expectations of what is appropriate to assess along those progressions based on those maturity expectations.</p>
+
+<p class="c1">Note that Fig. XX does not include maturity levels. Code maturity and project maturity, identified as some set of characteristics or through longevity, are not linear. A project can start with a high level of code maturity in an initial proof of concept phase. Project maturity, often presented as governance patterns similar to traditional open source projects, is the same. And improvements in both can occur within the lifespan of a single grant rather than through a series of grants. Here we see a potential mismatch between how &nbsp;funding agency may assess and categorize a project and the realities of developing software. Nor does it address mismatches between maturity, of either kind, and the focus on project growth through new research or feature implementations to meet research goals or the realities of software meeting community needs without necessarily meeting code/project maturity goals. These maturity markers are indicators of project health that we strongly support but not to the detriment of the larger goals of providing product that meets a community need and is adopted.</p>
+
+<p class="c1">As diverse as research software projects are, there are two overarching categories<sup><a id="cmnt_ref2" href="#cmnt2">[b]</a></sup>: code/software intentionally developed for reusability and adoption and code/software developed for highly specific project needs. Neither option negates the recent requirements for openness; however, the methods for achieving those requirements and expectations around code or project maturity are different. The guidance here outlines the community recommendations for openness to support both categories. For projects developing code or software not intended for reuse and adoption, the focus for assessment is on code maturity, documentation and preservation or publication. We should note, as well, &ldquo;not intended&rdquo; reflects stated project milestones, sustainability and community engagement activities per the funded proposal.</p>
+
+<p class="c1">We are focused here on code/software developed by a research group. For the purposes of assessment, we exclude software products reused by a research group from discussions of code maturity assessment while noting its value in assessing project maturity. Or, more specifically, we support a research group&rsquo;s decision to reuse a current, outcome-appropriate technology over reimplementing a similar technology but do not consider the reused technology an assessment target itself. A simple example is developing modules for an existing web publication framework instead of developing a new framework.</p>
+
+<p class="c1">Related, should a project employ an existing technology to support the publication or release of a research object that is not code or software, that technology again would not be considered during the assessment of the research software or code. A very broad example of this would be developing datasets and providing those publicly through ESRI&rsquo;s ArcOnline platform. A project assessment would consider the datasets but not ArcOnline in this case. However, guidance for quality and maturity for other research object types, such as datasets or ontologies, is beyond the scope of this document.</p>
+
+<p class="c1">Analytics and altmetrics are including here to highlight two aspects of analytics for assessment. First, projects at different stages of the lifecycle are characterized by different outcomes and those outcomes may not occur within a specific funding period. Second, we are focusing our guidance on those activities that are actionable by a research group to meet their maturity goals. The success of these activities may be, at least in part, demonstrated through analytics and altmetrics. Understanding how those metrics relate to the funding cycle timelines is necessary before including these in an assessment process focused on activities within a cycle. We suggest caution, then, in when and what is being measured in these areas without further research<sup><a id="cmnt_ref3" href="#cmnt3">[c]</a></sup>.</p>
+
+<h1 id="h.6bi4jecr96n" class="c1 c13">Community and Stakeholders</h1>
+
+<p class="c1">Our focus on assessment for guided educational activities as well as assessment for verification encompasses a wide range of stakeholders. Table XX outlines the main stakeholder communities and related use cases.</p>
+
+<p class="c1">Table XX. Stakeholder Use Cases</p>
+<p><a id="t.30141a4c1e6eea3239842046ea026ebd88d9a690"></a><a id="t.0"></a></p>
+<table class="c32 use_cases">
+    <thead>
+        <tr class="c15">
+<th class="c30" colspan="1" rowspan="1">
+<p class="c1 c24"><span class="c17 c3 c31">Stakeholder</span></p>
+</th>
+<th class="c20" colspan="1" rowspan="1">
+<p class="c24 c1"><span class="c31 c17 c3">Use Case</span></p>
+</th>
+<th class="c5" colspan="1" rowspan="1">
+<p class="c24 c1"><span class="c31 c17 c3">Outcome</span></p>
+</th>
+</tr>
+    </thead>
+<tbody>
+<tr class="c15">
+<td class="c30" colspan="1" rowspan="1">
+<p class="c10 c1"><span class="c14 c3">Funder</span></p>
+</td>
+<td class="c20" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">As a funding agency, we're interested in evaluating the software projects we fund.</span></p>
+</td>
+<td class="c5" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">A functional evaluation system based on accepted metrics.</span></p>
+</td>
+</tr>
+<tr class="c15">
+<td class="c30" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">Project Manager, Principal Investigator (manager in practice)</span></p>
+</td>
+<td class="c20" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">As a manager, I&rsquo;m interested in using the rubric/progression as a learning tool to help improve the development practices in my research group.</span></p>
+</td>
+<td class="c5" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">A checklist or informal assessment to help the research group meet funder's expectations and to determine next steps for training or related activities in the research group.</span></p>
+</td>
+</tr>
+<tr class="c15">
+<td class="c30" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">Principal Investigator</span></p>
+</td>
+<td class="c20" colspan="1" rowspan="1">
+<p class="c10"><span class="c3 c14">As a PI, I would like a tool to assess our progress and ensure we&rsquo;re meeting our funder&rsquo;s expectations for a software project based on the readiness level stated in the original proposal and as defined by the funder.</span></p>
+</td>
+<td class="c5" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">A checklist or informal assessment to help the research group meet funder's expectations (or participate in a formal assessment) and to determine next steps for training or related activities in the research group.</span></p>
+</td>
+</tr>
+<tr class="c15">
+<td class="c30" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">Science Software Developer, Researcher Who Codes</span></p>
+</td>
+<td class="c20" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">As a science software developer, I&rsquo;m interested in using the recommended practices to improve my own workflow and skillsets.</span></p>
+</td>
+<td class="c5" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">A checklist or mentoring activity to help guide me towards training options to meet my research goals and skillsets.</span></p>
+</td>
+</tr>
+<tr class="c15">
+<td class="c30" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">Developer</span></p>
+</td>
+<td class="c20" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">As a developer, I would like community-supported guidelines to support requests to change our current dev team practices.</span></p>
+</td>
+<td class="c5" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">A checklist or informal assessment to encourage my manager or PI to allow the development team to adopt appropriate practices.</span></p>
+</td>
+</tr>
+<tr class="c15">
+<td class="c30" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">Grad Student, Post-Doc, Researcher interested in continuing code education</span></p>
+</td>
+<td class="c20" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">I&rsquo;ve taken the introductory courses and want to continue to improve my skills but don&rsquo;t know good next steps. I&rsquo;d like guidance on next steps given my skillset.</span></p>
+</td>
+<td class="c5" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">A checklist or mentoring activity to help guide me towards training options to meet my research goals and skillsets.</span></p>
+</td>
+</tr>
+<tr class="c15">
+<td class="c30" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">Research Community</span></p>
+</td>
+<td class="c20" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">We want to provide educational materials or other support for community members to meet their goals re: research software implementation and career growth.</span></p>
+</td>
+<td class="c5" colspan="1" rowspan="1">
+<p class="c10"><span class="c14 c3">Develop and maintain guidelines for technology assessment and the framework for using those as educational tools.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<p class="c1">We must also understand that the research software projects are undertaken by a variety of research groups with varying degrees of resources available. These range from well-supported institutions with dedicated developer teams to PIs with only part-time developer support or small teams of graduate students. And team members have varying levels of experience related to software development. With that understanding, we have structured the guidance to provide worthwhile and concrete actions to improve development practices for both code and project maturity within a research group&rsquo;s current resource limitations. &nbsp;</p>
+<h1 id="h.jto1fyx4wiqs" class="c1 c13">Guidelines</h1>
+<p class="note"><span class="c19">NOTE: Although we outlined several stakeholders, we are focusing on developing guidelines that are accessible to principle investigators as the stakeholder group serving as intermediaries between funding agency requirements and project participants. As such, we are intentionally providing current examples and current terminology in the guidance. Removing that terminology can obscure the concept that hinders readers from searching for and finding relevant information. It is our opinion that this does not serve any of the stakeholders well. </span></p>
+
+<p class="c1">The guidance section is structured around high-level themes, principles in support of those themes and more detailed guidance and references. Where possible, we refer to current industry or research community practices and recommendations. Research code, in itself, is not special as code; however, as an artifact of research funding, it comes with additional burdens for supporting reproducibility, publication and preservation. &nbsp;</p>
+
+<p class="c1">Some aspects of code or project maturity may not relate to every type of software or code activity. Table XX describes the software types we considered when developing these guidelines. Where necessary, additional guidance is provided for a specific type if the general guidance neglects some aspect important for that software type.</p>
+
+<p class="c1">Table XX. Code and Software Categories.</p>
+<p><a id="t.fbca55f2541b17cd21a7205d5f8d35fc5dd5fc6f"></a><a id="t.1"></a></p>
+<table class="c32 use_cases">
+    <thead>
+        <tr class="c15">
+<th class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c27 c17 c3">Software Type</span></p>
+</th>
+<th class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c17 c3 c27">Description</span></p>
+</th>
+</tr>
+    </thead>
+<tbody>
+
+<tr class="c15">
+<td class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c12 c3">Processing scripts</span></p>
+</td>
+<td class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c12 c3">Code developed for one-off processing or other project-specific activities, not generally intended for adoption and reuse.</span></p>
+</td>
+</tr>
+<tr class="c15">
+<td class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c12 c3">Notebooks*</span></p>
+</td>
+<td class="c16" colspan="1" rowspan="1">&nbsp;</td>
+</tr>
+<tr class="c15">
+<td class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c12 c3">Module/library/command line interface (CLI)</span></p>
+</td>
+<td class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c12 c3">Packaged or buildable codebase, usually serving a specific purpose, often intended for adoption and reuse.</span></p>
+</td>
+</tr>
+<tr class="c15">
+<td class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c12 c3">Plugin/extension</span></p>
+</td>
+<td class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c12 c3">Packaged or installable software provided as a component of another piece of software.</span></p>
+</td>
+</tr>
+<tr class="c15">
+<td class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c12 c3">Desktop Application (GUI)</span></p>
+</td>
+<td class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c12 c3">Installable software developed for use on a desktop with a visual interface.</span></p>
+</td>
+</tr>
+<tr class="c15">
+<td class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c12 c3">Web Application</span></p>
+</td>
+<td class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c12 c3">Software deployed to a web server with functionality provided through a visual interface.</span></p>
+</td>
+</tr>
+<tr class="c15">
+<td class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c3 c12">Web Service</span></p>
+</td>
+<td class="c16" colspan="1" rowspan="1">
+<p class="c8"><span class="c12 c3">Software deployed to a web server, providing data access or other functionality through a Web API.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p class="note_small"><span class="c3">* Notebooks are often not code products and can serve as documentation, for example. As such, guidance is included pertaining to notebooks in those secondary roles.</span></p>
+
+<p class="c1">The guidance provided below strives to be language- and platform-agnostic. Wherever possible, the examples provided are not an endorsement of a language or product and are intended solely as examples of the larger concept.</p>
+
+<p class="c1">Finally, while we strongly support open science and the principles of accessibility, reproducibility and preservation of research software and code, we recognize the need to remain open to the resource limitations, experience and differing needs of the community. Choice of language, choice of platform, choice of tools &mdash; these are driven by the specific research and community needs rather than any dogmatic adherence to a particular philosophy.</p>
+<h2 id="h.jc42b2hcl6wm" class="c1 c13">Sustainable Code</h2>
+<p class="c1">Sustainable code deals with the characteristics that make source code maintainable over time and as contributors to it change. &nbsp;</p>
+<h3 id="h.w7q3addxbtzy" class="c1 c13">Clean, standardized code</h3>
+<h4 id="h.pt7zrmqte23n" class="c1 c13">The codebase is well-structured and consistently structured.</h4>
+<p class="c1">At its most basic, this simply means that text of the code is formatted in a clean and consistent manner throughout the codebase. Function (method) names and parameter (variable) names follow a standard structure such as CamelCase.</p>
+<h4 id="h.tekrxe5wegtn" class="c1 c13">Code follows the language&rsquo;s recommended style guide or the research group&rsquo;s style guide.</h4>
+<p class="c1">A code style guide describes the formatting conventions preferred within a language community or within a research group. Other organizations, such as Google or Mozilla, also publish style guides for different languages. The key is in selecting a style guide and consistently applying it.</p>
+<h4 id="h.1zkmnhg3e5oe" class="c1 c13">Conformance to the style is verified using a linter.</h4>
+<p class="c1">A linter is a small utility used to check for style discrepancies and other potential issues in source code. These can be integrated into a preferred development environment, such as the vi or emacs text editors or into a GUI-based IDE like Eclipse. Using a linter catches syntax or formatting errors quickly and conveniently.</p>
+
+<p class="c1">These are language dependent, for example, Python&rsquo;s <span class="c4"><a class="c7" href="https://www.pylint.org/">Pylint</a></span>, Javascript&rsquo;s <span class="c4"><a class="c7" href="https://github.com/douglascrockford/JSLint">JSLint</a></span>&nbsp;or Oracle&rsquo;s <span class="c4"><a class="c7" href="http://www.oracle.com/technetwork/java/codeconvtoc-136057.html">Java guide</a></span>.</p>
+<h4 id="h.xacmpjv4c3t" class="c1 c13">Linting is included during automated testing.</h4>
+<p class="c1">Once an automated testing system is in use for a project, ensure that linting is one of the tests included. Often, this is included in continuous integration processes. See <span class="c4"><a class="c7" href="#h.vekc78g7nqxx">Tested</a></span>&nbsp;below.</p>
+
+<p class="c1">Regardless of whether a codebase is open sourced, ie accepting outside contributions, having a code style guide for your research group or for a project is encouraged. Emphasizing clean code practices aids in maintenance during active development or during long-term support. Code is the interface for developers so maintaining clean code over the lifespan of a project and as contributors change is encouraged.</p>
+<h4 id="h.n0j2lapycvbr" class="c1 c13">Errors and exception handling follows recommends practices for the language used.</h4>
+<p class="c1">Use language and module-defined exceptions in most cases. Catch specific errors and handle those appropriately for the software. Do not publicly expose full stack traces in any operational environment.</p>
+
+<p class="note"><span class="c21">[Note: Considerations for Jupyter or other notebooks for code?]</span></p>
+<h3 id="h.g8dldwawc4gi" class="c1 c13">Versioned code</h3>
+<p class="c1">Software (or code) versioning is important for open sourced code and for research activities related to citation, reproducibility and provenance.</p>
+<h4 id="h.2tdya1yrzmc6" class="c1 c13">Source code is maintained in a version control system (VCS).</h4>
+<p class="c1">Any code should be versioned in a version control system of your choice, ie, <span class="c4"><a class="c7" href="https://git-scm.com/">git</a></span>, Apache <span class="c4"><a class="c7" href="https://subversion.apache.org">Subversion</a></span>, or <span class="c4"><a class="c7" href="https://www.mercurial-scm.org">Mercurial</a></span>. It is, for individual researchers or local teams, not critical which system you choose so long as it&rsquo;s being used. For code or software intended to be publicly released and released for adoption, it is important to note that, at the time of this document, git-based systems are widely available and widely used.</p>
+
+<p class="c1">These repositories do not need to be public to start a project or during active development. VCS&rsquo;s can be run locally, ie. installing git on your laptop, on a private system for local team development, using a third party VCS system such as BitBucket or GitHub that offers private repositories or through larger institutional systems.</p>
+
+<p class="c1">When considering a VCS, consider the funder&rsquo;s delivery and assessment requirements. Code repositories can be migrated from one VCS to another, they can be forked or cloned and, in the process, the repository can become decoupled from issue tracking systems or other related structure that are part of an assessment. See <span class="c4"><a class="c7" href="#h.b4mxlh97r1ja">Governed</a></span>&nbsp;and <span class="c4"><a class="c7" href="#h.rdevd43xfrh4">Code as Research Objects</a></span>&nbsp;for information on related guidelines. We note this issue, and it is unresolved for distributed VCS,</p>
+
+<p class="c1">Note that versioning is not a replacement for backups.</p>
+<h4 id="h.6c0j1lpk4dir" class="c1 c13">Source code uses a versioning scheme.</h4>
+<p class="c1">For code that is intended for adoption and ongoing maintenance, implement a versioning scheme. A versioning scheme, such as <span class="c4"><a class="c7" href="http://semver.org/">Semantic Versioning</a></span>&nbsp;or the <span class="c4"><a class="c7" href="https://www.gnu.org/prep/standards/html_node/Releases.html%23index-version-numbers_002c-for-releases">GNU preference</a></span>, here refers to the release version used in packaging and generally offers major and minor numbers, for example, &ldquo;version 1.2&rdquo; has a major version number of 1 and a minor number 2. This process gives adopters, using packaging tools or other automation tools for managing dependencies, a way to more effectively manage those dependencies and a way to manage those dependencies within their development cycles.</p>
+
+<p class="c1">See <span class="c4"><a class="c7" href="#h.278bwz69j1fc">Documented</a></span>&nbsp;for related activities.</p>
+<h4 id="h.huu50eug1a5f" class="c1 c13">Source code uses tagged releases.</h4>
+<p class="c1">Depending on the version control system in use, use tagged releases. A release is basically a specific commit in the code repository that meets some milestone conditions (defined by the project) and is stable (or not yet stable but released for beta testing). This provides adopters both an indication of when to upgrade to a stable version and, when combined with release notes (see <span class="c4"><a class="c7" href="#h.278bwz69j1fc">Documented</a></span>), some understanding of the effort needed to incorporate that new version into their own codebase or workflows.</p>
+<h3 id="h.tlmgsr2d8yip" class="c1 c13">Buildable or Installable</h3>
+<p class="c1">The method for delivering the software depends on the project requirements. For software projects implementing desktop GUIs, for example, pre-built installers may be made available. For other projects, the preferred method may be providing scripts for automated build tools and installation instructions.</p>
+<h4 id="h.dxcrxyr9q443" class="c1 c13">Source code includes build scripts to automate builds.</h4>
+<p class="c1">Indicate what system is used to perform the build and provide configuration files or related information. For some languages, builds are described as package installs. &nbsp;</p>
+
+<p class="c1">For dependencies that aren&rsquo;t installed as part of the build, provide information about those requirements and procedures. Otherwise, use the dependency management of your selected build tool to ensure any required dependencies are installed during the build process.</p>
+
+<p class="c1">If your software has optional dependencies, indicate that and provide installation information. Note what features or capabilities are supported by each optional dependency.</p>
+
+<p class="c1">In some languages, packaging tools can provide binaries that serve effectively as installers. Consider providing this option if it meets project goals and community practices for that language or your target audience.</p>
+<h4 id="h.v88x0wfkpugl" class="c1 c13">Scripts or configurations are provided for creating binary installers.</h4>
+<p class="c1">For software delivered as an installer, provide the language-specific configurations and tool information to generate a new installer. (This assumes the code is released as open source.)</p>
+<h4 id="h.hi3h4uzdhzde" class="c1 c13">For desktop GUIs, provide an installer.</h4>
+<p class="c1">Provide an installer, tied to a versioned release, for any desktop GUI. Indicate which operating systems are supported and provide an installer for each.</p>
+
+<p class="c1">Whenever possible, include an uninstaller or provide documentation to allow someone to perform a clean uninstall of the software.</p>
+
+<p class="c1">Note that systems can be delivered as runnable containers,<sup><a id="cmnt_ref4" href="#cmnt4">[d]</a></sup>&nbsp;Unix/Linux distributions or other options. These prepackaged options (not to be confused with Python packages) should follow recommended security and creation guidelines as provided by the platform used.</p>
+<h3 id="h.hlj4s6z7m6fe" class="c1 c13">Tested</h3>
+<p class="c1">Testing provides numerous benefits throughout the code or software lifecycle like basic quality control, verification of builds or installation, and effective and efficient means of assessing contributions to the code base from internal team members or external contributors. In a well-designed test, you are setting the expectation of success and writing your code to meet that expectation so it is documenting intent and providing a means of verifying that intent as the code changes.</p>
+<h4 id="h.r7veqzthne4v" class="c1 c13">Source code includes unit and integration tests.</h4>
+<p class="c1">Testing is a development style<sup><a id="cmnt_ref5" href="#cmnt5">[e]</a></sup>&nbsp;(test driven development or TDD) describing a workflow for coding. It allows for incremental design and can help create and maintain a clean codebase (see <span class="c4"><a class="c7" href="#h.jc42b2hcl6wm">Sustainable Code</a></span>). It sets expectations for the development and for adopters.</p>
+
+<p class="c1">Tests, like documentation, are only usable if kept up to date. A reasonable criteria for adoption is that a code base does not include failing tests and certainly not failing tests that have been in the code for a long period of time. Code coverage can promote unsustainable practices; we recommend, if nothing else, testing key aspects and integrations. This includes testing for success states as well as exceptions or exceptional conditions.</p>
+<h4 id="h.qfvkud70t782" class="c1 c13">Tests limit dependence on external services where possible.<sup><a id="cmnt_ref6" href="#cmnt6">[f]</a></sup></h4>
+<p class="c1">When possible, limit the use of external resources as inputs for the tests. Use mocking or include test infrastructure to build database dependencies or similar tasks. Tests should be as realistic as possible with regards to the system and with an eye towards efficient testing. Related, mocking allows tests to be developed for conditions that may be difficult or impossible to repeat from an external system.</p>
+<h4 id="h.vekc78g7nqxx" class="c1 c13">Testing is automated through a continuous integration system.</h4>
+<p class="c1"><span class="c4"><a class="c7" href="http://martinfowler.com/articles/continuousIntegration.html">Continuous integration</a></span>&nbsp;is a development process that allows developers to commit small, discrete changes (bug patches or a new feature), into a shared codebase in a way that doesn&rsquo;t &ldquo;break the build&rdquo; for other members of the team. It is a way to enforce code quality, (code isn&rsquo;t merged into the main branch if tests fail), a way to avoid large merge issues (conflicts in the code submitted by two developers), catch integration bugs early in the development process and provide a process for acceptance testing in reproducible environments. Common tools include <span class="c4"><a class="c7" href="https://jenkins.io/index.html">Jenkins</a></span>, <span class="c4"><a class="c7" href="https://circleci.com/">Circle CI</a></span>&nbsp;and <span class="c4"><a class="c7" href="https://travis-ci.org/">Travis CI</a></span>&nbsp;which can be integrated into a GitHub workflow or, depending on the tool, run in a locally-hosted environment.</p>
+
+<p class="c1">Note that continuous integration relies on several of the concepts outlined in this document before it can be implemented. It is not limited to simply unit testing &mdash; it assumes version control and versioning, a test suite, and automated builds.</p>
+<h4 id="h.66jeksgqtmig" class="c1 c13">For web applications, include automated GUI testing.<sup><a id="cmnt_ref7" href="#cmnt7">[g]</a></sup></h4>
+<p class="c1">Tools such as <span class="c4"><a class="c7" href="http://www.seleniumhq.org/">Selenium</a></span>&nbsp;provide options for automated testing against web interfaces and across browsers.</p>
+<h2 id="h.k8wt6ghlvp2k" class="c1 c13">Interoperable</h2>
+<p class="c1">These guidelines are intended for any code or software that provide web services or data for consumption by other platforms; however, we are mostly focusing on the web application/web service projects.</p>
+
+<p class="c1">Interoperable services fall under the same guidelines for performance and stability. See <span class="c4"><a class="c7" href="#h.7mb3s9l49d19">Usable</a></span>&nbsp;for information.</p>
+<h3 id="h.jdkbivybsbw3" class="c1 c13">For data services</h3>
+<p class="c1">Use community standards or conventions for data and metadata formats as well as the web services delivering those data.</p>
+
+<p class="c1">Ensure that the data is usable by validating the data format during testing, for example, ensuring that an ISO 19115 file is valid XML.</p>
+
+<p class="c1">Ensure that the web service is valid. Often this means validating a capabilities document against the schema provided by the standards body or through a web validator (<span class="c4"><a class="c7" href="http://testbed.echo.nasa.gov/cwic-smart/validations">CWICSmart</a></span>&nbsp;for OpenSearch, the <span class="c4"><a class="c7" href="http://cite.opengeospatial.org/teamengine/">OGC Web Validator</a></span>). At a lower level, ensure that the web service returns valid HTTP status codes and uses them for their intended purposes. Verify that content headers, especially those related to language and character encodings, are present and correct. Include service validation as part of the test suite for any generated service.</p>
+
+<p class="c1">Ensure that the web service is complete with regards to the goals and use cases of the project.</p>
+
+<p class="c1">Indicate, in the web API documentation for a service, that the service has been validated and the validation method, and that it is valid.</p>
+
+<p class="c1">We note that often the development of systems supporting interoperability include external frameworks or platforms that are integrated into the project system. Given that these guidelines are intended only for code and software developed by the project team, some of the above may not be feasible.</p>
+
+<p class="c1">See <span class="c4"><a class="c7" href="#h.278bwz69j1fc">Documented</a></span>&nbsp;for API documentation discussions.</p>
+<h3 id="h.jwbj4ujf85sn" class="c1 c13">Applications, desktop or web-based, supports community data standards for inputs and outputs.</h3>
+<p class="c1">Whenever possible, use open standards for data inputs and outputs.</p>
+<h3 id="h.9c8tsx28txfx" class="c1 c13">For Semantic Services<sup><a id="cmnt_ref8" href="#cmnt8">[h]</a></sup></h3>
+<p class="c1">Data dictionaries for each appropriate data output is provided in the documentation.</p>
+
+<p class="c1">If implementing a standard that supports it, provide codelists or controlled vocabularies.</p>
+
+<p class="c1">Provide ontology or vocabulary services. Every collection and concept/term published online should have a persistent, dereferencable URI and a definition.</p>
+
+<p class="c1">If providing RDF or JSON-LD formats (or other related formats), provide the ontology.</p>
+<h2 id="h.j3o37luj1lmk" class="c1 c13">Usable</h2>
+<p class="c1">Usable software meets the needs of the communities it has been developed for. Ideally meeting those needs matches the goals of the project.</p>
+
+<p class="c1">See <span class="c4"><a class="c7" href="#h.jc42b2hcl6wm">Sustainable Code</a></span>&nbsp;for guidelines regarding the usability of code.</p>
+<h3 id="h.jf59v21hi69u" class="c1 c13">Software has a clear, understandable interface.</h3>
+<h4 id="h.6foli2yv92b3" class="c1 c13">For software with a visual interface, such as a desktop GUI, plugin/extension or web application, the interface provides a clean and clear layout.</h4>
+<p class="c1">For desktop GUIs, this often means compliance with recommended design patterns for an operating system (<span class="c4"><a class="c7" href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/">Apple OS X Human Interface Guidelines</a></span>) or for the interface toolkit of a programming language (Tkinter for Python or Swing for Java).</p>
+
+<p class="note"><span class="c19">[If anyone feels that mobile apps should be included, add comments as necessary to this section.]</span></p>
+
+<p class="note"><span class="c19">[Likewise for notebooks.]</span></p>
+
+<p class="c1">For plugins or extensions, the interface components, such as forms and menus, conform to the design of the parent GUI.&nbsp;If the parent platform provides guidelines for extensions or plugins, the extension follows those guidelines (<span class="c4"><a class="c7" href="http://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/plugins.html">QGIS: Developing Python Plugins</a></span>).&nbsp;</p>
+
+<p class="c1">For web applications, the interface design depends on the goals of the project. Web interface design is not as constrained as desktop GUIs, nor do we want to impose visual design preferences here. However, for research groups with limited resources, consider using an existing framework, whether an extensible content delivery framework (ie, CMS or portal) or a more generic front-end framework (<span class="c4"><a class="c7" href="http://getbootstrap.com/">Bootstrap</a></span>&nbsp;or <span class="c4"><a class="c7" href="http://foundation.zurb.com/">Foundation</a></span>).&nbsp;</p>
+
+<p class="c1">When assessing web applications, visual design is important only as it helps or hinders the functionality of the site. Unless a stated research goal involves developing a new interaction method, use common interface designs. &nbsp;</p>
+
+<p class="c1">Provide clear labels and easily identifiable means of accessing help. Apply styles consistently across the application. Provide a style guide for visual styles, for example the <span class="c4"><a class="c7" href="https://standards.usa.gov/">USDS 18F Web Design Standards</a></span>&nbsp;(advanced option and more for those projects developed for adoption).</p>
+<h4 id="h.tvmzy7swlrrs" class="c1 c13">For web applications or any software accepting user inputs, Unicode is well-supported throughout the system.</h4>
+<p class="note">[Really]</p>
+<h4 id="h.qxz6nnr14i6e" class="c1 c13">For web applications, the application implements responsive design, ie. support for multiple screen sizes.</h4>
+<p class="c1"><span class="c4"><a class="c7" href="http://alistapart.com/article/responsive-web-design">Responsive design</a></span>&nbsp;adapts an application&rsquo;s layout based on the screen size (mobile, tablet, desktop) without requiring support for multiple application versions.</p>
+<h4 id="h.ga5mu41sst4w" class="c1 c13">For web applications, the application adheres to progressive enhancement practices.</h4>
+<p class="c1"><span class="c4"><a class="c7" href="https://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement">Progressive enhancement</a></span>&nbsp;adapts the supported features of the application based on the detected device. In practice, this means adjusting functionality based on slow connections, prevalence of feature phones (instead of smartphones) in the community being addressed, or other concerns related to the execution of Javascript code.</p>
+
+<p class="c1">This depends on the stated goals of the project and requires an understanding of the community needs before<sup><a id="cmnt_ref9" href="#cmnt9">[i]</a></sup>&nbsp;implementation.</p>
+<h4 id="h.42fc5mhfrgk0" class="c1 c13">For web applications, the interface follows established guidelines for web accessibility.</h4>
+<p class="c1">Web accessibility guidelines provide information to help develop web sites and applications that are open and inclusive for people with a range of abilities. Visit the W3C&rsquo;s <span class="c4"><a class="c7" href="https://www.w3.org/standards/webdesign/accessibility%23wai">Web Accessibility Initiative</a></span>&nbsp;(<span class="c4"><a class="c7" href="https://www.w3.org/standards/techs/wcag%23w3c_all">WCAG</a></span>, <span class="c4"><a class="c7" href="https://www.w3.org/WAI/intro/aria.php">WAI-ARIA</a></span>) and the U.S. GSA&rsquo;s <span class="c4"><a class="c7" href="https://section508.gov/content/learn/best-practice-library">Section 508</a></span>&nbsp;guidelines.</p>
+
+<p class="c1">These guidelines discuss structural concerns, for example semantic and well-structured HTML to support screen readers, and navigation or interaction requirements, such as keyboard bindings. We consider semantic and well-structured HTML in a similar context to that described in the <span class="c4"><a class="c7" href="#h.jc42b2hcl6wm">Sustainable Code</a></span>&nbsp;section, namely that it is beneficial to to meeting guidelines related to clean, well-structured code and is not considered an onerous or additional burden.</p>
+
+<p class="c1">For web applications supporting dynamic mapping functions, try to use mapping libraries that include support for accessibility whenever possible. We note that support for colorblind users, represented only in data color schemes only, does not meet the minimum expectations for supporting web accessibility.</p>
+
+<p class="c1">Project websites should also follow web accessibility<sup><a id="cmnt_ref10" href="#cmnt10">[j]</a></sup>&nbsp;guidelines.</p>
+<h4 id="h.fdfrt2xf1lu2" class="c1 c13">For web applications, support current browser versions.</h4>
+<p class="c1">Front-end frameworks and libraries have greatly improved cross-browser support, but it&rsquo;s still important to ensure that the web application functions as intended across any and all browsers supported by the project.</p>
+
+<p class="c1">Sometimes, project goals and community needs may require supporting older browser versions. In this case, state the supported versions and take steps to meet those requirements safely<sup><a id="cmnt_ref11" href="#cmnt11">[k]</a></sup>. Progressive enhancement principles can be considered to provide equivalent functionality for users limited to older browser versions and users using current versions.</p>
+
+<p class="c1">The opposite may also hold true, where a research goal is to develop a proof of concept or prototype application using cutting edge functionality that may only be supported in certain browsers. In this case, progressive enhancement is not necessary but the project documentation and web application should indicate that limited support clearly.</p>
+<h4 id="h.vft1b61bp3vj" class="c1 c13">For a web service, the API is RESTful&nbsp;or follows a known community standard or specification.</h4>
+<p class="c1">API design is a usability concern. As with other areas, an API should be clear and legible, with meaningful names and using the <span class="c4"><a class="c7" href="https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm">RESTful design pattern</a></span>&nbsp;(Fielding 2000). See <span class="c4"><a class="c7" href="#h.k8wt6ghlvp2k">Interoperable</a></span>&nbsp;for guidance on implementing community standards, understanding that those standards may not be RESTful or conform to the conceptual models found in Web API documentation platforms. For the purposes of assessment, correct implementation of the community standard outweighs any RESTful recommendations.</p>
+<h4 id="h.1gxhk9ppul8o" class="c1 c13">For collaboration tools, ensure that the interface design does not encourage sensitive information leaks<sup><a id="cmnt_ref12" href="#cmnt12">[l]</a></sup>.</h4>
+<p class="c1">Carefully consider interface design choices related to an individual&rsquo;s permissions and access selections. These characteristics, related to layout, label text and other details, are included in general web interface guidelines but they are important to highlight here due to privacy concerns. Permissions and access options should not result in unexpected behavior from the viewpoint of the individual using the platform.</p>
+<h3 id="h.7mb3s9l49d19" class="c1 c13">Software is performant and stable.</h3>
+<h4 id="h.nwh0jy5c06kn" class="c1 c13">Documentation describes the current development status.</h4>
+<p class="c1">For open or public codebases, this gives potential adopters an understanding of where the project is in its lifecycle. This can be as simple as adding a note stating that the source code is under very active development (high rate of commits, known breaking bugs remain, or rough interface), the source code is not being maintained or is in a reasonably stable in-between state.</p>
+
+<p class="c1">Please refer to <span class="c4"><a class="c7" href="#h.1ogf2zcgktnr">Governed</a></span>&nbsp;for managing contributions.</p>
+<h4 id="h.mpxwzayw9bzb" class="c1 c13">For web applications or web services, the documentation or project website includes service level qualities.</h4>
+<p class="c1">Simply put, provide potential adopters of the public-facing system information about the reliability and performance of that system.</p>
+
+<p class="c1">For web services, include limitations for requests (rate limiting) and other policies related to automated access. This gives adopters guidelines for developing clients safely, ie. they understand the system limitations and can work within them, and gives adopters of the system some indication of system limitations when taking the deployment requirements<sup><a id="cmnt_ref13" href="#cmnt13">[m]</a></sup>&nbsp;into consideration. It also gives you, as the maintainer of a system, a clear process<sup><a id="cmnt_ref14" href="#cmnt14">[n]</a></sup>&nbsp;for dealing with violations of these limits.</p>
+
+<p class="c1">For web applications and services, provide information regarding uptime, methods for receiving outage notifications, expected response times for responses to support requests.<sup><a id="cmnt_ref15" href="#cmnt15">[o]</a></sup></p>
+
+<p class="c1">These service level qualities are dependent on effective monitoring<sup><a id="cmnt_ref16" href="#cmnt16">[p]</a></sup>. Providing service level quality information is not, in itself, enough to build and maintain trust in a system. See <span class="c4"><a class="c7" href="#h.1z1daqwsh16q">Monitoring</a></span>&nbsp;below.</p>
+<h4 id="h.1z1daqwsh16q" class="c1 c13">For web applications and web services, systems are monitored.</h4>
+<p class="c1">Monitor your systems for security and infrastructure (anomalous activity), for service level quality metrics and performance (uptime, service response times), for sustainability metrics (growth, retention, service usage). Note that these are different concepts and use different platforms, for example, <span class="c4"><a class="c7" href="https://www.nagios.org/">Nagios</a></span>&nbsp;for infrastructure, the <span class="c4"><a class="c7" href="https://www.elastic.co/products">Elastic Stack</a></span>&nbsp;(ElasticSearch, Logstash and Kibana) for log analytics, and <span class="c4"><a class="c7" href="https://www.google.com/analytics/%23?modal_active%3Dnone">Google Analytics</a></span>&nbsp;for application events. You may also be able to take advantage of solutions provided by your cloud resource provider.</p>
+
+<p class="c1">The level of monitoring depends on where in the project lifecycle you are and what expectations you have for adoption and use. For production (beta) or operational systems, monitoring is not considered &ldquo;nice to have&rdquo; as access issues, performance issues or other issues affecting the use of the system has a negative impact on the trust of the system &mdash; instability or persistent performance problems<sup><a id="cmnt_ref17" href="#cmnt17">[q]</a></sup>&nbsp;drives people and potential adopters away.</p>
+
+<h4 id="h.l9dc6388w79f" class="c1 c13">For high performance computing, GPU or other cluster-based software, the project provides basic benchmarking <sup><a id="cmnt_ref18" href="#cmnt18">[r]</a></sup>statistics.</h4>
+<p class="c1">For algorithm development or similar code, provide benchmarks with comparisons to similar algorithms. Describe the benchmarking process. We note that this activity can be the topic of a research paper in certain domains. References to the paper and related research objects can be provided instead of a detailed write-up in the documentation. Cite it appropriately (see <span class="c4"><a class="c7" href="#h.tk3e9fopeigk">Publication and Citation</a></span>).</p>
+<h2 id="h.278bwz69j1fc" class="c1 c13">Documented</h2>
+<p class="c1">Documentation is important across project areas and audiences. Research code and software has a higher documentation burden. This is generally seen in two areas: the temporary and variable nature of the workforce and the expectations of reproducibility and contributions to the larger research community. Both can be mitigated<sup><a id="cmnt_ref19" href="#cmnt19">[s]</a></sup>&nbsp;by improved source code and project documentation where an effective knowledge base protects the project against unexpected churn and aids in onboarding new participants. &nbsp;</p>
+
+<p class="c1">When in doubt, a good rule of thumb is to document things that can&rsquo;t be found in any dependency or framework documentation and that might appear counter-intuitive to another developer, even if it&rsquo;s you in six months.</p>
+
+<p class="note"><span class="c19">[Update any section or suggest new for notebooks as documentation in any way.]</span></p>
+<h3 id="h.qlvssx94m25r" class="c1 c13">Source code is documented.</h3>
+<p class="c1">Comment blocks are included in the source code. Minimum documentation describes methods and the input and output parameters. In addition, we recommend code comments to describe sections that may not be clear, for example, bug patches that appear counter-intuitive or business decisions that shouldn&rsquo;t be modified without clear external reasons.</p>
+<h4 id="h.muhqkex415r9" class="c1 c13">Source code comments use a standard comment style, related to the selected style guide or language or related to a document generation tool.</h4>
+<p class="c1">As with the code itself, the comment style should follow the chosen style guide or language conventions.</p>
+<h4 id="h.ycrdao5dntt5" class="c1 c13">API documentation is automatically generated.</h4>
+<p class="c1">In this case, the API can refer to the methods and properties of the codebase or a web API. Document generators, such as <span class="c4"><a class="c7" href="http://www.sphinx-doc.org/en/stable/index.html">Sphinx</a></span>&nbsp;(Python) or <span class="c4"><a class="c7" href="https://github.com/weavejester/codox">Codox</a></span>&nbsp;(Clojure), expect explicitly formatted comment blocks within the code or as standalone files.</p>
+
+<p class="c1">For web APIs, especially RESTful APIs, use a documentation specification geared to that such as <span class="c4"><a class="c7" href="http://swagger.io/">Swagger</a></span>&nbsp;(or <span class="c4"><a class="c7" href="https://openapis.org/">Open API Initiative</a></span>), <span class="c4"><a class="c7" href="http://raml.org/">RAML</a></span>&nbsp;or <span class="c4"><a class="c7" href="https://apiblueprint.org/">API Blueprint</a></span>. In some cases, document generation tools may support the API specification so check that documentation for possible integrations. Keep in mind that public web API documentation does not replace source code documentation as one serves adoption for client development and reuse and the other supports further contributions.</p>
+<h4 id="h.4nph8cwunjf5" class="c1 c13">The documentation describes how to automatically generate the documentation.</h4>
+<p class="c1">When using a documentation generator, describe the tools and process for generating the documents.</p>
+
+<p class="c1">For traditionally open sourced projects, this description is related to other <span class="c4"><a class="c7" href="#h.qderu9pnkzxc">contribution guidelines</a></span>&nbsp;and offers contribution options beyond code. &nbsp;</p>
+<h4 id="h.tq0ajo5926em" class="c1 c13">API Documentation is versioned.</h4>
+<p class="c1">Like the code, the generated API documentation is versioned and maintained in a VCS. API documentation can be hosted under the project website or an external documentation host such as <span class="c4"><a class="c7" href="https://readthedocs.org/">Read the Docs</a></span>. If possible, link the documentation version with a code release (for reproducibility, preservation and community support).</p>
+<h3 id="h.gjmwihq5i3uk" class="c1 c13">The codebase includes documentation to support adoption and reuse.</h3>
+<p class="c1">This documentation is related to those information items that describe how to deploy the code or software. Reuse and adoption here refers to the developer community but it can also benefit preservation needs.</p>
+<h4 id="h.eyumqunuhqwt" class="c1 c13">The source code repository is documented using plain text file formats.</h4>
+<p class="c1">Current practice is to provide certain documentation through <span class="c4"><a class="c7" href="https://daringfireball.net/projects/markdown/">Markdown</a></span>&nbsp;or <span class="c4"><a class="c7" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a></span>. Expected files include a project-level README, LICENSE, and INSTALL and may include a code of conduct, CONTRIBUTING, AUTHOR or other files common to the GNU recommended file structure.</p>
+<h4 id="h.jo1cauupk7qk" class="c1 c13">The build procedure or installation process is described.</h4>
+<p class="c1">Describe the build procedure if building from the source code. Describe the installation process if providing binaries. Be sure to include any dependency requirements, including version information. Also include system requirements, including version information.</p>
+
+<p class="c1">Often, build/installation details are provided in the source code&rsquo;s README or INSTALL files.</p>
+<h4 id="h.4pnm2fq7ygzv" class="c1 c13">The documentation describes how to execute the test suite.</h4>
+<p class="c1">The documentation describes the tool used for testing and how to execute tests. Often this is included as a post-install or post-build step to demonstrate that that process was successful. For automated deployments where the configurations are provided, safely, with the code base, indicate that tests are automatically run.</p>
+<h4 id="h.6qp4s0y7ha51" class="c1 c13">The versioning scheme is described.</h4>
+<p class="c1">For source code in a VCS and with a defined versioning scheme, provide the versioning scheme used in the documentation. This is most likely included in the CONTRIBUTING file.</p>
+<h4 id="h.csa26k8fwk2r" class="c1 c13">Release notes or changelogs are provided for each release.</h4>
+<p class="c1">Clear and complete release notes provide adopters some understanding of how a major or minor release may affect their own systems and workflows.</p>
+
+<p class="c1">For preservation and archiving concerns, provide these items in the code repository or other documentation. Consider a future scenario in which a potential issue with a generated dataset comes up and, while the code is accessible (locatable and viewable), it may not be possible to run. Release notes in these situations provide avenues for understanding when and where the issue may have occurred.</p>
+<h3 id="h.90q5gnajhkbj" class="c1 c13">Software is documented.</h3>
+<p class="c1">Here we are discussing documentation guidelines for higher level guides for user or developer documentation, such as how-to guides, quick start guides or tutorials.</p>
+<h4 id="h.5wf9rcv7ts53" class="c1 c13">Any Documentation</h4>
+<p class="c1">Any restrictions or constraints for a particular method, request, or process is included in that item&rsquo;s documentation. This includes file size limits or rate limiting for web APIs.</p>
+
+<p class="c1">Quick start guides are provided to provide any user an introduction to the code or software. The selected example should reflect a normal interaction, provide a description of common possible errors and how to respond to each, and a successful outcome. If warranted, provide a simple dataset for this demonstration.</p>
+
+<p class="c1">Developer Documentation</p>
+<p class="c1">Note that developer documentation can simply be API documentation for modules/libraries, command line interfaces, or web APIs.</p>
+
+<p class="c1">For command line tools and web APIs, all input and output parameters for each command or request are defined, including default values. Every command or request is likewise described.</p>
+<h4 id="h.m7qbd04yq214" class="c1 c13">User <sup><a id="cmnt_ref20" href="#cmnt20">[t]</a></sup>documentation</h4>
+<p class="c1">This documentation is aimed at users of research software, whether a desktop GUI, plugin/extension, or web application.</p>
+
+<p class="c1">The software documentation is complete. It describes every possible action with annotated screenshots of interfaces and step-by-step processes. This includes possible errors and recovery options.</p>
+
+<p class="c1">The images and method or parameter names are up-to-date, ie they match what the user sees in the software.</p>
+
+<p class="c1">Provide this documentation in a manner that is searchable through a web search engine (preferred) for both desktop GUIs and web applications. For desktop GUIs, provide documentation in a manner supported by the application or the operating system.</p>
+<h3 id="h.gqpohaprkcbq" class="c1 c13">Project is documented.</h3>
+<p class="c1">This is the highest level documentation and often the first information made public. It can, in some ways, be considered pre-registration. This documentation is maintained on a project website separate from the code.</p>
+
+<p class="c1">This website should include the grant award numbers and agencies, initial project milestones, a description of the project and the expected software or code deliverables and a listing of project team members.</p>
+
+<p class="c1">As the project continues, include reports, articles, conference presentations or other materials on the site. If possible, include testimonials from satisfied users.</p>
+
+<p class="c1">Include links to the project source code or software installers and documentation.</p>
+
+<p class="c1">Provide copyright information, commonly in the footer of the project site. Consider licensing the project web site content through <span class="c4"><a class="c7" href="https://creativecommons.org/">Creative Commons</a></span>&nbsp;or under the license of the department or organization.&nbsp;</p>
+<h2 id="h.kevi2ogx4kct" class="c1 c13">Secure</h2>
+<p class="c1">Any code or software<sup><a id="cmnt_ref21" href="#cmnt21">[u]</a></sup>&nbsp;should be developed following the current recommended practices for the systems being used. Security must be considered across functional areas, from system administration and backend development to frontend development and user access.</p>
+
+<p class="c1">The principles outlined below are not inclusive and are meant to highlight certain areas of concern and point to resources to provide more detailed information. Security through obscurity is not a viable method.</p>
+<h3 id="h.c0ntdoo6m887" class="c1 c13">Source code, including automation configurations and scripts, have been sanitized for public release.</h3>
+<p class="c1">Whether you release source code at the end of the funded project for preservation or use a version control platform during development, it is important to ensure that sensitive information, such as access credentials for cloud services or database logins, are not ever publicly available. This starts before the first commit to a repository &mdash; the information remains in the history without additional effort. Take steps to ensure that you are not leaking credentials through your version control histories, through backups, through any automation configuration, or any other potential avenue.</p>
+<h3 id="h.bwddr3yneyvr" class="c1 c13">For web applications and services, software follows industry recommendations for secure practices.</h3>
+<p class="c1">It is beyond the scope of this document to cover all aspects of web application or web service security. However, we do strongly recommend following those put forth by the <span class="c4"><a class="c7" href="http://trustedci.org/">Center for Trustworthy Scientific Cyberinfrastructure</a></span>&nbsp;and <span class="c4"><a class="c7" href="https://www.owasp.org/index.php/Main_Page">The Open Web Application Security Project</a></span>&nbsp;(OWASP) as well as taking advantage of the <span class="c4"><a class="c7" href="https://github.com/google/vsaq">Vendor Security Assessment Questionnaire</a></span>&nbsp;(Google VSAQ).</p>
+
+<p class="c1">Some considerations:</p>
+<ul class="c28 lst-kix_hputbrx9prs6-0 start">
+<li class="c1 c22 c18">Enable HTTPS on every web application or service.</li>
+<li class="c1 c22 c18">Sanitize web form inputs to prevent cross-site scripting (XSS) or SQL injection attacks.</li>
+<li class="c1 c22 c18">Protect against Cross-site Request Forgery (CSRF) attacks.</li>
+<li class="c1 c22 c18">Sanitize responses related to errors and exceptions, ie do not return stack traces or similar from any public-facing platform.</li>
+</ul>
+
+<p class="c1">For HTTPS<sup><a id="cmnt_ref22" href="#cmnt22">[v]</a></sup>, check with your home institution or department for certificate providers in use (<span class="c4"><a class="c7" href="https://www.incommon.org/certificates/">InCommon</a></span>&nbsp;is a common university option). Small research groups may also want to consider an open certificate authority such as <span class="c4"><a class="c7" href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a></span>.</p>
+<h3 id="h.2qasdya4g2dq" class="c1 c13">For any code or software system, follow the recommended security practices for each system component.</h3>
+<p class="c1">For any system or framework or similar dependency used, follow the recommended security practices for that system for deployment and for ongoing management. Consider databases, web frameworks, authentication systems (such as <span class="c4"><a class="c7" href="https://tools.ietf.org/html/rfc6749">OAuth2</a></span><sup><a id="cmnt_ref23" href="#cmnt23">[w]</a></sup>), web servers, cloud infrastructure access.</p>
+<h3 id="h.v4eyawiuk7gf" class="c1 c13">Keep systems and dependencies up-to-date.</h3>
+<p class="c1">Security vulnerabilities can occur in any part of the implementation stack. For software or code currently being maintained under a grant, take note of vulnerability notifications and update dependencies and code accordingly. Indicate to adopters when a version contains a security patch. Indicate in the release notes which dependencies require updating &mdash; do not force a potentially breaking update without some warning.</p>
+
+<p class="c1">See <span class="c4"><a class="c7" href="#h.1ogf2zcgktnr">Governed</a></span>&nbsp;for information regarding sunsetting web applications or services. If resources are not available to upgrade the application to manage vulnerabilities in the dependencies, including the programming language version, operating system or web server version, we suggest archiving the system.</p>
+
+<p class="c1">If the project is releasing runnable containers<sup><a id="cmnt_ref24" href="#cmnt24">[x]</a></sup>, we encourage you to provide upgrade paths for the container or the application it runs. &nbsp;</p>
+<h3 id="h.wcbbon9uy2j6" class="c1 c13">Collaborative platforms include tests for permissions and integrations.</h3>
+<p class="c1">Include extensive tests for permissions conflicts in the test suite, particularly those that might make public content the person or group marked as private. Consider the interactions of all the content privacy settings. Consider carefully any new setting that might be added to the system, as potential conflicts and errors grow accordingly<sup><a id="cmnt_ref25" href="#cmnt25">[y]</a></sup>.</p>
+
+<p class="c1">Indicate in the documentation, at a very high level, that this kind of testing is performed. This is not dissimilar to a service level quality in that the statement alone is without merit. It must be backed up with valid tests of the system.</p>
+
+<p class="c1">Include additional testing for integrations, or the use of third party APIs such as Google Docs or GitHub. Only ask for permissions from the third party platforms that are required for use in the collaboration platform. Follow any recommended practices for securely connecting to those services.</p>
+<h3 id="h.ltbzsn7tud66" class="c1 c13">Containers follow recommended<sup><a id="cmnt_ref26" href="#cmnt26">[z]</a></sup>&nbsp;practices for security.</h3>
+<p class="c1">Container systems, such as <span class="c4"><a class="c7" href="http://www.docker.com/">Docker</a></span><sup><a id="cmnt_ref27" href="#cmnt27">[aa]</a></sup>&nbsp;or the <span class="c4"><a class="c7" href="https://linuxcontainers.org/">Linux Container</a></span>&nbsp;project, are not secure by default. For any public-facing system or any system deployed to a cloud provider, follow the recommended security practices for that container platform. This applies to containers deployed and maintained by the project team and those built as a project deliverable or with the intent to share (&ldquo;Project&rdquo; in a Box situations).</p>
+<p class="c1"><br />See <span class="c4"><a class="c7" href="#h.561dz5rrclj0">Sharable</a></span>&nbsp;for additional guidelines on automation.</p>
+<h2 id="h.j3cd3qemat79" class="c1 c13">Sharable</h2>
+<p class="c1">The guidelines promote practices for adoption and reusability of the code or software&rsquo;s codebase whether it was born-open or publicly released at a later time. These are intended for code released for publication and reproducibility as well as code released as an active open source project.</p>
+<h3 id="h.hhtvml7dyjhk" class="c1 c13">Source code is licensed.</h3>
+<p class="c1">Any code or software product, whether released for publication/preservation only or for ongoing development activities, should include a license. ESIP cannot provide recommendations for which license to apply but we encourage you to contact your institution&rsquo;s intellectual property policies with consideration for your funding agency&rsquo;s policies or any policies put forth in the solicitation of the award. Unlicensed code is&nbsp;unusable code<sup><a id="cmnt_ref28" href="#cmnt28">[ab]</a></sup>&nbsp;&mdash; you haven&rsquo;t provided a potential adopter any information regarding permissions or limitations on its use so the assumption is that an adopter is not permitted to use or modify that source code.</p>
+
+<p class="c1">License selection is affected by the intended use of the software and the licenses of the dependencies you use. For this reason, we encourage you to consider your license options early in the development process and to take that choice into consideration throughout implementation.</p>
+
+<p class="c1">For projects allowing outside contributions, you may also want to consider <span class="c4"><a class="c7" href="https://www.clahub.com/">Contributor License Agreements</a></span>. A CLA states that the contributor agrees to contribute and that the contributor grants rights to the project so that the project can use the contribution in distributions and that the contributor can&rsquo;t revoke that right.</p>
+
+<p class="c1">For a description of open source licenses, please visit the <span class="c4"><a class="c7" href="https://opensource.org/licenses">Open Source Initiative</a></span>&nbsp;or <span class="c4"><a class="c7" href="http://choosealicense.com/">Choose a License</a></span>.</p>
+
+<p class="c1">For source code published for preservation, at a minimum, the selected license should allow someone to rerun your code for the purposes of reproducibility or replication.</p>
+
+<p class="c1">See <span class="c4"><a class="c7" href="#h.278bwz69j1fc">Documented</a></span>&nbsp;for related.</p>
+<h3 id="h.561dz5rrclj0" class="c1 c13">Source code includes configurations for automated systems.</h3>
+<p class="c1">Automation can include test tools, build tools or packagers, provisioning or orchestration tools (<span class="c4"><a class="c7" href="https://www.chef.io/">Chef</a></span>, <span class="c4"><a class="c7" href="https://www.vagrantup.com/">Vagrant</a></span>, <span class="c4"><a class="c7" href="https://puppet.com/">Puppet</a></span>), or continuous integration systems.</p>
+
+<p class="c1">For tests, this includes providing verified inputs and outputs as necessary.</p>
+
+<p class="c1">Follow the tool&rsquo;s security practices for preventing credential leaks or other vulnerability concerns.</p>
+<h3 id="h.oofsvittp0hd" class="c1 c13">Project name is discoverable.</h3>
+<p class="c1">When discussing project names, ensure that the name or acronym is unique within a domain, at a minimum, and that it is searchable as is or with some additional context. Common words or highly similar acronyms/names can make a project difficult or impossible to find through a search engine.</p>
+<h2 id="h.1ogf2zcgktnr" class="c1 c13">Governed</h2>
+<p class="c1">Governance guidelines refer to the processes around active development and maintenance as well as communications related to those.</p>
+
+<p class="c1">Project governance guidelines can be applied without requiring a project to be traditionally open sourced. Indeed, many of the guidelines are simply explicit statements of process. We also note that it is not uncommon to consider a project &ldquo;internal open source,&rdquo; ie. it&rsquo;s managed in a way similar to a public OS project without being public. As with <span class="c4"><a class="c7" href="#h.278bwz69j1fc">Documented</a></span>, these guidelines are also meant to mitigate some of the issues related to the nature of our staff resources. These, then, can be applied to internal teams, larger collaborative groups and to traditionally open sourced projects.</p>
+<h3 id="h.qderu9pnkzxc" class="c1 c13">Contribution policies are provided.</h3>
+<p class="c1">This <span class="c4"><a class="c7" href="https://github.com/nayafia/contributing-template/blob/master/CONTRIBUTING-template.md">example template</a></span>&nbsp;for contribution policies covers many of the recommendations and provides examples of existing documents.</p>
+<h4 id="h.j2u8c0tf34q2" class="c1 c13">For any project, describe the workflow used by the project for contributions to the source code (or other versioned items).</h4>
+<p class="c1">This assumes that the source code is maintained in a VCS. Choose a workflow for contributions to the code repository. For git-based systems, this most likely involves a branch-based workflow such as <span class="c4"><a class="c7" href="https://guides.github.com/introduction/flow/">GitHub Flow</a></span>.</p>
+
+<p class="c1">For local teams (or even single contributors), select a workflow that is workable for all of the team. For public processes, select a commonly used workflow for your VCS of choice and your review process.</p>
+
+<p class="c1">Part of this workflow definition should include expectations about testing and documentation related to the contribution.</p>
+<h4 id="h.ns2tcmg58ars" class="c1 c13">For any project, describe commit message, pull request, and issue preferences.</h4>
+<p class="c1">If your workflow or automation processes support it (or for legibility), define commit message conventions and branch naming conventions. Set expectations for issue content. Define what is expected for bug reports or new features.</p>
+
+<p class="c1">See <span class="c4"><a class="c7" href="#h.278bwz69j1fc">Documented</a></span>&nbsp;for related.</p>
+<h4 id="h.p0kh0cpf78eq" class="c1 c13">For any project, define the code review process.</h4>
+<p class="c1">This describes the process for accepting a contribution into the repository. It applies to any development team and sets the roles and responsibilities of the reviewers and an expected timeframe for response.</p>
+
+<p class="c1">Note that this response time is not dissimilar to that described for service level qualities as outstanding pull requests can be a warning flag for potential contributors and for sustainability concerns.</p>
+<h4 id="h.ffvx3h4l2hb7" class="c1 c13">For open source projects, provide a code of conduct or state clear expectations of behavior and communication.</h4>
+<p class="c1">This is a sign of openness to potential contributors. A common structure is the <span class="c4"><a class="c7" href="http://contributor-covenant.org/">Contributor Covenant</a></span>. Consider the statements made in any code of conduct you develop or reuse and ensure that you agree with and will enforce the statements in the document.</p>
+<h4 id="h.oy3ktoh4p9gb" class="c1 c13">For open source projects, provide guidelines about what contributions will or will not be accepted.</h4>
+<p class="c1">This includes contributions not related to source code, contributions that don&rsquo;t fit within stated milestones or near-term feature implementation goals, or contributions that don&rsquo;t comply with other stated expectations. A common example of what won&rsquo;t be accepted are contributions based solely on style guide modifications (tabs changed to spaces, for example).</p>
+<h3 id="h.b4mxlh97r1ja" class="c1 c13">Development activities are transparent.</h3>
+<p class="c1">The section involves those activities related to active development and the communication processes in places for development and support.</p>
+<h4 id="h.foxopgq1esv4" class="c1 c13">Development activities are managed through an issue tracker or similar software.</h4>
+<p class="c1">For internal teams, this can be the tracker provided through an external or self-hosted VCS (GitHub, <span class="c4"><a class="c7" href="https://bitbucket.org/">BitBucket</a></span>, <span class="c4"><a class="c7" href="https://about.gitlab.com/">GitLab</a></span>), through a project management tool (<span class="c4"><a class="c7" href="https://www.pivotaltracker.com/">Pivotal Tracker</a></span>) or a TODO manager (<span class="c4"><a class="c7" href="https://trello.com/">Trello</a></span>).</p>
+
+<p class="c1">For traditionally open sourced projects, the issue tracker provided through the external VCS is preferred, although any public tracker is acceptable. This allows adopters to submit bug reports or external contributors to submit pull requests for patches and new features.</p>
+<h4 id="h.l1vbrrmurts7" class="c1 c13">Project provides support mechanism(s).</h4>
+<p class="c1">For project support beyond a specific code base (a project can support multiple codebases), provide a dedicated support email or contact form.</p>
+
+<p class="c1">For security concerns, a support contact option is recommended over the public issue tracker. This provides a way for someone to describe a potential vulnerability privately, giving the project team time to respond. Include this contact information and preference regarding vulnerability concerns to your CONTRIBUTING documentation or other appropriate documentation location. We strongly encourage this for collaborative platforms.</p>
+
+<p class="c1">Other communication methods include Twitter, listservs or mailing lists and IRC.</p>
+
+<p class="c1">Any public-facing support mechanism should be actively used by project team members. This does not mean enforced chatter; it means that support requests are addressed in a timely manner.</p>
+
+<p class="c1">In the event that a web application or service reaches the end of its lifespan, project members use these support mechanisms and other public-facing avenues (the website and/or code repository README, for example) to notify the community of adopters of service sunsetting and expectations for the cessation of services. Include information about what will happen with crowdsourced data, account information, site access and other relevant details based on the nature of the project. &nbsp;</p>
+
+<p class="c1">Related: <span class="c4"><a class="c7" href="#h.mpxwzayw9bzb">service level qualities</a></span>.</p>
+<h2 id="h.nag33fat6sc8" class="c1 c13">Code as Research Objects</h2>
+<p class="c1">These guidelines discuss activities important to the research community for preservation, reproducibility, provenance and credit. When discussing accessibility in this section, we are referring to the ability of an individual to locate a project and, more importantly, its software or code products.</p>
+
+<p class="c1">The ongoing shift towards considering code and software as research objects in their own right is a rapidly changing environment. The guidance below starts with currently actionable steps, defaulting to capturing the information in the code repository at least.</p>
+<h3 id="h.tk3e9fopeigk" class="c1 c13">Publication and Citation</h3>
+<h4 id="h.hhhoi02ps8tb" class="c1 c13">Software, as binaries and source code, are published to a sustainable third-party repository.</h4>
+<p class="c1">This criteria can be met for projects hosting source code in an external VCS platform during development and simply leaving those publicly accessible at the end of the project.</p>
+
+<p class="c1">Some research communities have developed domain-specific software and code registries for publication.</p>
+
+<p class="c1">Other options include depositing software/code and related documentation with your institutional repository.</p>
+<h4 id="h.42ni1tsctkct" class="c1 c13">Documentation includes citation details.</h4>
+<p class="c1">As noted earlier regarding other metrics for assessing the sustainability (or viability) of a research software package includes impact related to citations. Provide a suggested citation in the README of the source code and the project website.</p>
+
+<p class="c1">If publishing a software paper to a dedicated research software journal such as <span class="c4"><a class="c7" href="http://www.journals.elsevier.com/softwarex/">SoftwareX</a></span><sup><a id="cmnt_ref29" href="#cmnt29">[ac]</a></sup><sup><a id="cmnt_ref30" href="#cmnt30">[ad]</a></sup>, provide the citation in the README and on the project website.</p>
+
+<p class="c1">We encourage the adoption of the <span class="c4"><a class="c7" href="https://www.force11.org/software-citation-principles">Software Citation Principles</a></span>&nbsp;outlined by the Force11 Software Citation Working Group, noting that currently we do not have a normalized citation structure for code. In some areas, community practices exist; for those areas without, the F11 document provides references for currently used options.</p>
+<h3 id="h.pzfz7hkzxqus" class="c1 c13">Preservation/Archiving<sup><a id="cmnt_ref31" href="#cmnt31">[ae]</a></sup></h3>
+<p class="c1">As noted in <span class="c4"><a class="c7" href="#h.tk3e9fopeigk">Publication and Citation</a></span>, depositing a stable or final version in an external repository is the minimum option. Meeting most, if not all, of the documentation guidelines and ensuring that the documentation is deposited with the source code provides a more useful archive.</p>
+
+<p class="c1">Containerization is being explored as another archive option (<span class="c4"><a class="c7" href="https://daspos.crc.nd.edu/">DASPOS</a></span>). Here, the software is provided in a runnable container, preserving the system and dependencies. In some cases, this kind of preservation is not possible due to license constraints related to redistribution.</p>
+
+<p class="c1">Realistically, black box archiving or a container providing only installed or built software is not as future-proof as providing both the source code and documentation archive and a containerized version.</p>
+<h3 id="h.rdevd43xfrh4" class="c1 c13">Credit</h3>
+<p class="c1">Authorship and credit for software is overlooked in traditional scholarly spaces. Citation is one method for addressing that. Projects such as <span class="c4"><a class="c7" href="http://depsy.org/">depsy</a></span>, where transitive credit and contributions are considered, is another. Often these options are limited to certain languages, VCS platforms or package indexes. To ensure that the authorship information is available regardless of these current limitations, include an AUTHOR file in the code repository. Indicate major contributions, important contributions to code and other components.</p>
+<h1 id="h.g3e5ybizjqjh" class="c1 c13">Progression, Sustainability and Reusability</h1>
+
+<p class="note"><span class="c21">NOTE: These areas are being discussed at the ESIP Summer Meeting in July. &nbsp;</span></p>
+
+<p class="note"><span class="c21">NOTE: Provide some alignment/discussion of the Reuse Readiness Levels and code/project maturity here.</span></p>
+
+<p class="c1">The medium- to long-term sustainability of research software projects is often tied to a traditional open source model. And the guidance provided here draws heavily on those kinds of governance and contribution models. That being said, research software and code has additional expectations as part of the larger scholarly and research community. Traditional open source might be a big hammer for research projects that may not actually be nails. It is appropriate and necessary to understand the context in which open source activities are undertaken and in which research is undertaken and adapt these processes and potential funding avenues to reflect those different needs. We encourage further discussion and research here.</p>
+<h1 id="h.qyi0cpttkurs" class="c1 c13">Contributors</h1>
+<p class="c1"><strong>ESIP</strong></p>
+<ul>
+<li>Valerie Toner (NOAA)</li>
+<li>James Gallagher (OPeNDAP)</li>
+<li>Robert Downs (CIESIN)</li>
+<li>Anne Wilson (LASP)</li>
+<li>Kim Kokkonen (LASP)</li>
+<li>Joshua Elliott (LASP)</li>
+<li>Chris Pankratz (LASP)</li>
+<li>Ruth Duerr (Ronin Institute)</li>
+<li>Ryan Bowe (Geospatial Metadata)</li>
+</ul>
+<p class="c1"><strong>EarthCube/ESIP Software Assessment Workshop, June 1-3, Boulder, CO</strong></p>
+<ul>
+<li>Anne Wilson (LASP)</li>
+<li>Emily Law (JPL NASA)</li>
+<li>Ken Keiser (UAL-H)</li>
+<li>Aleksandar Jelenak (The HDF Group)</li>
+<li>Nathan Hook (NCAR-CISL)</li>
+<li>Ward Fisher (UCAR/Unidata)</li>
+<li>Bob Arko (UNOLS/R2R)</li>
+<li>Adam Shephard (WHOI)</li>
+<li>Matt Tricomi (Xentity)</li>
+</ul>
+
+<h1 id="h.t9xnm5ov8ynb" class="c1 c25 c13">&nbsp;</h1>
+<hr/>
+<h1 id="h.diuyfhespr4i" class="c1 c13 c25">&nbsp;</h1>
+<h1 id="h.cymifvkdyqc0" class="c1 c13">References and Bibliography</h1>
+<p class="c1 c6"><span class="c3">1.</span><span class="c3">Alspaugh, T. A. Kinds of Software Quality (Ilities). Available at: http://www.thomasalspaugh.org/pub/fnd/ility.html. (Accessed: 28th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">2.</span><span class="c3">Azizian, N., Sarkani, S. &amp; Mazzuchi, T. A Comprehensive Review and Analysis of Maturity Assessment Approaches for Improved Decision Support to Achieve Efficient Defense Acquisition. in Proceedings of the World Congress on Engineering and Computer Science 2009 (2009).</span></p>
+<p class="c1 c6"><span class="c3">3.Berander, P. et al. Software quality attributes and trade-offs. (2005).</span></p>
+<p class="c1 c6"><span class="c3">4.Burgess, A. 2015 AIST Evaluations Overview. (Federation of Earth Science Information Partners, 2016).</span></p>
+<p class="c1 c6"><span class="c3">5.Chełkowski, T., Gloor, P. &amp; Jemielniak, D. Inequalities in Open Source Software Development: Analysis of Contributor&rsquo;s Commits in Apache Software Foundation Projects. PLoS One 11, (2016).</span></p>
+<p class="c1 c6"><span class="c3">6.Crockford, D. JSLint. GitHub (2015). Available at: https://github.com/douglascrockford/JSLint. (Accessed: 13th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">7.Crouch, S., Jackson, M. &amp; Baxter, R. Software Evaluation Guide. Software Sustainability Institute (2014). Available at: http://www.software.ac.uk/software-evaluation-guide. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">8.Debattista, J. et al. Data on the Web Best Practices: Data Quality Vocabulary. (2016). Available at: https://www.w3.org/TR/vocab-dqv/. </span></p>
+<p class="c1 c6"><span class="c3">9.Downs, R. R. &amp; Marshall, J. J. A Proposal on Using Reuse Readiness Levels to Measure Software Reusability. Data Science Journal 9, (2010).</span></p>
+<p class="c1 c6"><span class="c3">10.Duijnhouwer, F.-W. &amp; Widdows, C. Open Source Maturity Model. (Capgemini, 2003).</span></p>
+<p class="c1 c6"><span class="c3">11.Eghbal, N. Contributing Guides: A Template. Available at: https://github.com/nayafia/contributing-template. </span></p>
+<p class="c1 c6"><span class="c3">12.Ehmke, C. A. Contributor Covenant: A Code of Conduct for Open Source Projects. (2014). Available at: http://contributor-covenant.org/. </span></p>
+<p class="c1 c6"><span class="c3">13.Fang, J., Hu, S. &amp; Han, Y. A service interoperability assessment model for service composition. in 2004 IEEE International Conference on Services Computing, 2004. (SCC 2004). Proceedings 153&ndash;158 (2004). doi:10.1109/SCC.2004.1358002</span></p>
+<p class="c1 c6"><span class="c3">14.Fielding, R. T. Architectural Styles and the Design of Network-based Software Architectures. (University of California, Irvine, 2000).</span></p>
+<p class="c1 c6"><span class="c3">15.Fogel, K. Producing Open Source Software. Available at: http://producingoss.com/en/producingoss.html. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">16.Fowler, M. Continuous Integration. martinfowler.com Available at: http://martinfowler.com/articles/continuousIntegration.html. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">17.Gent, I., Jones, C. &amp; Matthews, B. GUIDELINES FOR PERSISTENTLY IDENTIFYING SOFTWARE USING DATACITE: A JISC RESEARCH DATA SPRING PROJECT. (2015).</span></p>
+<p class="c1 c6"><span class="c3">18.Gharehyazie, M., Posnett, D., Vasilescu, B. &amp; Filkov, V. Developer initiation and social interactions in OSS: A case study of the Apache Software Foundation. Empir Software Eng 20, 1318&ndash;1353 (2014).</span></p>
+<p class="c1 c6"><span class="c3">19.Graybeal, J. ESIP Technology Evaluation Framework Final Recommendations. (2016).</span></p>
+<p class="c1 c6"><span class="c3">20.Graybeal, J. ESIP Technology Evaluation Framework. GitHub (2016). Available at: https://github.com/ESIPFed/technology-evaluation-framework. (Accessed: 10th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">21.Hettrick, S. Research Software Sustainability: Report on a Knowledge Exchange Workshop. (The Software Sustainability Institute, 2016).</span></p>
+<p class="c1 c6"><span class="c3">22.Jackson, M., Crouch, S. &amp; Baxter, R. Software Evaluation: Criteria-based Assessment. (2011).</span></p>
+<p class="c1 c6"><span class="c3">23.jenniferc. Service Level Agreement Examples: A Total Must for Your Business and Mine! Udemy Blog Available at: https://blog.udemy.com/service-level-agreement-examples/. (Accessed: 14th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">24.Keyes, D. &amp; Taylor, V. National Science Foundation Advisory Committee for CyberInfrastructure Task Force on Software for Science and Engineering. (National Science Foundation, 2011).</span></p>
+<p class="c1 c6"><span class="c3">25.Mader, C., Haslhofer, B. &amp; Isaac, A. in Theory and Practice of Digital Libraries (eds. Zaphiris, P., Buchanan, G., Rasmussen, E. &amp; Loizides, F.) 7489, 222&ndash;233 (Springer Berlin Heidelberg, 2012).</span></p>
+<p class="c1 c6"><span class="c3">26.Marcotte, E. Responsive Web Design. Available at: http://alistapart.com/article/responsive-web-design. (Accessed: 16th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">27.Mattmann, C. A., Downs, R. R., Marshall, J. J., Most, N. F. &amp; Samadi, S. TOOLS TO SUPPORT THE REUSE OF SOFTWARE ASSETS FOR THE NASA EARTH SCIENCE DECADAL SURVEY MISSIONS. IEEE Geoscience and Remote Sensing Society Newsletter (2011).</span></p>
+<p class="c1 c6"><span class="c3">28.Miguel, J. P., Mauricio, D. &amp; Rodr&iacute;guez, G. A Review of Software Quality Models for the Evaluation of Software Products. International Journal of Software Engineering &amp; Applications (IJSEA), 5, (2014).</span></p>
+<p class="c1 c6"><span class="c3">29.Pernice, K. &amp; Nielsen, J. Usability Guidelines for Accessible Web Design: Based on Usability Studies with People Using Assistive Technology. (Nielsen Norman Group, 2001).</span></p>
+<p class="c1 c6"><span class="c3">30.Petre, M. &amp; Wilson, G. PLOS/Mozilla Scientific Code Review Pilot: Summary of Findings. CoRR abs/1311.2412, (2013).</span></p>
+<p class="c1 c6"><span class="c3">31.Ratnakar, V. &amp; Gil, Y. Ontosoft. Ontosoft Available at: http://ontosoft.org/ontology/software/. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">32.Rezaei, R., Chiew, T. &amp; Lee, S. A review of interoperability assessment models. J. Zhejiang Univ. - Sci. C 14, 663&ndash;681 (2013).</span></p>
+<p class="c1 c6"><span class="c3">33.Scott, A. Ethical Web Development. (2016). Available at: https://ethicalweb.org/. (Accessed: 12th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">34.Smith, A., Katz, D. &amp; Niemeyer, K. FORCE11 SOFTWARE CITATION PRINCIPLES (Draft). (2016).</span></p>
+<p class="c1 c6"><span class="c3">35.Smith, N. sempervirens. GitHub Available at: https://github.com/njsmith/sempervirens. (Accessed: 16th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">36.Stig, D. C., H&ouml;gman, U. &amp; Bergsj&ouml;, D. Assessment for the Readiness for Internal Technology Transfer - A Case Study. (2011).</span></p>
+<p class="c1 c6"><span class="c3">37.Urban-Mathieux, B. NGDA Lifecycle Maturity Assessment. GEOPLATFORM.gov Available at: https://cms.geoplatform.gov/A-16-NGDA-Theme-Community/LMA. </span></p>
+<p class="c1 c6"><span class="c3">38.Wang, W., Tolk, A. &amp; Wang, W. The Levels of Conceptual Interoperability Model: Applying Systems Engineering Principles to M&amp;S. in SpringSim&rsquo;09 Proceedings (2009).</span></p>
+<p class="c1 c6"><span class="c3">39.weavejester. Codox. Codox: Clojure documentation tool Available at: https://github.com/weavejester/codox. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">40.Welker, K. D. The Software Maintainability Index Revisited. The Journal of Defense Software Engineering (2001).</span></p>
+<p class="c1 c6"><span class="c3">41.Wiggins, A. The Twelve-Factor App. (2012). Available at: http://12factor.net/. (Accessed: 13th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">42.Yuan, D. et al. Simple Testing Can Prevent Most Critical Failures: An Analysis of Production Failures in Distributed Data-intensive Systems. in Proceedings of the 11th USENIX Conference on Operating Systems Design and Implementation 249&ndash;265 (USENIX Association, 2014).</span></p>
+<p class="c1 c6"><span class="c3">43.Zaveri, A. et al. Quality assessment for Linked Data: A Survey: A systematic literature review and conceptual framework. Semantic Web 7, 63&ndash;93 (2015).</span></p>
+<p class="c1 c6"><span class="c3">44.Code Conventions for the Java Programming Language: Contents. (1999). Available at: http://www.oracle.com/technetwork/java/codeconvtoc-136057.html. (Accessed: 13th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">45.ISO/EIC 9126-1. (2000).</span></p>
+<p class="c1 c6"><span class="c3">46.Speed Matters. Google Research Blog (2009).</span></p>
+<p class="c1 c6"><span class="c3">47.Reuse Readiness Levels (RRLs). (NASA Earth Science Data Systems - Software Reuse Working Group, 2010).</span></p>
+<p class="c1 c6"><span class="c3">48.Falsehoods Programmers Believe About Names. Kalzumeus Software (2010).</span></p>
+<p class="c1 c6"><span class="c3">49.NASA Technology Readiness Levels. (2012). Available at: https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html. </span></p>
+<p class="c1 c6"><span class="c3">50.API Resource Guide, API Security. API Management Blog - Akana (2014). Available at: https://blog.akana.com/api-security-resource-guide/. (Accessed: 16th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">51.Introduction to Container Security. (Docker, 2015).</span></p>
+<p class="c1 c6"><span class="c3">52.Mozilla Developer Guide &gt; Coding style. Mozilla Developer Network (2016). Available at: https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style. (Accessed: 13th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">53.Pylint. (2016). Available at: https://www.pylint.org/. (Accessed: 12th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">54.Twitter API Rate Limits. Twitter Developers (2016). Available at: https://dev.twitter.com/rest/public/rate-limiting. (Accessed: 13th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">55.2016 Software Infrastructure for Sustained Innovation (SI2) PI Workshop Report. (Software Infrastructure for Sustained Innovation (SI2) Principal Investigators (PI), 2016).</span></p>
+<p class="c1 c6"><span class="c3">56.6 Things to Know About Successful (and Failed) Open-Source Software.</span></p>
+<p class="c1 c6"><span class="c3">57.Accessibility - W3C. Available at: https://www.w3.org/standards/webdesign/accessibility#wai. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">58.[ARCHIVED] Open Source Maturity Model. Available at: http://oss-watch.ac.uk/resources/archived/osmm#how-the-osmm-compares-against-the-brr. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">59.Best Practice Library | Section508.gov. Available at: http://section508.gov/content/learn/best-practice-library. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">60.Best Practices Criteria for Free/Libre and Open Source Software (FLOSS) (version 0.8.0). Linux Foundation Available at: https://github.com/linuxfoundation/cii-best-practices-badge/blob/master/doc/criteria.md. </span></p>
+<p class="c1 c6"><span class="c3">61.Center for Trustworthy Scientific Cyberinfrastructure. Center for Trustworthy Scientific Cyberinfrastructure Available at: http://trustedci.org/. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">62.Choose an open source license. Choose a License Available at: http://choosealicense.com/. (Accessed: 13th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">63.CLAHub. Contributor License Agreements on Github Available at: https://www.clahub.com/. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">64.codemeta/codemeta. GitHub Available at: https://github.com/codemeta/codemeta. (Accessed: 1st June 2016)</span></p>
+<p class="c1 c6"><span class="c3">65.Computational Infrastructure for Geodynamics :: Best Practices. Available at: https://geodynamics.org/cig/dev/best-practices. (Accessed: 12th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">66.Continuous Integration and Delivery. CircleCI Available at: https://circleci.com/. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">67.Creative Commons. Creative Commons Available at: https://creativecommons.org/. (Accessed: 16th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">68.CWICSmart A Programmatic OpenSearch Client. Available at: http://testbed.echo.nasa.gov/cwic-smart/validations. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">69.DASPOS. Available at: https://daspos.crc.nd.edu/. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">70.Depsy. Available at: http://depsy.org/. (Accessed: 26th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">71.Docker. Docker Available at: http://www.docker.com/. (Accessed: 14th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">72.Draft U.S. Web Design Standards | Draft U.S. Web Design Standards. Available at: https://standards.usa.gov/. (Accessed: 16th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">73.duecredit/duecredit. duecredit Available at: https://github.com/duecredit/duecredit. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">74.EarthCube Cross-Domain Interoperability Roadmap | EarthCube. Available at: http://earthcube.org/document/2012/earthcube-cross-domain-interoperability-roadmap. (Accessed: 4th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">75.EarthCube Integration and Testing Environment (ECITE) | EarthCube. Available at: http://earthcube.org/group/earthcube-integration-testing-environment-ecite. (Accessed: 1st June 2016)</span></p>
+<p class="c1 c6"><span class="c3">76.Ecological Studies of Open Source Software Ecosystems. Available at: http://informatique.umons.ac.be/genlog/projects/ecos/. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">77.ESSI-SCOPE Quality Characteristics and their application. Available at: http://www.cse.dcu.ie/essiscope/sm2/9126ref.html. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">78.GNU Coding Standards: Releases. Available at: https://www.gnu.org/prep/standards/html_node/Releases.html#index-version-numbers_002c-for-releases. (Accessed: 14th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">79.Google VSAQ: Vendor Security Assessment Questionnaire. Google VSAQ Available at: https://github.com/google/vsaq. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">80.Graceful degradation versus progressive enhancement - W3C Wiki. Available at: https://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement. (Accessed: 16th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">81.Guide to WS-Agreement Model &amp; Protocol. Available at: http://wsag4j.sourceforge.net/site/wsag/overview.html. (Accessed: 14th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">82.InCommon Certificate Service. Available at: https://www.incommon.org/certificates/. (Accessed: 14th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">83.Introduction - 18F Open Source Style Guide. Available at: https://pages.18f.gov/open-source-guide/. (Accessed: 16th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">84.ISO 25010. Available at: http://iso25000.com/index.php/en/iso-25000-standards/iso-25010?limit=3&amp;limitstart=0. (Accessed: 25th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">85.ISO/IEC 25010:2011 - Systems and software engineering -- Systems and software Quality Requirements and Evaluation (SQuaRE) -- System and software quality models. ISO Available at: http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=35733. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">86.istlab/Alitheia-Core. GitHub Available at: https://github.com/istlab/Alitheia-Core. (Accessed: 1st June 2016)</span></p>
+<p class="c1 c6"><span class="c3">87.Jenkins. Available at: https://jenkins.io/index.html. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">88.Let&rsquo;s Encrypt - Free SSL/TLS Certificates. Available at: https://letsencrypt.org/. (Accessed: 14th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">89.Open Services for Lifecycle Collaboration. Available at: http://open-services.net/. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">90.OS X Human Interface Guidelines: Designing for Yosemite. Available at: https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/. (Accessed: 14th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">91.OWASP. The Open Web Application Security Project Available at: https://www.owasp.org/index.php/Main_Page. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">92.OWASP/DevGuide. GitHub Available at: https://github.com/OWASP/DevGuide. (Accessed: 13th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">93.Practices Perfected In OSS Can Reshape Enterprise Development. The npm Blog Available at: http://blog.npmjs.org/post/139373244435/practices-perfected-in-oss-can-reshape-enterprise. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">94.QCon NewYork 2016: The Verification of a Distributed System. Speaker Deck Available at: https://speakerdeck.com/caitiem20/qcon-newyork-2016-the-verification-of-a-distributed-system. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">95.QGIS: Developing Python Plugins. Available at: http://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/plugins.html. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">96.RAML. RAML Available at: http://raml.org/. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">97.Read the Docs. Available at: https://readthedocs.org/. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">98.RepoGrams/RepoGrams. RepoGrams Available at: https://github.com/RepoGrams/RepoGrams. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">99.reproducible-builds.org. Reproducible Builds Available at: https://reproducible-builds.org/. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">100.reStructuredText. Available at: http://docutils.sourceforge.net/rst.html. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">101.Selenium - Web Browser Automation. Available at: http://www.seleniumhq.org/. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">102.Semantic Versioning 2.0.0. Available at: http://semver.org/. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">103.SLA@SOI. Available at: http://sla-at-soi.eu/. (Accessed: 14th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">104.Software Preservation Network.</span></p>
+<p class="c1 c6"><span class="c3">105.Software Testing and Static Analysis Tools | Coverity. Synopsys Available at: http://www.coverity.com/. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">106.SoftwareX.</span></p>
+<p class="c1 c6"><span class="c3">107.Sphinx 1.4.4 documentation. Available at: http://www.sphinx-doc.org/en/stable/index.html. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">108.SQA Software Quality Assurance: FURPS. Available at: http://www.sqa.net/index.htm#furps. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">109.SQA Software Quality Assurance in Practice. Available at: http://www.sqa.net/sqa-practice.html. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">110.SQC Software Quality Control. Available at: http://www.sqa.net/softwarequalityattributes.html. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">111.StartSSL&trade; Certificates &amp; Public Key Infrastructure. Available at: https://www.startssl.com/StartEncrypt. (Accessed: 14th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">112.Stealing Google&rsquo;s Coding Practices for Academia. Stealing Google&rsquo;s Coding Practices for Academia</span></p>
+<p class="c1 c6"><span class="c3">113.Swagger &ndash; The World&rsquo;s Most Popular Framework for APIs. Available at: http://swagger.io/. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">114.TEAM Engine. Available at: http://cite.opengeospatial.org/teamengine/. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">115.The Open Definition - Open Definition - Defining Open in Open Data, Open Content and Open Knowledge. Available at: http://opendefinition.org/. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">116.Travis CI - Test and Deploy Your Code with Confidence. Available at: https://travis-ci.org/. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">117.Understanding the GitHub Flow &middot; GitHub Guides. Available at: https://guides.github.com/introduction/flow/. (Accessed: 15th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">118.WAI-ARIA Overview. Available at: https://www.w3.org/WAI/intro/aria.php. (Accessed: 16th June 2016)</span></p>
+<p class="c1 c6"><span class="c3">119.WCAG Overview. Available at: https://www.w3.org/WAI/intro/wcag. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">120.Web Accessibility Initiative. Available at: https://www.w3.org/standards/webdesign/accessibility. (Accessed: 24th May 2016)</span></p>
+<p class="c1 c6"><span class="c3">121.Welcome to the Standard Technical Evaluation Process Toolkit. MITRE STEP Toolkit Available at: http://www2.mitre.org/work/sepo/toolkits/STEP/. (Accessed: 24th May 2016)</span></p>
+<div>&nbsp;</div>
+<div class="c9">
+<p class="c8"><a id="cmnt1" href="#cmnt_ref1">[a]</a><span class="c12 c23">being revised for the top two levels (overlap in types not funding, ie the bars don't indicate when a grant ends but that a kind of grant could result in projects at different progression stages)</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt2" href="#cmnt_ref2">[b]</a><span class="c12 c23">data pipeline scripts vs some data repository code, for example.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt3" href="#cmnt_ref3">[c]</a><span class="c12 c23">if it exists, i'm not having luck finding it.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt4" href="#cmnt_ref4">[d]</a><span class="c12 c23">the library crowd does this often, if there's a need to expand?</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt5" href="#cmnt_ref5">[e]</a><span class="c12 c23">currently without a reasonable reference here.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt6" href="#cmnt_ref6">[f]</a><span class="c12 c23">probably not the correct statement re: data inputs, mocking, etc.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt7" href="#cmnt_ref7">[g]</a><span class="c12 c23">Insert more context here. maybe what kinds of things are tested, benefits, etc.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt8" href="#cmnt_ref8">[h]</a><span class="c12 c23">section needs a bit more context (esp. ontology/vocab service bits) and examples/references.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt9" href="#cmnt_ref9">[i]</a><span class="c12 c23">could make a statement related - project includes explicit effort to gather info or has performed that prior to start.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt10" href="#cmnt_ref10">[j]</a><span class="c12 c23">something about choosing or noting institutional requirements (limited to dept site and templates provided, etc).</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt11" href="#cmnt_ref11">[k]</a><span class="c12 c23">vulnerabilities in the older browsers, IE.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt12" href="#cmnt_ref12">[l]</a><span class="c12 c23">must be a better way to say bad interface design + private info made public != user error.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt13" href="#cmnt_ref13">[m]</a><span class="c12 c23">so if i want to run awesome service framework and i know i need to handle XX requests per minute, i have a better idea if the system can handle that now or if i might have to modify it to meet my needs.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt14" href="#cmnt_ref14">[n]</a><span class="c12 c23">add something about describing the process (ie you get booted temporarily for 1 violation, etc).</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt15" href="#cmnt_ref15">[o]</a><span class="c12 c23">how complete do we need to make this list?</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt16" href="#cmnt_ref16">[p]</a><span class="c12 c23">Note re: robots.txt and web service access - it is a blunt instrument in many ways, relying solely on it to block traffic is indicative of load issues.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt17" href="#cmnt_ref17">[q]</a><span class="c12 c23">https://research.googleblog.com/2009/06/speed-matters.html</span></p>
+<p class="c8 c2">&nbsp;</p>
+<p class="c8"><span class="c12 c23">for one of the popular studies</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt18" href="#cmnt_ref18">[r]</a><span class="c12 c23">If there are more HPC/GPU/cluster-related guidelines that might be missing, add them.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt19" href="#cmnt_ref19">[s]</a><span class="c12 c23">code isn't self-documenting and tests don't capture project decisions in very real ways.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt20" href="#cmnt_ref20">[t]</a><span class="c12 c23">needs a better word.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt21" href="#cmnt_ref21">[u]</a><span class="c12 c23">could include something like Coverity (http://www.coverity.com/), contributed during the revision process. doesn't fit currently now.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt22" href="#cmnt_ref22">[v]</a><span class="c12 c23">this seems picky but google will downgrade sites without it.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt23" href="#cmnt_ref23">[w]</a><span class="c12 c23">possibly the worst link for a functional description.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt24" href="#cmnt_ref24">[x]</a><span class="c12 c23">does not remove the sysadmin requirements but is (often) misinterpreted as such. point people to system resources for upgrades (to know what the thing is *to* update), give them an understanding of how to handle your app in the container for upgrades.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt25" href="#cmnt_ref25">[y]</a><span class="c12 c23">meaning, do you really need 200 options for toggling private, private to group, public for a page?</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt26" href="#cmnt_ref26">[z]</a><span class="c12 c23">could be a better statement, but added here to make sure containers are included.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt27" href="#cmnt_ref27">[aa]</a><span class="c12 c23">the docker security white paper</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt28" href="#cmnt_ref28">[ab]</a><span class="c12 c23">unusable code is unsustainable code, ie think about ROI from the funder's side</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt29" href="#cmnt_ref29">[ac]</a><span class="c12 c23">also another example here.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt30" href="#cmnt_ref30">[ad]</a><span class="c12 c23">one that supports any of the things that makes code reusable instead of just blobs of fortran would be fantastic here.</span></p>
+</div>
+<div class="c9">
+<p class="c8"><a id="cmnt31" href="#cmnt_ref31">[ae]</a><span class="c12 c23">might be missing a reference or two?</span></p>
+</div>
