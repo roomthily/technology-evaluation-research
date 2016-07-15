@@ -16,7 +16,7 @@ title: "ESIP Software Guidelines (Draft June 2016)"
 
 <div class="feedback">
 <p>Comments and feedback are encouraged until <strong>July 22, 2016</strong>. </p>
-<p>To comment, please use one of the following options, in oreder of preference:</p>
+<p>To comment, please use one of the following options, in order of preference:</p>
 <ol>
     <li>Comment directly on this page using the <a href="https://hypothes.is/">Hypothes.is</a> annotation system (you will need to make an account to view or add annotations).</li>
     <li>Create an issue in <a href="https://github.com/roomthily/technology-evaluation-research/issues">GitHub</a>.</li>
@@ -27,10 +27,21 @@ title: "ESIP Software Guidelines (Draft June 2016)"
 <hr />
 
 <h2>Table of Contents</h2>
+<p><a href="#draft-start">Continue</a> to draft.</p>
 <ul>
-    <li><a href="#h.46uewrp95kfe">Introduction</a></li>
-    <li><a href="#h.rtkadvvyvaul">Research Software Projects</a></li>
+    <li><a href="#motivation">Motivation</a></li>
+    <li><a href="#h.46uewrp95kfe">Background</a></li>
+    <li><a href="#developing-guidelines">Developing Software Guidelines: A Community-driven Process</a></li>
+    <li><a href="#what-is-research">What is Research Code?</a></li>
     <li><a href="#h.6bi4jecr96n">Community and Stakeholders</a></li>
+    <li><a href="#h.rtkadvvyvaul">Research Software Projects</a>
+        <ul>
+            <li><a href="#scenarios">Scenarios</a></li>
+            <li><a href="#maturities">Code and Project Maturity</a></li>
+            <li><a href="#systems">Systems</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Goals of this Document</a></li>
     <li><a href="#h.jto1fyx4wiqs">Guidelines</a>
         <ul>
             <li><a href="#h.jc42b2hcl6wm">Sustainable Code</a>
@@ -178,43 +189,44 @@ title: "ESIP Software Guidelines (Draft June 2016)"
         </ul>
     </li>
     <li><a href="#h.g3e5ybizjqjh">Progression, Sustainability and Reusability</a></li>
+    <li><a href="#assessment">Using this guidance for assessment</a></li>
     <li><a href="#h.qyi0cpttkurs">Contributors</a></li>
     <li><a href="#h.btnzoj6jjto1">References and Bibliography</a></li>
 </ul>
 
-<hr />
+<hr id="draft-start"/>
 
-<h1 id="h.46uewrp95kfe" class="c1 c13">Introduction</h1>
-<p class="c1">This work builds on the criteria developed by the <span class="c4"><a class="c7" href="http://software.ac.uk/sites/default/files/SSI-SoftwareEvaluationCriteria.pdf">Software Sustainability Institute</a></span>&nbsp;(Jackson et al. 2011) and its application, and expansion, in an evaluation framework, developed through ESIP in collaboration with NASA AIST, to verify <span class="c4"><a class="c7" href="https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html">Technology Readiness Levels</a></span>&nbsp;(TRL, NASA 2012) in 2015. The framework was used during a <span class="c4"><a class="c7" href="http://testbed.esipfed.org/sites/default/files/2015_AIST_Evaluations_Overview.pdf">pilot evaluation effort</a></span>&nbsp;(Burgess 2016, Graybeal 2016) over the course of that autumn.</p>
+<p>The Federation for Earth Science Information Partners (ESIP) recognizes the role code plays in contemporary research practices as well as the issues community members face when approaching technology-dependent research. With the cross-disciplinary nature of the ESIP membership, we feel well positioned to develop guidance and recommended practices for the Earth observation and geosciences communities in a way that recognizes the domain expertise within these communities and that supports the communities’ desire for improved practices around research code and software. </p>
+<p>Current discussions around code and software practices in the broader research community often does not include representations from either the Earth observation or geosciences communities. And while we agree that code is code in any domain, we believe that it is important that these discussions and the practices that evolve from them speak to the broadest range of researchers, whether they are faculty, research staff, developers, graduate students or postdoctoral fellows. In this way, we hope to develop meaningful and practical assessment procedures that address the concerns of currently funded researchers and develop training and support networks for early career and future researchers.</p>
 
-<p class="c1">Community discussions around the criteria and ESIP&rsquo;s larger interest in assessment as a mentoring activity, instead of a verification activity, led to this effort to revise the assessment criteria to better fit with those education goals as well as certain structural concerns with the existing criteria.</p>
-<h3 id="h.3qhixgp3adkd" class="c1 c13">Goals of this Document</h3>
-<ol class="c28 lst-kix_shfd0z5borlh-0 start" start="1">
-<li class="c1 c18 c22">Describe research software project stages and relationships between code and project maturity.</li>
-<li class="c1 c22 c18">Provide guidance and resources that are relevant across stakeholders and types of research groups.</li>
-<li class="c1 c22 c18">Provide guidance and resources that are relevant for any type of research software or code or specific guidance when warranted.</li>
-</ol>
+<h2 id="motivation" class="c1 c13">Motivation</h2>
+<p class="note">[NOTE: Statement, here or at start, on the need for these guidelines re: lack of support for research code/software and the importance of it across so many areas of research.]
+</p>
 
-<p class="c1">The guidance outlined here is intended intended to cover a broad range of research software concept.</p>
-<h1 id="h.rtkadvvyvaul" class="c1 c13">Research Software Projects</h1>
+<h2 id="h.46uewrp95kfe" class="c1 c13">Background</h2>
 
-<p class="c1">The guidance developed here is intended for any research software or research code output or deliverable. We are looking beyond the traditional understanding of &ldquo;science code&rdquo; to consider any code developed through a grant funding mechanism. These codes may not directly speak to a science outcome; however, they are valuable when considered more broadly for provenance, for reusability and reproducibility.</p>
-<img title="" src="images/image00.png" alt="Research Funding Lifecycle" />
-<p class="c1">Figure XX. Research Funding Lifecycles.</p>
+<p class="c1">This work builds on the criteria developed by the <span class="c4"><a class="c7" href="http://software.ac.uk/sites/default/files/SSI-SoftwareEvaluationCriteria.pdf">Software Sustainability Institute</a></span>&nbsp;(Jackson et al. 2011)  and extends their use through a larger evaluation framework developed by ESIP in collaboration with NASA AIST to verify <span class="c4"><a class="c7" href="https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html">Technology Readiness Levels</a></span>&nbsp;(TRL, NASA 2012). The evaluation framework was used in a <span class="c4"><a class="c7" href="http://testbed.esipfed.org/sites/default/files/2015_AIST_Evaluations_Overview.pdf">pilot effort</a></span>&nbsp;(Burgess 2016, Graybeal 2016) over the course of autumn 2015.</p>
 
-<p class="c1">Figure XX provides an idealized overview of research grant funding as it relates to software project lifecycles. It is not intended to describe the complete funding landscape or the variety of ways a research software project could be positioned along a funding or maturity progression. For the purposes of this document and the guidance provided, we are noting the expectations of project or code maturity and the expectations of what is appropriate to assess along those progressions based on those maturity expectations.</p>
+<p>This effort results from both community discussions around these criteria and from ESIP’s larger interest in technology evaluation as a mentoring activity rather than as a verification activity. The guidelines outlined in this document will serve as the foundation for future assessment and training implementations.</p>
 
-<p class="c1">Note that Fig. XX does not include maturity levels. Code maturity and project maturity, identified as some set of characteristics or through longevity, are not linear. A project can start with a high level of code maturity in an initial proof of concept phase. Project maturity, often presented as governance patterns similar to traditional open source projects, is the same. And improvements in both can occur within the lifespan of a single grant rather than through a series of grants. Here we see a potential mismatch between how &nbsp;funding agency may assess and categorize a project and the realities of developing software. Nor does it address mismatches between maturity, of either kind, and the focus on project growth through new research or feature implementations to meet research goals or the realities of software meeting community needs without necessarily meeting code/project maturity goals. These maturity markers are indicators of project health that we strongly support but not to the detriment of the larger goals of providing product that meets a community need and is adopted.</p>
+<h2 id="developing-guidelines">Developing Software Guidelines: A Community-driven Process</h2>
+<p>We began the revision of these guidelines with a focus on the ESIP community’s interdisciplinary membership. In addition, we made a conscious effort to solicit input from active developers, aiming for a roughly even split between developers and researchers, managers and/or principal investigators. 
+</p>
 
-<p class="c1">As diverse as research software projects are, there are two overarching categories: code/software intentionally developed for reusability and adoption and code/software developed for highly specific project needs. Neither option negates the recent requirements for openness; however, the methods for achieving those requirements and expectations around code or project maturity are different. The guidance here outlines the community recommendations for openness to support both categories. For projects developing code or software not intended for reuse and adoption, the focus for assessment is on code maturity, documentation and preservation or publication. We should note, as well, &ldquo;not intended&rdquo; reflects stated project milestones, sustainability and community engagement activities per the funded proposal.</p>
+<p>The formal revision process for the initial draft was undertaken through three different activities. The first involved a remote sprint where ESIP members volunteered to review different sections of the original criteria based on domain expertise and interest. The second activity involved community discussions with members of the Boulder Earth and Space Science Informatics Group (BESSIG). The last activity was the Joint EarthCube and ESIP Workshop on Software Assessment (Boulder, CO; June 2016). The outcome of this workshop, for ESIP, was twofold — further revisions of the guidelines and developing initial guidelines for interoperability and to establish the roles of each community, EArthCube and ESIP, in addressing the larger EO and geoscience community needs for improving research code and software practices.</p>
 
-<p class="c1">We are focused here on code/software developed by a research group. For the purposes of assessment, we exclude software products reused by a research group from discussions of code maturity assessment while noting its value in assessing project maturity. Or, more specifically, we support a research group&rsquo;s decision to reuse a current, outcome-appropriate technology over reimplementing a similar technology but do not consider the reused technology an assessment target itself. A simple example is developing modules for an existing web publication framework instead of developing a new framework.</p>
+<p class="note">NOTE: Update for the outcomes from ESIP Summer Meeting 2016 workshop sessions.</p>
 
-<p class="c1">Related, should a project employ an existing technology to support the publication or release of a research object that is not code or software, that technology again would not be considered during the assessment of the research software or code. A very broad example of this would be developing datasets and providing those publicly through ESRI&rsquo;s ArcOnline platform. A project assessment would consider the datasets but not ArcOnline in this case. However, guidance for quality and maturity for other research object types, such as datasets or ontologies, is beyond the scope of this document.</p>
+<h2 id="what-is-research">What is Research Code?</h2>
+<p>For our purposes, research code and research software are any code outputs developed through grant-funded activities. This understanding is broader and more inclusive  than that found in more traditional “science code” definitions, and it is a necessary expansion for  supporting the current needs of our research communities. Research code and research software are critical to many contemporary research activities (Hettrick et al. 2014). 
+</p>
+<p>Here, we also make a distinction between research code and research software. Research code can be scripts, data processing or analysis workflows, or other codes developed to generate data, perform analyses, or perform other project-specific tasks leading to artefacts published through journal articles or otherwise. This kind of code is usually not intended for community adoption through open sourcing or public release, nor is it included as an explicit deliverable on a grant. The potential for long term support for these codes is low, but, these codes are nevertheless important to the community for provenance and reproducibility, replicability and publication.
+</p>
+<p>For its part, research software is any code product, whether as scripts or as some packaged object, that is intended to be released for community adoption and use. Intention of release is not a complete description of what we mean by research software as we also include intentional design or systems understanding for a defined purpose. This software is most likely an explicit deliverable for a grant. These outputs are valuable for provenance and other community practices, and have the additional potential of longer term support through both ongoing maintenance by the research group or other contributors and through continued funding. </p>
+<p>The distinctions here are related to the purpose of the release and the prospect for ongoing maintenance. In practice, these factors usually do not affect the guidance provided, and for most of this text, the terms research code and research software will be simplified to “codes”. However, there are certain circumstances in which the differences come into play, and these situations will be noted.
+</p>
 
-<p class="c1">Analytics and altmetrics are including here to highlight two aspects of analytics for assessment. First, projects at different stages of the lifecycle are characterized by different outcomes and those outcomes may not occur within a specific funding period. Second, we are focusing our guidance on those activities that are actionable by a research group to meet their maturity goals. The success of these activities may be, at least in part, demonstrated through analytics and altmetrics. Understanding how those metrics relate to the funding cycle timelines is necessary before including these in an assessment process focused on activities within a cycle. We suggest caution, then, in when and what is being measured in these areas without further research.</p>
-
-<h1 id="h.6bi4jecr96n" class="c1 c13">Community and Stakeholders</h1>
+<h2 id="h.6bi4jecr96n" class="c1 c13">Community and Stakeholders</h2>
 
 <p class="c1">Our focus on assessment for guided educational activities as well as assessment for verification encompasses a wide range of stakeholders. Table XX outlines the main stakeholder communities and related use cases.</p>
 
@@ -315,8 +327,60 @@ title: "ESIP Software Guidelines (Draft June 2016)"
 </tbody>
 </table>
 
+<p class="c1">We must also understand that the research software projects are undertaken by a variety of research groups with varying degrees of resources available. These groups range from well-supported institutions with dedicated developer teams to individual PIs with only part-time developer support or small teams of graduate students with varying levels of experience in software development. With that understanding, we have structured this guidance to demonstrate worthwhile and concrete actions that can be taken to improve development practices within a research group’s current resource limitations.</p>
 
-<p class="c1">We must also understand that the research software projects are undertaken by a variety of research groups with varying degrees of resources available. These range from well-supported institutions with dedicated developer teams to PIs with only part-time developer support or small teams of graduate students. And team members have varying levels of experience related to software development. With that understanding, we have structured the guidance to provide worthwhile and concrete actions to improve development practices for both code and project maturity within a research group&rsquo;s current resource limitations. &nbsp;</p>
+<p>These use cases are expanded in the Scenarios section below to provide more concrete examples and discuss the assessment implications for maturity and for education in real world situations.</p>
+
+
+
+<h1 id="h.rtkadvvyvaul" class="c1 c13">Research Software Projects</h1>
+
+<h3 id="scenarios">Scenarios</h3>
+<p>In this section, we will describe a number of common scenarios where research produces some code or software and the expectations for assessment, code and project maturity, and sustainability may play out differently in each scenario. 
+</p>
+
+<div class="feedback">
+    <p>We're collecting scenarios describing real world situations for different funding, development and research group activities. From this collection, we'd like to address concerns related to assessment by funding agencies and assessment for education. Placeholders are included for new scenarios provided through annotation. If a similar scenario is provided, add comments to the annotation.</p>
+    <p>Scenario 1 is provded as an example description at this time.</p>
+    <p>We are interested in situations particularly around existing projects, legacy codebases, multiple funders and between research code and research software. These are discussion points for considering an assessment system that is not punitive, not onerous and that considers the funders' ROI interests while still meeting the desired community practices. You don't need to provide project names or identifying features but try to provide the context as completely as possible.</p>
+    <p>Scenarios can also be provided through a <a href="https://docs.google.com/spreadsheets/d/1Y4tIm0RzfmgaBWM_jl2_NyIo494DjXXXbksLLPENGOU/edit?usp=sharing">Google Spreadsheet</a> or through a public <a href="https://titanpad.com/0z9RcazAJy">Titanpad</a> (no account necessary).</p>
+</div>
+
+<p><strong>Scenario 1: </strong>A grad student is brought on to a project, under a single funder/grant, to develop the workflow to process data taken from a data logger and create the final calibrated dataset.</p>
+<p><strong>Scenario 2: </strong></p>
+<p><strong>Scenario 3: </strong></p>
+<p><strong>Scenario 4: </strong></p>
+<p><strong>Scenario 5: </strong></p>
+
+<h3 id="maturities">Code and Project Maturity</h3>
+
+Code maturity and project maturity, identified either through longevity or by some defined criteria, are not linear, nor do they necessarily coincide. A project can start with a high level of code maturity in an initial proof of concept phase. For its part, project maturity, often presented as governance patterns similar to traditional open source projects, can begin the same way. Improvements in both can occur within the lifespan of a single grant rather than through a series of grants. Here we can see the potential mismatch between the way that funding agencies often assess and categorize a project and the way that software develops in reality. At its most basic, this is the not uncommon situation where a codebase may not meet the desired level of code or project maturity but is successfully serving a community need. These maturity markers are indicators of project health that we strongly support but not to the detriment of the larger goals of providing product that meets a community need and is adopted.
+</p>
+
+<p class="c1">As diverse as research software projects are, there are two overarching categories: code/software intentionally developed for reusability and adoption and code/software developed for highly specific project needs. Neither option negates the recent requirements for openness; however, the methods for achieving those requirements and expectations around code or project maturity are different. The guidance here outlines the community recommendations for openness to support both categories. For projects developing code or software not intended for reuse and adoption, the focus for assessment is on code maturity, documentation and preservation or publication. We should note, as well, “not intended” reflects stated project milestones, sustainability and community engagement activities per the funded proposal. 
+</p>
+
+<p class="c1">We are focused here on code/software developed by a research group. For the purposes of assessment, we exclude software products reused by a research group from discussions of code maturity assessment while noting its value in assessing project maturity. Or, more specifically, we support a research group’s decision to reuse a current, outcome-appropriate technology over reimplementing a similar technology but do not consider the reused technology an assessment target itself. A simple example is developing modules for an existing web publication framework instead of developing a new framework.</p>
+
+<p class="c1">Related, should a project employ an existing technology to support the publication or release of a research object that is not code or software, that technology again would not be considered during the assessment of the research software or code. A very broad example of this would be developing datasets and providing those publicly through ESRI’s ArcOnline platform. A project assessment would consider the datasets but not ArcOnline in this case. However, guidance for quality and maturity for other research object types, such as datasets or ontologies, is beyond the scope of this document.</p>
+
+<p class="c1">Analytics and altmetrics are including here to highlight two aspects of analytics for assessment. First, projects at different stages of the lifecycle are characterized by different outcomes and those outcomes may not occur within a specific funding period. Second, we are focusing our guidance on those activities that are actionable by a research group to meet their maturity goals. The success of these activities may be, at least in part, demonstrated through analytics and altmetrics. Understanding how those metrics relate to the funding cycle timelines is necessary before including these in an assessment process focused on activities within a cycle. We suggest caution, then, in when and what is being measured in these areas without further research. </p>
+
+<h3 id="systems" class="c1 c13">Systems</h3>
+
+<p class="note">NOTE: Consider a statement re: the system as it relates to successfully meeting research goals. Especially as we consider activities using legacy or existing platforms, we should consider how those systems, and the choice to use them, is assessed. ANd the difference in that choice between proof of concept (demonstration of some system in a new area) versus other activities.</p>
+
+
+<h3 id="h.3qhixgp3adkd" class="c1 c13">Goals of this Document</h3>
+<ol class="c28 lst-kix_shfd0z5borlh-0 start" start="1">
+<li class="c1 c18 c22">Describe research software project stages and relationships between code and project maturity.</li>
+<li class="c1 c22 c18">Provide guidance and resources that are relevant across stakeholders and types of research groups.</li>
+<li class="c1 c22 c18">Provide guidance and resources to research groups that are relevant for any type of research software or code or specific guidance when warranted.</li>
+</ol>
+
+<p class="c1">The guidance outlined here is intended intended to cover a broad range of research software concept.</p>
+
+
 <h1 id="h.jto1fyx4wiqs" class="c1 c13">Guidelines</h1>
 <p class="note"><span class="c19">NOTE: Although we outlined several stakeholders, we are focusing on developing guidelines that are accessible to principle investigators as the stakeholder group serving as intermediaries between funding agency requirements and project participants. As such, we are intentionally providing current examples and current terminology in the guidance. Removing that terminology can obscure the concept that hinders readers from searching for and finding relevant information. It is our opinion that this does not serve any of the stakeholders well. </span></p>
 
@@ -417,7 +481,7 @@ title: "ESIP Software Guidelines (Draft June 2016)"
 
 <p class="c1">Regardless of whether a codebase is open sourced, ie accepting outside contributions, having a code style guide for your research group or for a project is encouraged. Emphasizing clean code practices aids in maintenance during active development or during long-term support. Code is the interface for developers so maintaining clean code over the lifespan of a project and as contributors change is encouraged.</p>
 <h4 id="h.n0j2lapycvbr" class="c1 c13">Errors and exception handling follows recommends practices for the language used.</h4>
-<p class="c1">Use language and module-defined exceptions in most cases. Catch specific errors and handle those appropriately for the software. Do not publicly expose full stack traces in any operational environment.</p>
+<p class="c1">Use language and module-defined exceptions in most cases. Catch specific errors and handle those appropriately for the software. For web applications and services, do not publicly expose full stack traces in any operational environment.</p>
 
 <p class="note"><span class="c21">[Note: Considerations for Jupyter or other notebooks for code?]</span></p>
 <h3 id="h.g8dldwawc4gi" class="c1 c13">Versioned code</h3>
@@ -739,7 +803,7 @@ title: "ESIP Software Guidelines (Draft June 2016)"
 <h4 id="h.42ni1tsctkct" class="c1 c13">Documentation includes citation details.</h4>
 <p class="c1">As noted earlier regarding other metrics for assessing the sustainability (or viability) of a research software package includes impact related to citations. Provide a suggested citation in the README of the source code and the project website.</p>
 
-<p class="c1">If publishing a software paper to a dedicated research software journal such as <span class="c4"><a class="c7" href="http://www.journals.elsevier.com/softwarex/">SoftwareX</a></span>, provide the citation in the README and on the project website.</p>
+<p class="c1">If publishing a software paper to a dedicated research software journal such as <span class="c4"><a class="c7" href="http://www.journals.elsevier.com/softwarex/">SoftwareX</a></span> or <a href="http://joss.theoj.org/">The Journal of Open Source Software,</a>, provide the citation in the README and on the project website.</p>
 
 <p class="c1">We encourage the adoption of the <span class="c4"><a class="c7" href="https://www.force11.org/software-citation-principles">Software Citation Principles</a></span>&nbsp;outlined by the Force11 Software Citation Working Group, noting that currently we do not have a normalized citation structure for code. In some areas, community practices exist; for those areas without, the F11 document provides references for currently used options.</p>
 <h3 id="h.pzfz7hkzxqus" class="c1 c13">Preservation/Archiving</h3>
@@ -757,6 +821,15 @@ title: "ESIP Software Guidelines (Draft June 2016)"
 <p class="note"><span class="c21">NOTE: Provide some alignment/discussion of the Reuse Readiness Levels and code/project maturity here.</span></p>
 
 <p class="c1">The medium- to long-term sustainability of research software projects is often tied to a traditional open source model. And the guidance provided here draws heavily on those kinds of governance and contribution models. That being said, research software and code has additional expectations as part of the larger scholarly and research community. Traditional open source might be a big hammer for research projects that may not actually be nails. It is appropriate and necessary to understand the context in which open source activities are undertaken and in which research is undertaken and adapt these processes and potential funding avenues to reflect those different needs. We encourage further discussion and research here.</p>
+
+<h1 id="assessment">Using this guidance for assessment</h1>
+<p>We err here in favor of externally verifiable indicators for any assessment task, whether self-assessment or a more formal process. In some cases, these indicators support other sustainability and adoption goals. For assessment, such as any potential external evaluation undertaken by a funding agency, we often have no other reliable means to evaluate a piece of software. </p>
+<p>They are not, however, perfect assessment or evaluation indicators. For example, migrating a project from one VCS to another can result in the loss of the information held in an issue tracker and lead to false negatives for related criteria. We recommend any system developed using this guidance, or any that is similar, considers the real world practices that may interfere with these external indicators and provide a means for the project team to respond and clarify.
+</p>
+<p>There are also recommended practices for improving code quality that are invisible to this kind of external review. Code reviews, pair programming, Agile or Lean management practices — these activities can be difficult to discern from the project artifacts that we consider throughout the guidance above. While there are practices described there that are commonly used in Agile management, for example, we are not advocating any one management style.</p>
+
+<p class="note">Recommendations for implementation to come.</p>
+
 <h1 id="h.qyi0cpttkurs" class="c1 c13">Contributors</h1>
 <p class="c1"><strong>ESIP</strong></p>
 <ul>
@@ -787,124 +860,146 @@ title: "ESIP Software Guidelines (Draft June 2016)"
 <hr/>
 <h1 id="h.diuyfhespr4i" class="c1 c13 c25">&nbsp;</h1>
 <h1 id="h.cymifvkdyqc0" class="c1 c13">References and Bibliography</h1>
-<p class="c1 c6"><span class="c3">1.</span><span class="c3">Alspaugh, T. A. Kinds of Software Quality (Ilities). Available at: http://www.thomasalspaugh.org/pub/fnd/ility.html. (Accessed: 28th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">2.</span><span class="c3">Azizian, N., Sarkani, S. &amp; Mazzuchi, T. A Comprehensive Review and Analysis of Maturity Assessment Approaches for Improved Decision Support to Achieve Efficient Defense Acquisition. in Proceedings of the World Congress on Engineering and Computer Science 2009 (2009).</span></p>
-<p class="c1 c6"><span class="c3">3.Berander, P. et al. Software quality attributes and trade-offs. (2005).</span></p>
-<p class="c1 c6"><span class="c3">4.Burgess, A. 2015 AIST Evaluations Overview. (Federation of Earth Science Information Partners, 2016).</span></p>
-<p class="c1 c6"><span class="c3">5.Chełkowski, T., Gloor, P. &amp; Jemielniak, D. Inequalities in Open Source Software Development: Analysis of Contributor&rsquo;s Commits in Apache Software Foundation Projects. PLoS One 11, (2016).</span></p>
-<p class="c1 c6"><span class="c3">6.Crockford, D. JSLint. GitHub (2015). Available at: https://github.com/douglascrockford/JSLint. (Accessed: 13th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">7.Crouch, S., Jackson, M. &amp; Baxter, R. Software Evaluation Guide. Software Sustainability Institute (2014). Available at: http://www.software.ac.uk/software-evaluation-guide. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">8.Debattista, J. et al. Data on the Web Best Practices: Data Quality Vocabulary. (2016). Available at: https://www.w3.org/TR/vocab-dqv/. </span></p>
-<p class="c1 c6"><span class="c3">9.Downs, R. R. &amp; Marshall, J. J. A Proposal on Using Reuse Readiness Levels to Measure Software Reusability. Data Science Journal 9, (2010).</span></p>
-<p class="c1 c6"><span class="c3">10.Duijnhouwer, F.-W. &amp; Widdows, C. Open Source Maturity Model. (Capgemini, 2003).</span></p>
-<p class="c1 c6"><span class="c3">11.Eghbal, N. Contributing Guides: A Template. Available at: https://github.com/nayafia/contributing-template. </span></p>
-<p class="c1 c6"><span class="c3">12.Ehmke, C. A. Contributor Covenant: A Code of Conduct for Open Source Projects. (2014). Available at: http://contributor-covenant.org/. </span></p>
-<p class="c1 c6"><span class="c3">13.Fang, J., Hu, S. &amp; Han, Y. A service interoperability assessment model for service composition. in 2004 IEEE International Conference on Services Computing, 2004. (SCC 2004). Proceedings 153&ndash;158 (2004). doi:10.1109/SCC.2004.1358002</span></p>
-<p class="c1 c6"><span class="c3">14.Fielding, R. T. Architectural Styles and the Design of Network-based Software Architectures. (University of California, Irvine, 2000).</span></p>
-<p class="c1 c6"><span class="c3">15.Fogel, K. Producing Open Source Software. Available at: http://producingoss.com/en/producingoss.html. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">16.Fowler, M. Continuous Integration. martinfowler.com Available at: http://martinfowler.com/articles/continuousIntegration.html. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">17.Gent, I., Jones, C. &amp; Matthews, B. GUIDELINES FOR PERSISTENTLY IDENTIFYING SOFTWARE USING DATACITE: A JISC RESEARCH DATA SPRING PROJECT. (2015).</span></p>
-<p class="c1 c6"><span class="c3">18.Gharehyazie, M., Posnett, D., Vasilescu, B. &amp; Filkov, V. Developer initiation and social interactions in OSS: A case study of the Apache Software Foundation. Empir Software Eng 20, 1318&ndash;1353 (2014).</span></p>
-<p class="c1 c6"><span class="c3">19.Graybeal, J. ESIP Technology Evaluation Framework Final Recommendations. (2016).</span></p>
-<p class="c1 c6"><span class="c3">20.Graybeal, J. ESIP Technology Evaluation Framework. GitHub (2016). Available at: https://github.com/ESIPFed/technology-evaluation-framework. (Accessed: 10th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">21.Hettrick, S. Research Software Sustainability: Report on a Knowledge Exchange Workshop. (The Software Sustainability Institute, 2016).</span></p>
-<p class="c1 c6"><span class="c3">22.Jackson, M., Crouch, S. &amp; Baxter, R. Software Evaluation: Criteria-based Assessment. (2011).</span></p>
-<p class="c1 c6"><span class="c3">23.jenniferc. Service Level Agreement Examples: A Total Must for Your Business and Mine! Udemy Blog Available at: https://blog.udemy.com/service-level-agreement-examples/. (Accessed: 14th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">24.Keyes, D. &amp; Taylor, V. National Science Foundation Advisory Committee for CyberInfrastructure Task Force on Software for Science and Engineering. (National Science Foundation, 2011).</span></p>
-<p class="c1 c6"><span class="c3">25.Mader, C., Haslhofer, B. &amp; Isaac, A. in Theory and Practice of Digital Libraries (eds. Zaphiris, P., Buchanan, G., Rasmussen, E. &amp; Loizides, F.) 7489, 222&ndash;233 (Springer Berlin Heidelberg, 2012).</span></p>
-<p class="c1 c6"><span class="c3">26.Marcotte, E. Responsive Web Design. Available at: http://alistapart.com/article/responsive-web-design. (Accessed: 16th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">27.Mattmann, C. A., Downs, R. R., Marshall, J. J., Most, N. F. &amp; Samadi, S. TOOLS TO SUPPORT THE REUSE OF SOFTWARE ASSETS FOR THE NASA EARTH SCIENCE DECADAL SURVEY MISSIONS. IEEE Geoscience and Remote Sensing Society Newsletter (2011).</span></p>
-<p class="c1 c6"><span class="c3">28.Miguel, J. P., Mauricio, D. &amp; Rodr&iacute;guez, G. A Review of Software Quality Models for the Evaluation of Software Products. International Journal of Software Engineering &amp; Applications (IJSEA), 5, (2014).</span></p>
-<p class="c1 c6"><span class="c3">29.Pernice, K. &amp; Nielsen, J. Usability Guidelines for Accessible Web Design: Based on Usability Studies with People Using Assistive Technology. (Nielsen Norman Group, 2001).</span></p>
-<p class="c1 c6"><span class="c3">30.Petre, M. &amp; Wilson, G. PLOS/Mozilla Scientific Code Review Pilot: Summary of Findings. CoRR abs/1311.2412, (2013).</span></p>
-<p class="c1 c6"><span class="c3">31.Ratnakar, V. &amp; Gil, Y. Ontosoft. Ontosoft Available at: http://ontosoft.org/ontology/software/. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">32.Rezaei, R., Chiew, T. &amp; Lee, S. A review of interoperability assessment models. J. Zhejiang Univ. - Sci. C 14, 663&ndash;681 (2013).</span></p>
-<p class="c1 c6"><span class="c3">33.Scott, A. Ethical Web Development. (2016). Available at: https://ethicalweb.org/. (Accessed: 12th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">34.Smith, A., Katz, D. &amp; Niemeyer, K. FORCE11 SOFTWARE CITATION PRINCIPLES (Draft). (2016).</span></p>
-<p class="c1 c6"><span class="c3">35.Smith, N. sempervirens. GitHub Available at: https://github.com/njsmith/sempervirens. (Accessed: 16th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">36.Stig, D. C., H&ouml;gman, U. &amp; Bergsj&ouml;, D. Assessment for the Readiness for Internal Technology Transfer - A Case Study. (2011).</span></p>
-<p class="c1 c6"><span class="c3">37.Urban-Mathieux, B. NGDA Lifecycle Maturity Assessment. GEOPLATFORM.gov Available at: https://cms.geoplatform.gov/A-16-NGDA-Theme-Community/LMA. </span></p>
-<p class="c1 c6"><span class="c3">38.Wang, W., Tolk, A. &amp; Wang, W. The Levels of Conceptual Interoperability Model: Applying Systems Engineering Principles to M&amp;S. in SpringSim&rsquo;09 Proceedings (2009).</span></p>
-<p class="c1 c6"><span class="c3">39.weavejester. Codox. Codox: Clojure documentation tool Available at: https://github.com/weavejester/codox. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">40.Welker, K. D. The Software Maintainability Index Revisited. The Journal of Defense Software Engineering (2001).</span></p>
-<p class="c1 c6"><span class="c3">41.Wiggins, A. The Twelve-Factor App. (2012). Available at: http://12factor.net/. (Accessed: 13th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">42.Yuan, D. et al. Simple Testing Can Prevent Most Critical Failures: An Analysis of Production Failures in Distributed Data-intensive Systems. in Proceedings of the 11th USENIX Conference on Operating Systems Design and Implementation 249&ndash;265 (USENIX Association, 2014).</span></p>
-<p class="c1 c6"><span class="c3">43.Zaveri, A. et al. Quality assessment for Linked Data: A Survey: A systematic literature review and conceptual framework. Semantic Web 7, 63&ndash;93 (2015).</span></p>
-<p class="c1 c6"><span class="c3">44.Code Conventions for the Java Programming Language: Contents. (1999). Available at: http://www.oracle.com/technetwork/java/codeconvtoc-136057.html. (Accessed: 13th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">45.ISO/EIC 9126-1. (2000).</span></p>
-<p class="c1 c6"><span class="c3">46.Speed Matters. Google Research Blog (2009).</span></p>
-<p class="c1 c6"><span class="c3">47.Reuse Readiness Levels (RRLs). (NASA Earth Science Data Systems - Software Reuse Working Group, 2010).</span></p>
-<p class="c1 c6"><span class="c3">48.Falsehoods Programmers Believe About Names. Kalzumeus Software (2010).</span></p>
-<p class="c1 c6"><span class="c3">49.NASA Technology Readiness Levels. (2012). Available at: https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html. </span></p>
-<p class="c1 c6"><span class="c3">50.API Resource Guide, API Security. API Management Blog - Akana (2014). Available at: https://blog.akana.com/api-security-resource-guide/. (Accessed: 16th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">51.Introduction to Container Security. (Docker, 2015).</span></p>
-<p class="c1 c6"><span class="c3">52.Mozilla Developer Guide &gt; Coding style. Mozilla Developer Network (2016). Available at: https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style. (Accessed: 13th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">53.Pylint. (2016). Available at: https://www.pylint.org/. (Accessed: 12th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">54.Twitter API Rate Limits. Twitter Developers (2016). Available at: https://dev.twitter.com/rest/public/rate-limiting. (Accessed: 13th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">55.2016 Software Infrastructure for Sustained Innovation (SI2) PI Workshop Report. (Software Infrastructure for Sustained Innovation (SI2) Principal Investigators (PI), 2016).</span></p>
-<p class="c1 c6"><span class="c3">56.6 Things to Know About Successful (and Failed) Open-Source Software.</span></p>
-<p class="c1 c6"><span class="c3">57.Accessibility - W3C. Available at: https://www.w3.org/standards/webdesign/accessibility#wai. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">58.[ARCHIVED] Open Source Maturity Model. Available at: http://oss-watch.ac.uk/resources/archived/osmm#how-the-osmm-compares-against-the-brr. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">59.Best Practice Library | Section508.gov. Available at: http://section508.gov/content/learn/best-practice-library. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">60.Best Practices Criteria for Free/Libre and Open Source Software (FLOSS) (version 0.8.0). Linux Foundation Available at: https://github.com/linuxfoundation/cii-best-practices-badge/blob/master/doc/criteria.md. </span></p>
-<p class="c1 c6"><span class="c3">61.Center for Trustworthy Scientific Cyberinfrastructure. Center for Trustworthy Scientific Cyberinfrastructure Available at: http://trustedci.org/. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">62.Choose an open source license. Choose a License Available at: http://choosealicense.com/. (Accessed: 13th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">63.CLAHub. Contributor License Agreements on Github Available at: https://www.clahub.com/. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">64.codemeta/codemeta. GitHub Available at: https://github.com/codemeta/codemeta. (Accessed: 1st June 2016)</span></p>
-<p class="c1 c6"><span class="c3">65.Computational Infrastructure for Geodynamics :: Best Practices. Available at: https://geodynamics.org/cig/dev/best-practices. (Accessed: 12th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">66.Continuous Integration and Delivery. CircleCI Available at: https://circleci.com/. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">67.Creative Commons. Creative Commons Available at: https://creativecommons.org/. (Accessed: 16th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">68.CWICSmart A Programmatic OpenSearch Client. Available at: http://testbed.echo.nasa.gov/cwic-smart/validations. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">69.DASPOS. Available at: https://daspos.crc.nd.edu/. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">70.Depsy. Available at: http://depsy.org/. (Accessed: 26th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">71.Docker. Docker Available at: http://www.docker.com/. (Accessed: 14th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">72.Draft U.S. Web Design Standards | Draft U.S. Web Design Standards. Available at: https://standards.usa.gov/. (Accessed: 16th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">73.duecredit/duecredit. duecredit Available at: https://github.com/duecredit/duecredit. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">74.EarthCube Cross-Domain Interoperability Roadmap | EarthCube. Available at: http://earthcube.org/document/2012/earthcube-cross-domain-interoperability-roadmap. (Accessed: 4th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">75.EarthCube Integration and Testing Environment (ECITE) | EarthCube. Available at: http://earthcube.org/group/earthcube-integration-testing-environment-ecite. (Accessed: 1st June 2016)</span></p>
-<p class="c1 c6"><span class="c3">76.Ecological Studies of Open Source Software Ecosystems. Available at: http://informatique.umons.ac.be/genlog/projects/ecos/. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">77.ESSI-SCOPE Quality Characteristics and their application. Available at: http://www.cse.dcu.ie/essiscope/sm2/9126ref.html. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">78.GNU Coding Standards: Releases. Available at: https://www.gnu.org/prep/standards/html_node/Releases.html#index-version-numbers_002c-for-releases. (Accessed: 14th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">79.Google VSAQ: Vendor Security Assessment Questionnaire. Google VSAQ Available at: https://github.com/google/vsaq. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">80.Graceful degradation versus progressive enhancement - W3C Wiki. Available at: https://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement. (Accessed: 16th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">81.Guide to WS-Agreement Model &amp; Protocol. Available at: http://wsag4j.sourceforge.net/site/wsag/overview.html. (Accessed: 14th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">82.InCommon Certificate Service. Available at: https://www.incommon.org/certificates/. (Accessed: 14th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">83.Introduction - 18F Open Source Style Guide. Available at: https://pages.18f.gov/open-source-guide/. (Accessed: 16th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">84.ISO 25010. Available at: http://iso25000.com/index.php/en/iso-25000-standards/iso-25010?limit=3&amp;limitstart=0. (Accessed: 25th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">85.ISO/IEC 25010:2011 - Systems and software engineering -- Systems and software Quality Requirements and Evaluation (SQuaRE) -- System and software quality models. ISO Available at: http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=35733. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">86.istlab/Alitheia-Core. GitHub Available at: https://github.com/istlab/Alitheia-Core. (Accessed: 1st June 2016)</span></p>
-<p class="c1 c6"><span class="c3">87.Jenkins. Available at: https://jenkins.io/index.html. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">88.Let&rsquo;s Encrypt - Free SSL/TLS Certificates. Available at: https://letsencrypt.org/. (Accessed: 14th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">89.Open Services for Lifecycle Collaboration. Available at: http://open-services.net/. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">90.OS X Human Interface Guidelines: Designing for Yosemite. Available at: https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/. (Accessed: 14th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">91.OWASP. The Open Web Application Security Project Available at: https://www.owasp.org/index.php/Main_Page. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">92.OWASP/DevGuide. GitHub Available at: https://github.com/OWASP/DevGuide. (Accessed: 13th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">93.Practices Perfected In OSS Can Reshape Enterprise Development. The npm Blog Available at: http://blog.npmjs.org/post/139373244435/practices-perfected-in-oss-can-reshape-enterprise. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">94.QCon NewYork 2016: The Verification of a Distributed System. Speaker Deck Available at: https://speakerdeck.com/caitiem20/qcon-newyork-2016-the-verification-of-a-distributed-system. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">95.QGIS: Developing Python Plugins. Available at: http://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/plugins.html. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">96.RAML. RAML Available at: http://raml.org/. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">97.Read the Docs. Available at: https://readthedocs.org/. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">98.RepoGrams/RepoGrams. RepoGrams Available at: https://github.com/RepoGrams/RepoGrams. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">99.reproducible-builds.org. Reproducible Builds Available at: https://reproducible-builds.org/. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">100.reStructuredText. Available at: http://docutils.sourceforge.net/rst.html. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">101.Selenium - Web Browser Automation. Available at: http://www.seleniumhq.org/. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">102.Semantic Versioning 2.0.0. Available at: http://semver.org/. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">103.SLA@SOI. Available at: http://sla-at-soi.eu/. (Accessed: 14th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">104.Software Preservation Network.</span></p>
-<p class="c1 c6"><span class="c3">105.Software Testing and Static Analysis Tools | Coverity. Synopsys Available at: http://www.coverity.com/. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">106.SoftwareX.</span></p>
-<p class="c1 c6"><span class="c3">107.Sphinx 1.4.4 documentation. Available at: http://www.sphinx-doc.org/en/stable/index.html. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">108.SQA Software Quality Assurance: FURPS. Available at: http://www.sqa.net/index.htm#furps. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">109.SQA Software Quality Assurance in Practice. Available at: http://www.sqa.net/sqa-practice.html. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">110.SQC Software Quality Control. Available at: http://www.sqa.net/softwarequalityattributes.html. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">111.StartSSL&trade; Certificates &amp; Public Key Infrastructure. Available at: https://www.startssl.com/StartEncrypt. (Accessed: 14th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">112.Stealing Google&rsquo;s Coding Practices for Academia. Stealing Google&rsquo;s Coding Practices for Academia</span></p>
-<p class="c1 c6"><span class="c3">113.Swagger &ndash; The World&rsquo;s Most Popular Framework for APIs. Available at: http://swagger.io/. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">114.TEAM Engine. Available at: http://cite.opengeospatial.org/teamengine/. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">115.The Open Definition - Open Definition - Defining Open in Open Data, Open Content and Open Knowledge. Available at: http://opendefinition.org/. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">116.Travis CI - Test and Deploy Your Code with Confidence. Available at: https://travis-ci.org/. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">117.Understanding the GitHub Flow &middot; GitHub Guides. Available at: https://guides.github.com/introduction/flow/. (Accessed: 15th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">118.WAI-ARIA Overview. Available at: https://www.w3.org/WAI/intro/aria.php. (Accessed: 16th June 2016)</span></p>
-<p class="c1 c6"><span class="c3">119.WCAG Overview. Available at: https://www.w3.org/WAI/intro/wcag. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">120.Web Accessibility Initiative. Available at: https://www.w3.org/standards/webdesign/accessibility. (Accessed: 24th May 2016)</span></p>
-<p class="c1 c6"><span class="c3">121.Welcome to the Standard Technical Evaluation Process Toolkit. MITRE STEP Toolkit Available at: http://www2.mitre.org/work/sepo/toolkits/STEP/. (Accessed: 24th May 2016)</span></p>
+<p>1.Alspaugh, T. A. Kinds of Software Quality (Ilities). Available at: http://www.thomasalspaugh.org/pub/fnd/ility.html. (Accessed: 28th May 2016)</p>
+<p>2.Azizian, N., Sarkani, S. &amp; Mazzuchi, T. A Comprehensive Review and Analysis of Maturity Assessment Approaches for Improved Decision Support to Achieve Efficient Defense Acquisition. in Proceedings of the World Congress on Engineering and Computer Science 2009 (2009).</p>
+<p>3.Berander, P. et al. Software quality attributes and trade-offs. (2005).</p>
+<p>4.Burgess, A. 2015 AIST Evaluations Overview. (Federation of Earth Science Information Partners, 2016).</p>
+<p>5.Calamito, A. Understanding The Flexibility of Open Source Licensing. Boundless (2016).</p>
+<p>6.Chełkowski, T., Gloor, P. &amp; Jemielniak, D. Inequalities in Open Source Software Development: Analysis of Contributor&rsquo;s Commits in Apache Software Foundation Projects. PLoS One 11, (2016).</p>
+<p>7.Crockford, D. JSLint. GitHub (2015). Available at: https://github.com/douglascrockford/JSLint. (Accessed: 13th June 2016)</p>
+<p>8.Crouch, S., Jackson, M. &amp; Baxter, R. Software Evaluation Guide. Software Sustainability Institute (2014). Available at: http://www.software.ac.uk/software-evaluation-guide. (Accessed: 24th May 2016)</p>
+<p>9.Debattista, J. et al. Data on the Web Best Practices: Data Quality Vocabulary. (2016). Available at: https://www.w3.org/TR/vocab-dqv/. </p>
+<p>10.Downs, R. R. &amp; Marshall, J. J. A Proposal on Using Reuse Readiness Levels to Measure Software Reusability. Data Science Journal 9, (2010).</p>
+<p>11.Duijnhouwer, F.-W. &amp; Widdows, C. Open Source Maturity Model. (Capgemini, 2003).</p>
+<p>12.Eghbal, N. Contributing Guides: A Template. Available at: https://github.com/nayafia/contributing-template. </p>
+<p>13.Eghbal, N. Posted slides from my @codeconf talk on liberal contribution models: http://www.slideshare.net/NadiaEghbal/emerging-models-for-open-source-contributions &hellip; The history was fun to research! @nayafia (2016).</p>
+<p>14.Ehmke, C. A. Contributor Covenant: A Code of Conduct for Open Source Projects. (2014). Available at: http://contributor-covenant.org/. </p>
+<p>15.Fang, J., Hu, S. &amp; Han, Y. A service interoperability assessment model for service composition. in 2004 IEEE International Conference on Services Computing, 2004. (SCC 2004). Proceedings 153&ndash;158 (2004). doi:10.1109/SCC.2004.1358002</p>
+<p>16.Fielding, R. T. Architectural Styles and the Design of Network-based Software Architectures. (University of California, Irvine, 2000).</p>
+<p>17.Fogel, K. Producing Open Source Software. Available at: http://producingoss.com/en/producingoss.html. (Accessed: 24th May 2016)</p>
+<p>18.Forsgren, N. &amp; Humble, J. The Role of Continuous Delivery in IT and Organizational Performance. (Social Science Research Network, 2015).</p>
+<p>19.Fowler, M. Continuous Integration. martinfowler.com Available at: http://martinfowler.com/articles/continuousIntegration.html. (Accessed: 15th June 2016)</p>
+<p>20.Gent, I., Jones, C. &amp; Matthews, B. GUIDELINES FOR PERSISTENTLY IDENTIFYING SOFTWARE USING DATACITE: A JISC RESEARCH DATA SPRING PROJECT. (2015).</p>
+<p>21.Gharehyazie, M., Posnett, D., Vasilescu, B. &amp; Filkov, V. Developer initiation and social interactions in OSS: A case study of the Apache Software Foundation. Empir Software Eng 20, 1318&ndash;1353 (2014).</p>
+<p>22.Graybeal, J. ESIP Technology Evaluation Framework. GitHub (2016). Available at: https://github.com/ESIPFed/technology-evaluation-framework. (Accessed: 10th June 2016)</p>
+<p>23.Graybeal, J. ESIP Technology Evaluation Framework Final Recommendations. (2016).</p>
+<p>24.Gutzman, K. et al. Attribution of Work in the Scholarly Ecosystem. (2016).</p>
+<p>25.Hettrick, S. et al. UK Research Software Survey 2014. Zenodo (2014). doi:10.5281/zenodo.14809</p>
+<p>26.Hettrick, S. Research Software Sustainability: Report on a Knowledge Exchange Workshop. (The Software Sustainability Institute, 2016).</p>
+<p>27.Hong, N. C. Open Software for Open Science. (2015).</p>
+<p>28.Jackson, M., Crouch, S. &amp; Baxter, R. Software Evaluation: Criteria-based Assessment. (2011).</p>
+<p>29.jenniferc. Service Level Agreement Examples: A Total Must for Your Business and Mine! Udemy Blog Available at: https://blog.udemy.com/service-level-agreement-examples/. (Accessed: 14th June 2016)</p>
+<p>30.Keyes, D. &amp; Taylor, V. National Science Foundation Advisory Committee for CyberInfrastructure Task Force on Software for Science and Engineering. (National Science Foundation, 2011).</p>
+<p>31.Mader, C., Haslhofer, B. &amp; Isaac, A. in Theory and Practice of Digital Libraries (eds. Zaphiris, P., Buchanan, G., Rasmussen, E. &amp; Loizides, F.) 7489, 222&ndash;233 (Springer Berlin Heidelberg, 2012).</p>
+<p>32.Marcotte, E. Responsive Web Design. Available at: http://alistapart.com/article/responsive-web-design. (Accessed: 16th June 2016)</p>
+<p>33.Mattmann, C. A., Downs, R. R., Marshall, J. J., Most, N. F. &amp; Samadi, S. TOOLS TO SUPPORT THE REUSE OF SOFTWARE ASSETS FOR THE NASA EARTH SCIENCE DECADAL SURVEY MISSIONS. IEEE Geoscience and Remote Sensing Society Newsletter (2011).</p>
+<p>34.Miguel, J. P., Mauricio, D. &amp; Rodr&iacute;guez, G. A Review of Software Quality Models for the Evaluation of Software Products. International Journal of Software Engineering &amp; Applications (IJSEA), 5, (2014).</p>
+<p>35.Pernice, K. &amp; Nielsen, J. Usability Guidelines for Accessible Web Design: Based on Usability Studies with People Using Assistive Technology. (Nielsen Norman Group, 2001).</p>
+<p>36.Petre, M. &amp; Wilson, G. PLOS/Mozilla Scientific Code Review Pilot: Summary of Findings. CoRR abs/1311.2412, (2013).</p>
+<p>37.Ratnakar, V. &amp; Gil, Y. Ontosoft. Ontosoft Available at: http://ontosoft.org/ontology/software/. (Accessed: 24th May 2016)</p>
+<p>38.Rezaei, R., Chiew, T. &amp; Lee, S. A review of interoperability assessment models. J. Zhejiang Univ. - Sci. C 14, 663&ndash;681 (2013).</p>
+<p>39.Scott, A. Ethical Web Development. (2016). Available at: https://ethicalweb.org/. (Accessed: 12th June 2016)</p>
+<p>40.Smith, A., Katz, D. &amp; Niemeyer, K. FORCE11 SOFTWARE CITATION PRINCIPLES (Draft). (2016).</p>
+<p>41.Smith, A. The shape of open source. GitHub (2016). Available at: https://github.com/blog/2195-the-shape-of-open-source. (Accessed: 26th June 2016)</p>
+<p>42.Smith, N. sempervirens. GitHub Available at: https://github.com/njsmith/sempervirens. (Accessed: 16th June 2016)</p>
+<p>43.Stig, D. C., H&ouml;gman, U. &amp; Bergsj&ouml;, D. Assessment for the Readiness for Internal Technology Transfer - A Case Study. (2011).</p>
+<p>44.Urban-Mathieux, B. NGDA Lifecycle Maturity Assessment. GEOPLATFORM.gov Available at: https://cms.geoplatform.gov/A-16-NGDA-Theme-Community/LMA. </p>
+<p>45.Wang, W., Tolk, A. &amp; Wang, W. The Levels of Conceptual Interoperability Model: Applying Systems Engineering Principles to M&amp;S. in SpringSim&rsquo;09 Proceedings (2009).</p>
+<p>46.weavejester. Codox. Codox: Clojure documentation tool Available at: https://github.com/weavejester/codox. (Accessed: 15th June 2016)</p>
+<p>47.Welker, K. D. The Software Maintainability Index Revisited. The Journal of Defense Software Engineering (2001).</p>
+<p>48.Wiggins, A. The Twelve-Factor App. (2012). Available at: http://12factor.net/. (Accessed: 13th June 2016)</p>
+<p>49.Yuan, D. et al. Simple Testing Can Prevent Most Critical Failures: An Analysis of Production Failures in Distributed Data-intensive Systems. in Proceedings of the 11th USENIX Conference on Operating Systems Design and Implementation 249&ndash;265 (USENIX Association, 2014).</p>
+<p>50.Zaveri, A. et al. Quality assessment for Linked Data: A Survey: A systematic literature review and conceptual framework. Semantic Web 7, 63&ndash;93 (2015).</p>
+<p>51.6 Things to Know About Successful (and Failed) Open-Source Software.</p>
+<p>52.2016 Software Infrastructure for Sustained Innovation (SI2) PI Workshop Report. (Software Infrastructure for Sustained Innovation (SI2) Principal Investigators (PI), 2016).</p>
+<p>53.Accessibility - W3C. Available at: https://www.w3.org/standards/webdesign/accessibility#wai. (Accessed: 15th June 2016)</p>
+<p>54.All the Apache Streaming Projects: An Exploratory Guide. The New Stack (2016).</p>
+<p>55.API Resource Guide, API Security. API Management Blog - Akana (2014). Available at: https://blog.akana.com/api-security-resource-guide/. (Accessed: 16th June 2016)</p>
+<p>56.[ARCHIVED] Open Source Maturity Model. Available at: http://oss-watch.ac.uk/resources/archived/osmm#how-the-osmm-compares-against-the-brr. (Accessed: 24th May 2016)</p>
+<p>57.Best Practice Library | Section508.gov. Available at: http://section508.gov/content/learn/best-practice-library. (Accessed: 24th May 2016)</p>
+<p>58.Best Practices Criteria for Free/Libre and Open Source Software (FLOSS) (version 0.8.0). Linux Foundation Available at: https://github.com/linuxfoundation/cii-best-practices-badge/blob/master/doc/criteria.md. </p>
+<p>59.Billions at Stake in University Patent Fights. Bloomberg.com Available at: http://www.bloomberg.com/graphics/2016-university-patents/. (Accessed: 9th July 2016)</p>
+<p>60.Center for Trustworthy Scientific Cyberinfrastructure. Center for Trustworthy Scientific Cyberinfrastructure Available at: http://trustedci.org/. (Accessed: 24th May 2016)</p>
+<p>61.Choose an open source license. Choose a License Available at: http://choosealicense.com/. (Accessed: 13th June 2016)</p>
+<p>62.CLAHub. Contributor License Agreements on Github Available at: https://www.clahub.com/. (Accessed: 24th May 2016)</p>
+<p>63.Code Conventions for the Java Programming Language: Contents. (1999). Available at: http://www.oracle.com/technetwork/java/codeconvtoc-136057.html. (Accessed: 13th June 2016)</p>
+<p>64.codemeta/codemeta. GitHub Available at: https://github.com/codemeta/codemeta. (Accessed: 1st June 2016)</p>
+<p>65.Computational Infrastructure for Geodynamics :: Best Practices. Available at: https://geodynamics.org/cig/dev/best-practices. (Accessed: 12th June 2016)</p>
+<p>66.Conda kapsel tutorial &mdash; Conda documentation. Available at: http://conda.pydata.org/docs/kapsel/. (Accessed: 13th July 2016)</p>
+<p>67.Continuous Integration and Delivery. CircleCI Available at: https://circleci.com/. (Accessed: 15th June 2016)</p>
+<p>68.Creative Commons. Creative Commons Available at: https://creativecommons.org/. (Accessed: 16th June 2016)</p>
+<p>69.CWICSmart A Programmatic OpenSearch Client. Available at: http://testbed.echo.nasa.gov/cwic-smart/validations. (Accessed: 15th June 2016)</p>
+<p>70.DASPOS. Available at: https://daspos.crc.nd.edu/. (Accessed: 24th May 2016)</p>
+<p>71.Depsy. Available at: http://depsy.org/. (Accessed: 26th May 2016)</p>
+<p>72.Docker. Docker Available at: http://www.docker.com/. (Accessed: 14th June 2016)</p>
+<p>73.Draft U.S. Web Design Standards | Draft U.S. Web Design Standards. Available at: https://standards.usa.gov/. (Accessed: 16th June 2016)</p>
+<p>74.duecredit/duecredit. duecredit Available at: https://github.com/duecredit/duecredit. (Accessed: 24th May 2016)</p>
+<p>75.EarthCube Cross-Domain Interoperability Roadmap | EarthCube. Available at: http://earthcube.org/document/2012/earthcube-cross-domain-interoperability-roadmap. (Accessed: 4th June 2016)</p>
+<p>76.EarthCube Integration and Testing Environment (ECITE) | EarthCube. Available at: http://earthcube.org/group/earthcube-integration-testing-environment-ecite. (Accessed: 1st June 2016)</p>
+<p>77.Ecological Studies of Open Source Software Ecosystems. Available at: http://informatique.umons.ac.be/genlog/projects/ecos/. (Accessed: 24th May 2016)</p>
+<p>78.Emerging Models for Open Source Contributions. (14:35:29 UTC).</p>
+<p>79.ESSI-SCOPE Quality Characteristics and their application. Available at: http://www.cse.dcu.ie/essiscope/sm2/9126ref.html. (Accessed: 24th May 2016)</p>
+<p>80.Falsehoods Programmers Believe About Names. Kalzumeus Software (2010).</p>
+<p>81.Funding - Django REST framework. Available at: https://fund.django-rest-framework.org/topics/funding/. (Accessed: 17th June 2016)</p>
+<p>82.GNU Coding Standards: Releases. Available at: https://www.gnu.org/prep/standards/html_node/Releases.html#index-version-numbers_002c-for-releases. (Accessed: 14th June 2016)</p>
+<p>83.Google VSAQ: Vendor Security Assessment Questionnaire. Google VSAQ Available at: https://github.com/google/vsaq. (Accessed: 24th May 2016)</p>
+<p>84.Graceful degradation versus progressive enhancement - W3C Wiki. Available at: https://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement. (Accessed: 16th June 2016)</p>
+<p>85.Guide to WS-Agreement Model &amp; Protocol. Available at: http://wsag4j.sourceforge.net/site/wsag/overview.html. (Accessed: 14th June 2016)</p>
+<p>86.HumanOps/HumanOps. GitHub Available at: https://github.com/HumanOps/HumanOps. (Accessed: 15th July 2016)</p>
+<p>87.InCommon Certificate Service. Available at: https://www.incommon.org/certificates/. (Accessed: 14th June 2016)</p>
+<p>88.Introduction - 18F Open Source Style Guide. Available at: https://pages.18f.gov/open-source-guide/. (Accessed: 16th June 2016)</p>
+<p>89.Introduction to Container Security. (Docker, 2015).</p>
+<p>90.ISO 25010. Available at: http://iso25000.com/index.php/en/iso-25000-standards/iso-25010?limit=3&amp;limitstart=0. (Accessed: 25th May 2016)</p>
+<p>91.ISO/EIC 9126-1. (2000).</p>
+<p>92.ISO/IEC 25010:2011 - Systems and software engineering -- Systems and software Quality Requirements and Evaluation (SQuaRE) -- System and software quality models. ISO Available at: http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=35733. (Accessed: 24th May 2016)</p>
+<p>93.istlab/Alitheia-Core. GitHub Available at: https://github.com/istlab/Alitheia-Core. (Accessed: 1st June 2016)</p>
+<p>94.Jenkins. Available at: https://jenkins.io/index.html. (Accessed: 15th June 2016)</p>
+<p>95.Let&rsquo;s Encrypt - Free SSL/TLS Certificates. Available at: https://letsencrypt.org/. (Accessed: 14th June 2016)</p>
+<p>96.Mozilla Developer Guide &gt; Coding style. Mozilla Developer Network (2016). Available at: https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style. (Accessed: 13th June 2016)</p>
+<p>97.NASA Technology Readiness Levels. (2012). Available at: https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html. </p>
+<p>98.NumFOCUS Receives Grant for Project Sustainability. NumFOCUS | Open Code = Better Science Available at: http://www.numfocus.org/1/post/2016/06/numfocus-receives-grant-for-project-sustainability.html. (Accessed: 2nd July 2016)</p>
+<p>99.Onboarding at rOpenSci: A Year in Reviews. Available at: /blog/2016/03/28/software-review. (Accessed: 2nd July 2016)</p>
+<p>100.openrif/contribution-ontology. GitHub Available at: https://github.com/openrif/contribution-ontology. (Accessed: 23rd June 2016)</p>
+<p>101.Open Services for Lifecycle Collaboration. Available at: http://open-services.net/. (Accessed: 24th May 2016)</p>
+<p>102.OS X Human Interface Guidelines: Designing for Yosemite. Available at: https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/. (Accessed: 14th June 2016)</p>
+<p>103.OWASP. The Open Web Application Security Project Available at: https://www.owasp.org/index.php/Main_Page. (Accessed: 24th May 2016)</p>
+<p>104.OWASP/DevGuide. GitHub Available at: https://github.com/OWASP/DevGuide. (Accessed: 13th June 2016)</p>
+<p>105.Practices Perfected In OSS Can Reshape Enterprise Development. The npm Blog Available at: http://blog.npmjs.org/post/139373244435/practices-perfected-in-oss-can-reshape-enterprise. (Accessed: 24th May 2016)</p>
+<p>106.Pylint. (2016). Available at: https://www.pylint.org/. (Accessed: 12th June 2016)</p>
+<p>107.QCon NewYork 2016: The Verification of a Distributed System. Speaker Deck Available at: https://speakerdeck.com/caitiem20/qcon-newyork-2016-the-verification-of-a-distributed-system. (Accessed: 15th June 2016)</p>
+<p>108.QGIS: Developing Python Plugins. Available at: http://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/plugins.html. (Accessed: 15th June 2016)</p>
+<p>109.RAML. RAML Available at: http://raml.org/. (Accessed: 15th June 2016)</p>
+<p>110.Read the Docs. Available at: https://readthedocs.org/. (Accessed: 15th June 2016)</p>
+<p>111.RepoGrams/RepoGrams. RepoGrams Available at: https://github.com/RepoGrams/RepoGrams. (Accessed: 24th May 2016)</p>
+<p>112.reproducible-builds.org. Reproducible Builds Available at: https://reproducible-builds.org/. (Accessed: 24th May 2016)</p>
+<p>113.reStructuredText. Available at: http://docutils.sourceforge.net/rst.html. (Accessed: 15th June 2016)</p>
+<p>114.Result and Artifact Review and Badging &mdash; Association for Computing Machinery. Available at: http://www.acm.org/publications/policies/artifact-review-badging. (Accessed: 27th June 2016)</p>
+<p>115.Reuse Readiness Levels (RRLs). (NASA Earth Science Data Systems - Software Reuse Working Group, 2010).</p>
+<p>116.Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure. Ford Foundation Available at: http://www.fordfoundation.org/library/reports-and-studies/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure/. (Accessed: 15th July 2016)</p>
+<p>117.Selenium - Web Browser Automation. Available at: http://www.seleniumhq.org/. (Accessed: 15th June 2016)</p>
+<p>118.Semantic Versioning 2.0.0. Available at: http://semver.org/. (Accessed: 24th May 2016)</p>
+<p>119.SLA@SOI. Available at: http://sla-at-soi.eu/. (Accessed: 14th June 2016)</p>
+<p>120.Software Preservation Network.</p>
+<p>121.Software Testing and Static Analysis Tools | Coverity. Synopsys Available at: http://www.coverity.com/. (Accessed: 15th June 2016)</p>
+<p>122.SoftwareX.</p>
+<p>123.Speed Matters. Google Research Blog (2009).</p>
+<p>124.Sphinx 1.4.4 documentation. Available at: http://www.sphinx-doc.org/en/stable/index.html. (Accessed: 15th June 2016)</p>
+<p>125.SQA Software Quality Assurance: FURPS. Available at: http://www.sqa.net/index.htm#furps. (Accessed: 24th May 2016)</p>
+<p>126.SQA Software Quality Assurance in Practice. Available at: http://www.sqa.net/sqa-practice.html. (Accessed: 24th May 2016)</p>
+<p>127.SQC Software Quality Control. Available at: http://www.sqa.net/softwarequalityattributes.html. (Accessed: 24th May 2016)</p>
+<p>128.StartSSL&trade; Certificates &amp; Public Key Infrastructure. Available at: https://www.startssl.com/StartEncrypt. (Accessed: 14th June 2016)</p>
+<p>129.Stealing Google&rsquo;s Coding Practices for Academia. Stealing Google&rsquo;s Coding Practices for Academia</p>
+<p>130.Swagger &ndash; The World&rsquo;s Most Popular Framework for APIs. Available at: http://swagger.io/. (Accessed: 15th June 2016)</p>
+<p>131.TEAM Engine. Available at: http://cite.opengeospatial.org/teamengine/. (Accessed: 15th June 2016)</p>
+<p>132.Test Double | Our Thinking | The social coding contract. Available at: http://blog.testdouble.com/posts/2014-12-02-the-social-coding-contract.html. (Accessed: 13th July 2016)</p>
+<p>133.The Gordon and Betty Moore Foundation Grant for Numba and Dask. Continuum (2016). Available at: https://www.continuum.io/blog/developer-blog/gordon-and-betty-moore-foundation-grant-numba-and-dask. (Accessed: 14th July 2016)</p>
+<p>134.The Journal of Open Source Software Reviewer Guidelines. The Journal of Open Source Software Available at: http://joss.theoj.org/about#reviewer_guidelines. (Accessed: 2nd July 2016)</p>
+<p>135.The Open Definition - Open Definition - Defining Open in Open Data, Open Content and Open Knowledge. Available at: http://opendefinition.org/. (Accessed: 24th May 2016)</p>
+<p>136.Travis CI - Test and Deploy Your Code with Confidence. Available at: https://travis-ci.org/. (Accessed: 15th June 2016)</p>
+<p>137.Twitter API Rate Limits. Twitter Developers (2016). Available at: https://dev.twitter.com/rest/public/rate-limiting. (Accessed: 13th June 2016)</p>
+<p>138.Understanding the GitHub Flow &middot; GitHub Guides. Available at: https://guides.github.com/introduction/flow/. (Accessed: 15th June 2016)</p>
+<p>139.Update on InfluxDB Clustering, High-Availability and Monetization | InfluxData.</p>
+<p>140.WAI-ARIA Overview. Available at: https://www.w3.org/WAI/intro/aria.php. (Accessed: 16th June 2016)</p>
+<p>141.WCAG Overview. Available at: https://www.w3.org/WAI/intro/wcag. (Accessed: 24th May 2016)</p>
+<p>142.Web Accessibility Initiative. Available at: https://www.w3.org/standards/webdesign/accessibility. (Accessed: 24th May 2016)</p>
+<p>143.Welcome to the Standard Technical Evaluation Process Toolkit. MITRE STEP Toolkit Available at: http://www2.mitre.org/work/sepo/toolkits/STEP/. (Accessed: 24th May 2016)</p>

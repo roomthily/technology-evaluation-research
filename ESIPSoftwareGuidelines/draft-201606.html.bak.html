@@ -16,7 +16,7 @@ title: "ESIP Software Guidelines (Draft June 2016)"
 
 <div class="feedback">
 <p>Comments and feedback are encouraged until <strong>July 22, 2016</strong>. </p>
-<p>To comment, please use one of the following options, in order of preference:</p>
+<p>To comment, please use one of the following options, in oreder of preference:</p>
 <ol>
     <li>Comment directly on this page using the <a href="https://hypothes.is/">Hypothes.is</a> annotation system (you will need to make an account to view or add annotations).</li>
     <li>Create an issue in <a href="https://github.com/roomthily/technology-evaluation-research/issues">GitHub</a>.</li>
@@ -27,19 +27,10 @@ title: "ESIP Software Guidelines (Draft June 2016)"
 <hr />
 
 <h2>Table of Contents</h2>
-<p><a href="#draft-start">Continue</a> to draft.</p>
 <ul>
-    <li><a href="#h.46uewrp95kfe">Background</a></li>
-    <li><a href="#developing-guidelines">Developing Software Guidelines: A Community-driven Process</a></li>
-    <li><a href="#what-is-research">What is Research Code?</a></li>
+    <li><a href="#h.46uewrp95kfe">Introduction</a></li>
+    <li><a href="#h.rtkadvvyvaul">Research Software Projects</a></li>
     <li><a href="#h.6bi4jecr96n">Community and Stakeholders</a></li>
-    <li><a href="#h.rtkadvvyvaul">Research Software Projects</a>
-        <ul>
-            <li><a href="#scenarios">Scenarios</a></li>
-            <li><a href="#maturities">Code and Project Maturity</a></li>
-        </ul>
-    </li>
-    <li><a href="#">Goals of this Document</a></li>
     <li><a href="#h.jto1fyx4wiqs">Guidelines</a>
         <ul>
             <li><a href="#h.jc42b2hcl6wm">Sustainable Code</a>
@@ -187,35 +178,43 @@ title: "ESIP Software Guidelines (Draft June 2016)"
         </ul>
     </li>
     <li><a href="#h.g3e5ybizjqjh">Progression, Sustainability and Reusability</a></li>
-    <li><a href="#assessment">Using this guidance for assessment</a></li>
     <li><a href="#h.qyi0cpttkurs">Contributors</a></li>
     <li><a href="#h.btnzoj6jjto1">References and Bibliography</a></li>
 </ul>
 
-<hr id="draft-start"/>
+<hr />
 
-<p>The Federation for Earth Science Information Partners (ESIP) recognizes the role code plays in contemporary research practices as well as the issues community members face when approaching technology-dependent research. With the cross-disciplinary nature of the ESIP membership, we feel well positioned to develop guidance and recommended practices for the Earth observation and geosciences communities in a way that recognizes the domain expertise within these communities and that supports the communities’ desire for improved practices around research code and software. </p>
-<p>Current discussions around code and software practices in the broader research community often does not include representations from either the Earth observation or geosciences communities. And while we agree that code is code in any domain, we believe that it is important that these discussions and the practices that evolve from them speak to the broadest range of researchers, whether they are faculty, research staff, developers, graduate students or postdoctoral fellows. In this way, we hope to develop meaningful and practical assessment procedures that address the concerns of currently funded researchers and develop training and support networks for early career and future researchers.</p>
+<h1 id="h.46uewrp95kfe" class="c1 c13">Introduction</h1>
+<p class="c1">This work builds on the criteria developed by the <span class="c4"><a class="c7" href="http://software.ac.uk/sites/default/files/SSI-SoftwareEvaluationCriteria.pdf">Software Sustainability Institute</a></span>&nbsp;(Jackson et al. 2011) and its application, and expansion, in an evaluation framework, developed through ESIP in collaboration with NASA AIST, to verify <span class="c4"><a class="c7" href="https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html">Technology Readiness Levels</a></span>&nbsp;(TRL, NASA 2012) in 2015. The framework was used during a <span class="c4"><a class="c7" href="http://testbed.esipfed.org/sites/default/files/2015_AIST_Evaluations_Overview.pdf">pilot evaluation effort</a></span>&nbsp;(Burgess 2016, Graybeal 2016) over the course of that autumn.</p>
 
-<h2 id="h.46uewrp95kfe" class="c1 c13">Background</h2>
+<p class="c1">Community discussions around the criteria and ESIP&rsquo;s larger interest in assessment as a mentoring activity, instead of a verification activity, led to this effort to revise the assessment criteria to better fit with those education goals as well as certain structural concerns with the existing criteria.</p>
+<h3 id="h.3qhixgp3adkd" class="c1 c13">Goals of this Document</h3>
+<ol class="c28 lst-kix_shfd0z5borlh-0 start" start="1">
+<li class="c1 c18 c22">Describe research software project stages and relationships between code and project maturity.</li>
+<li class="c1 c22 c18">Provide guidance and resources that are relevant across stakeholders and types of research groups.</li>
+<li class="c1 c22 c18">Provide guidance and resources that are relevant for any type of research software or code or specific guidance when warranted.</li>
+</ol>
 
-<p class="c1">This work builds on the criteria developed by the <span class="c4"><a class="c7" href="http://software.ac.uk/sites/default/files/SSI-SoftwareEvaluationCriteria.pdf">Software Sustainability Institute</a></span>&nbsp;(Jackson et al. 2011)  and extends their use through a larger evaluation framework developed by ESIP in collaboration with NASA AIST to verify <span class="c4"><a class="c7" href="https://www.nasa.gov/directorates/heo/scan/engineering/technology/txt_accordion1.html">Technology Readiness Levels</a></span>&nbsp;(TRL, NASA 2012). The evaluation framework was used in a <span class="c4"><a class="c7" href="http://testbed.esipfed.org/sites/default/files/2015_AIST_Evaluations_Overview.pdf">pilot effort</a></span>&nbsp;(Burgess 2016, Graybeal 2016) over the course of autumn 2015.</p>
+<p class="c1">The guidance outlined here is intended intended to cover a broad range of research software concept.</p>
+<h1 id="h.rtkadvvyvaul" class="c1 c13">Research Software Projects</h1>
 
-<p>This effort results from both community discussions around these criteria and from ESIP’s larger interest in technology evaluation as a mentoring activity rather than as a verification activity. The guidelines outlined in this document will serve as the foundation for future assessment and training implementations.</p>
+<p class="c1">The guidance developed here is intended for any research software or research code output or deliverable. We are looking beyond the traditional understanding of &ldquo;science code&rdquo; to consider any code developed through a grant funding mechanism. These codes may not directly speak to a science outcome; however, they are valuable when considered more broadly for provenance, for reusability and reproducibility.</p>
+<img title="" src="images/image00.png" alt="Research Funding Lifecycle" />
+<p class="c1">Figure XX. Research Funding Lifecycles.</p>
 
-<h2 id="developing-guidelines">Developing Software Guidelines: A Community-driven Process</h2>
-<p></p>
+<p class="c1">Figure XX provides an idealized overview of research grant funding as it relates to software project lifecycles. It is not intended to describe the complete funding landscape or the variety of ways a research software project could be positioned along a funding or maturity progression. For the purposes of this document and the guidance provided, we are noting the expectations of project or code maturity and the expectations of what is appropriate to assess along those progressions based on those maturity expectations.</p>
 
-<h2 id="what-is-research">What is Research Code?</h2>
-<p>For our purposes, research code and research software are any code outputs developed through grant-funded activities. This understanding is broader and more inclusive  than that found in more traditional “science code” definitions, and it is a necessary expansion for  supporting the current needs of our research communities. Research code and research software are critical to many contemporary research activities (Hettrick et al. 2014). 
-</p>
-<p>Here, we also make a distinction between research code and research software. Research code can be scripts, data processing or analysis workflows, or other codes developed to generate data, perform analyses, or perform other project-specific tasks leading to artefacts published through journal articles or otherwise. This kind of code is usually not intended for community adoption through open sourcing or public release, nor is it included as an explicit deliverable on a grant. The potential for long term support for these codes is low, but, these codes are nevertheless important to the community for provenance and reproducibility, replicability and publication.
-</p>
-<p>For its part, research software is any code product, whether as scripts or as some packaged object, that is intended to be released for community adoption and use. Intention of release is not a complete description of what we mean by research software as we also include intentional design or systems understanding for a defined purpose. This software is most likely an explicit deliverable for a grant. These outputs are valuable for provenance and other community practices, and have the additional potential of longer term support through both ongoing maintenance by the research group or other contributors and through continued funding. </p>
-<p>The distinctions here are related to the purpose of the release and the prospect for ongoing maintenance. In practice, these factors usually do not affect the guidance provided, and for most of this text, the terms research code and research software will be simplified to “codes”. However, there are certain circumstances in which the differences come into play, and these situations will be noted.
-</p>
+<p class="c1">Note that Fig. XX does not include maturity levels. Code maturity and project maturity, identified as some set of characteristics or through longevity, are not linear. A project can start with a high level of code maturity in an initial proof of concept phase. Project maturity, often presented as governance patterns similar to traditional open source projects, is the same. And improvements in both can occur within the lifespan of a single grant rather than through a series of grants. Here we see a potential mismatch between how &nbsp;funding agency may assess and categorize a project and the realities of developing software. Nor does it address mismatches between maturity, of either kind, and the focus on project growth through new research or feature implementations to meet research goals or the realities of software meeting community needs without necessarily meeting code/project maturity goals. These maturity markers are indicators of project health that we strongly support but not to the detriment of the larger goals of providing product that meets a community need and is adopted.</p>
 
-<h2 id="h.6bi4jecr96n" class="c1 c13">Community and Stakeholders</h2>
+<p class="c1">As diverse as research software projects are, there are two overarching categories: code/software intentionally developed for reusability and adoption and code/software developed for highly specific project needs. Neither option negates the recent requirements for openness; however, the methods for achieving those requirements and expectations around code or project maturity are different. The guidance here outlines the community recommendations for openness to support both categories. For projects developing code or software not intended for reuse and adoption, the focus for assessment is on code maturity, documentation and preservation or publication. We should note, as well, &ldquo;not intended&rdquo; reflects stated project milestones, sustainability and community engagement activities per the funded proposal.</p>
+
+<p class="c1">We are focused here on code/software developed by a research group. For the purposes of assessment, we exclude software products reused by a research group from discussions of code maturity assessment while noting its value in assessing project maturity. Or, more specifically, we support a research group&rsquo;s decision to reuse a current, outcome-appropriate technology over reimplementing a similar technology but do not consider the reused technology an assessment target itself. A simple example is developing modules for an existing web publication framework instead of developing a new framework.</p>
+
+<p class="c1">Related, should a project employ an existing technology to support the publication or release of a research object that is not code or software, that technology again would not be considered during the assessment of the research software or code. A very broad example of this would be developing datasets and providing those publicly through ESRI&rsquo;s ArcOnline platform. A project assessment would consider the datasets but not ArcOnline in this case. However, guidance for quality and maturity for other research object types, such as datasets or ontologies, is beyond the scope of this document.</p>
+
+<p class="c1">Analytics and altmetrics are including here to highlight two aspects of analytics for assessment. First, projects at different stages of the lifecycle are characterized by different outcomes and those outcomes may not occur within a specific funding period. Second, we are focusing our guidance on those activities that are actionable by a research group to meet their maturity goals. The success of these activities may be, at least in part, demonstrated through analytics and altmetrics. Understanding how those metrics relate to the funding cycle timelines is necessary before including these in an assessment process focused on activities within a cycle. We suggest caution, then, in when and what is being measured in these areas without further research.</p>
+
+<h1 id="h.6bi4jecr96n" class="c1 c13">Community and Stakeholders</h1>
 
 <p class="c1">Our focus on assessment for guided educational activities as well as assessment for verification encompasses a wide range of stakeholders. Table XX outlines the main stakeholder communities and related use cases.</p>
 
@@ -316,55 +315,8 @@ title: "ESIP Software Guidelines (Draft June 2016)"
 </tbody>
 </table>
 
-<p class="c1">We must also understand that the research software projects are undertaken by a variety of research groups with varying degrees of resources available. These groups range from well-supported institutions with dedicated developer teams to individual PIs with only part-time developer support or small teams of graduate students with varying levels of experience in software development. With that understanding, we have structured this guidance to demonstrate worthwhile and concrete actions that can be taken to improve development practices within a research group’s current resource limitations.</p>
 
-<p>These use cases are expanded in the Scenarios section below to provide more concrete examples and discuss the assessment implications for maturity and for education in real world situations.</p>
-
-
-
-<h1 id="h.rtkadvvyvaul" class="c1 c13">Research Software Projects</h1>
-
-<h3 id="scenarios">Scenarios</h3>
-<p>In this section, we will describe a number of common scenarios where research produces some code or software and the expectations for assessment, code and project maturity, and sustainability may play out differently in each scenario. 
-</p>
-
-<div class="feedback">
-    <p>We're collecting scenarios describing real world situations for different funding, development and research group activities. From this collection, we'd like to address concerns related to assessment by funding agencies and assessment for education. Placeholders are included for new scenarios provided through annotation. If a similar scenario is provided, add comments to the annotation.</p>
-    <p>Scenario 1 is provded as an example description at this time.</p>
-    <p>We are interested in situations particularly around existing projects, legacy codebases, multiple funders and between research code and research software. These are discussion points for considering an assessment system that is not punitive, not onerous and that considers the funders' ROI interests while still meeting the desired community practices. You don't need to provide project names or identifying features but try to provide the context as completely as possible.</p>
-</div>
-
-<p><strong>Scenario 1: </strong>A grad student is brought on to a project, under a single funder/grant, to develop the workflow to process data taken from a data logger and create the final calibrated dataset.</p>
-<p><strong>Scenario 2: </strong></p>
-<p><strong>Scenario 3: </strong></p>
-<p><strong>Scenario 4: </strong></p>
-<p><strong>Scenario 5: </strong></p>
-
-<h3 id="maturities">Code and Project Maturity</h3>
-
-Code maturity and project maturity, identified either through longevity or by some defined criteria, are not linear, nor do they necessarily coincide. A project can start with a high level of code maturity in an initial proof of concept phase. For its part, project maturity, often presented as governance patterns similar to traditional open source projects, can begin the same way. Improvements in both can occur within the lifespan of a single grant rather than through a series of grants. Here we can see the potential mismatch between the way that funding agencies often assess and categorize a project and the way that software develops in reality. At its most basic, this is the not uncommon situation where a codebase may not meet the desired level of code or project maturity but is successfully serving a community need. These maturity markers are indicators of project health that we strongly support but not to the detriment of the larger goals of providing product that meets a community need and is adopted.
-</p>
-
-<p class="c1">As diverse as research software projects are, there are two overarching categories: code/software intentionally developed for reusability and adoption and code/software developed for highly specific project needs. Neither option negates the recent requirements for openness; however, the methods for achieving those requirements and expectations around code or project maturity are different. The guidance here outlines the community recommendations for openness to support both categories. For projects developing code or software not intended for reuse and adoption, the focus for assessment is on code maturity, documentation and preservation or publication. We should note, as well, “not intended” reflects stated project milestones, sustainability and community engagement activities per the funded proposal. 
-</p>
-
-<p class="c1">We are focused here on code/software developed by a research group. For the purposes of assessment, we exclude software products reused by a research group from discussions of code maturity assessment while noting its value in assessing project maturity. Or, more specifically, we support a research group’s decision to reuse a current, outcome-appropriate technology over reimplementing a similar technology but do not consider the reused technology an assessment target itself. A simple example is developing modules for an existing web publication framework instead of developing a new framework.</p>
-
-<p class="c1">Related, should a project employ an existing technology to support the publication or release of a research object that is not code or software, that technology again would not be considered during the assessment of the research software or code. A very broad example of this would be developing datasets and providing those publicly through ESRI’s ArcOnline platform. A project assessment would consider the datasets but not ArcOnline in this case. However, guidance for quality and maturity for other research object types, such as datasets or ontologies, is beyond the scope of this document.</p>
-
-<p class="c1">Analytics and altmetrics are including here to highlight two aspects of analytics for assessment. First, projects at different stages of the lifecycle are characterized by different outcomes and those outcomes may not occur within a specific funding period. Second, we are focusing our guidance on those activities that are actionable by a research group to meet their maturity goals. The success of these activities may be, at least in part, demonstrated through analytics and altmetrics. Understanding how those metrics relate to the funding cycle timelines is necessary before including these in an assessment process focused on activities within a cycle. We suggest caution, then, in when and what is being measured in these areas without further research. </p>
-
-
-<h3 id="h.3qhixgp3adkd" class="c1 c13">Goals of this Document</h3>
-<ol class="c28 lst-kix_shfd0z5borlh-0 start" start="1">
-<li class="c1 c18 c22">Describe research software project stages and relationships between code and project maturity.</li>
-<li class="c1 c22 c18">Provide guidance and resources that are relevant across stakeholders and types of research groups.</li>
-<li class="c1 c22 c18">Provide guidance and resources that are relevant for any type of research software or code or specific guidance when warranted.</li>
-</ol>
-
-<p class="c1">The guidance outlined here is intended intended to cover a broad range of research software concept.</p>
-
-
+<p class="c1">We must also understand that the research software projects are undertaken by a variety of research groups with varying degrees of resources available. These range from well-supported institutions with dedicated developer teams to PIs with only part-time developer support or small teams of graduate students. And team members have varying levels of experience related to software development. With that understanding, we have structured the guidance to provide worthwhile and concrete actions to improve development practices for both code and project maturity within a research group&rsquo;s current resource limitations. &nbsp;</p>
 <h1 id="h.jto1fyx4wiqs" class="c1 c13">Guidelines</h1>
 <p class="note"><span class="c19">NOTE: Although we outlined several stakeholders, we are focusing on developing guidelines that are accessible to principle investigators as the stakeholder group serving as intermediaries between funding agency requirements and project participants. As such, we are intentionally providing current examples and current terminology in the guidance. Removing that terminology can obscure the concept that hinders readers from searching for and finding relevant information. It is our opinion that this does not serve any of the stakeholders well. </span></p>
 
@@ -805,15 +757,6 @@ Code maturity and project maturity, identified either through longevity or by so
 <p class="note"><span class="c21">NOTE: Provide some alignment/discussion of the Reuse Readiness Levels and code/project maturity here.</span></p>
 
 <p class="c1">The medium- to long-term sustainability of research software projects is often tied to a traditional open source model. And the guidance provided here draws heavily on those kinds of governance and contribution models. That being said, research software and code has additional expectations as part of the larger scholarly and research community. Traditional open source might be a big hammer for research projects that may not actually be nails. It is appropriate and necessary to understand the context in which open source activities are undertaken and in which research is undertaken and adapt these processes and potential funding avenues to reflect those different needs. We encourage further discussion and research here.</p>
-
-<h1 id="assessment">Using this guidance for assessment</h1>
-<p>We err here in favor of externally verifiable indicators for any assessment task, whether self-assessment or a more formal process. In some cases, these indicators support other sustainability and adoption goals. For assessment, such as any potential external evaluation undertaken by a funding agency, we often have no other reliable means to evaluate a piece of software. </p>
-<p>They are not, however, perfect assessment or evaluation indicators. For example, migrating a project from one VCS to another can result in the loss of the information held in an issue tracker and lead to false negatives for related criteria. We recommend any system developed using this guidance, or any that is similar, considers the real world practices that may interfere with these external indicators and provide a means for the project team to respond and clarify.
-</p>
-<p>There are also recommended practices for improving code quality that are invisible to this kind of external review. Code reviews, pair programming, Agile or Lean management practices — these activities can be difficult to discern from the project artifacts that we consider throughout the guidance above. While there are practices described there that are commonly used in Agile management, for example, we are not advocating any one management style.</p>
-
-<p class="note">Recommendations for implementation to come.</p>
-
 <h1 id="h.qyi0cpttkurs" class="c1 c13">Contributors</h1>
 <p class="c1"><strong>ESIP</strong></p>
 <ul>
